@@ -12,6 +12,7 @@ export type Question = {
 	prompt: string;
 	options: Option[];
 	hint: string;
+	topic?: string;
 };
 
 export type Quiz = {

@@ -43,10 +43,36 @@ export async function getCategories(): Promise<Category[]> {
 	return categories;
 }
 
+export async function getAvailableTopics(categoryId: string, customFetch = fetch): Promise<string[]> {
+	const meta = CATEGORIES_META[categoryId];
+	if (!meta) {
+		throw new Error(`Category "${categoryId}" not found`);
+	}
+
+	const topics = new Set<string>();
+
+	for (const file of meta.files) {
+		const response = await customFetch(`/data/${categoryId}/${file}`);
+		const data: QuizData[] = await response.json();
+
+		for (const quizData of data) {
+			for (const question of quizData.quiz.questions) {
+				if (question.topic) {
+					topics.add(question.topic);
+				}
+			}
+		}
+	}
+
+	return Array.from(topics).sort();
+}
+
 export async function getQuestions(
 	categoryId: string,
 	type: QuizType | 'RANDOM',
-	count: number
+	count: number,
+	selectedTopics: string[] = [],
+	customFetch = fetch
 ): Promise<Question[]> {
 	const meta = CATEGORIES_META[categoryId];
 	if (!meta) {
@@ -56,13 +82,27 @@ export async function getQuestions(
 	const allQuestions: Question[] = [];
 
 	for (const file of meta.files) {
-		const response = await fetch(`/data/${categoryId}/${file}`);
+		const response = await customFetch(`/data/${categoryId}/${file}`);
 		const data: QuizData[] = await response.json();
 
 		for (const quizData of data) {
-			if (type === 'RANDOM' || quizData.quiz.type === type) {
-				allQuestions.push(...quizData.quiz.questions);
+			// Filter by Type
+			if (type !== 'RANDOM' && quizData.quiz.type !== type) {
+				continue;
 			}
+
+			// Filter by Topics
+			const filteredQuestions = quizData.quiz.questions.filter(q => {
+				// If no topics selected, include all (or maybe all that have a topic? No, usually all)
+				if (selectedTopics.length === 0) return true;
+				// If question has no topic, maybe exclude it? Or include? 
+				// The requirement is "select topic(s) ... as an optional input".
+				// If user selects topics, they probably only want those topics.
+				// If question has no topic, it doesn't match the selection.
+				return q.topic && selectedTopics.includes(q.topic);
+			});
+
+			allQuestions.push(...filteredQuestions);
 		}
 	}
 

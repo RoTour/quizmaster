@@ -3,9 +3,10 @@
     "url": "https://gemini.google.com/share/62fb7a54dd34",
     "quiz": {
       "type": "THEORY",
+      "topic": "EBS",
       "questions": [
         {
-          "id": "f1240f14-f347-4090-97a3-45c4964c78b4",
+          "id": "18193a54-cdb8-4ab3-bcdf-35774fa26d00",
           "prompt": "A Solutions Architect is designing a system that requires a storage layer capable of acting as a boot drive for an operating system. Which storage architecture is fundamentally capable of this?",
           "options": [
             {
@@ -25,10 +26,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "bd9b5844-6f8d-4124-b064-e05c4ac4c019",
+          "id": "042a3988-5897-4a89-bc1c-a6df07a54416",
           "prompt": "You have launched an EC2 instance in Availability Zone us-east-1a. You attempt to attach an existing EBS volume located in us-east-1b to this instance, but the operation fails. What is the cause?",
           "options": [
             {
@@ -48,10 +50,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "a4ac5b02-02d1-4088-b056-ef9b2202aa26",
+          "id": "b9fc797c-c639-4e53-84c2-1033a4e6a88c",
           "prompt": "A critical application requires an EBS volume to be resilient against physical drive failure. How does a standard EBS volume handle the failure of a single physical hardware component backing it?",
           "options": [
             {
@@ -71,10 +74,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "4fe07d40-0232-4320-8d90-8d028e9354a9",
+          "id": "19d1f52d-f8b4-484e-b208-992da96d6d11",
           "prompt": "You need to migrate an EBS volume from one Availability Zone to another to support an application migration. Which workflow achieves this?",
           "options": [
             {
@@ -94,10 +98,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "cb360322-57bb-4dc0-a78c-09d4e9458e5c",
+          "id": "736fd24e-0937-42ee-b687-66c1de4ace7b",
           "prompt": "An architect is selecting a volume type for a MySQL database workload that requires consistent, low-latency performance and high durability. Which EBS volume category is most appropriate?",
           "options": [
             {
@@ -117,10 +122,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "4dc3446f-b26d-42b2-98ae-c9468c2d612d",
+          "id": "6aa89578-2b18-4cff-933f-cfdd4c2ec488",
           "prompt": "What is the primary operational difference between General Purpose SSD gp2 and gp3 volume types?",
           "options": [
             {
@@ -140,10 +146,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "a10a014e-3636-42da-866c-c8a0ca3c627e",
+          "id": "f7f433b5-fd67-4410-ac61-0c11ad525e01",
           "prompt": "A clustered application requires a single EBS volume to be connected to multiple EC2 instances simultaneously to share data. What requirement must be met to avoid data corruption?",
           "options": [
             {
@@ -163,10 +170,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "959fd653-1f13-4b83-b34b-09d79f1f7ee6",
+          "id": "c60789e1-6b82-4e53-b4cf-eb0e5b6f1748",
           "prompt": "You have a log processing workload that writes large datasets sequentially and requires high throughput but not high IOPS. Which volume type offers the best cost-efficiency?",
           "options": [
             {
@@ -186,10 +194,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "25c895ba-feec-41f2-80ff-891c9ab43481",
+          "id": "c3fda9c1-bc22-47fb-ab78-24a25249fe76",
           "prompt": "When configuring an EBS volume, how is the cost primarily determined?",
           "options": [
             {
@@ -209,10 +218,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "06243640-8ba3-4d22-9c7b-a84ba6a9eccc",
+          "id": "eed3f484-cb2d-4134-85e6-0fecdceecc43",
           "prompt": "To migrate an EBS volume to a different AWS Region for disaster recovery, what is the correct sequence of steps?",
           "options": [
             {
@@ -232,7 +242,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         }
       ]
     }
@@ -241,9 +252,10 @@
     "url": "https://gemini.google.com/share/5c5ebf426855",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "EBS",
       "questions": [
         {
-          "id": "c3601e38-2ff4-4668-9ba5-f06ab4eede78",
+          "id": "93dc887c-feac-4e75-bd8c-748ce9e4bf92",
           "prompt": "Scenario: 'SecureCorp' has discovered a critical compliance violation. Their primary production database (running on an EC2 instance) is using an unencrypted EBS volume. You need to encrypt this volume with the least amount of operational overhead. You cannot simply 'switch on' encryption for an existing volume. What is the correct architectural workflow to fix this?",
           "options": [
             {
@@ -263,10 +275,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "ecba5e12-84be-45e8-9b90-91a05536f1f6",
+          "id": "9b7ea099-b9fc-4981-a1c6-1ad97048e7a1",
           "prompt": "Scenario: A legacy financial application requires exactly 25,000 IOPS to function correctly during peak load. The current architecture uses a single gp3 volume, but the application is crashing due to I/O throttling. You check the gp3 settings and see it is provisioned correctly, but performance is capped. What is the limitation and the solution?",
           "options": [
             {
@@ -286,10 +299,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "7ceef86d-ca07-40f9-86b9-572fe86dcadb",
+          "id": "9d3c8329-9f9e-4c62-9f33-f15c0be0da48",
           "prompt": "Scenario: You launch a new high-performance database instance using an AMI from the AWS Marketplace. You stop the instance to resize it, and when you start it back up, all the data is gone. You realize the AMI was configured to use 'Instance Store' volumes rather than EBS. Why did this happen?",
           "options": [
             {
@@ -309,10 +323,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "29c1d402-f195-473b-9db7-eafab1def1ed",
+          "id": "1159a0ec-f707-467a-89d3-5fdbfdc12e53",
           "prompt": "Scenario: A media company wants to migrate 10 TB of video archives to the sc1 (Cold HDD) volume type to save money. However, they need to support a burst of read activity every morning that exceeds the baseline performance of a single sc1 volume. They cannot afford SSDs. As an Architect, how can you increase the Read/Write performance (IOPS and Throughput) while keeping the low cost of HDD sc1 volumes?",
           "options": [
             {
@@ -332,10 +347,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         },
         {
-          "id": "b5cf83f6-6384-4f02-bf46-a4697dc1e341",
+          "id": "366ed1d4-fc92-4ea8-b040-9b5f18c70342",
           "prompt": "Scenario: You have an EC2 instance in us-east-1a with a critical EBS volume. A massive hurricane is predicted to hit the region. You want to ensure this data is available in the us-west-1 (California) region as a disaster recovery backup. Which sequence of actions creates the backup in the remote region?",
           "options": [
             {
@@ -355,7 +371,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EBS"
         }
       ]
     }
@@ -364,9 +381,10 @@
     "url": "https://gemini.google.com/share/5d4b2fdf8e21",
     "quiz": {
       "type": "THEORY",
+      "topic": "S3",
       "questions": [
         {
-          "id": "2d58dd34-4256-4304-9baf-0d198552a85a",
+          "id": "17245569-27c3-41cb-8a35-f22c455f40cd",
           "prompt": "Which of the following best describes the type of storage provided by Amazon S3?",
           "options": [
             {
@@ -386,10 +404,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "ba5dfd5d-9bb1-4a9a-a879-2ffb79e8fce8",
+          "id": "c30db89e-368d-4d49-9f0b-678332eb097d",
           "prompt": "What is the requirement for naming an S3 bucket?",
           "options": [
             {
@@ -409,10 +428,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "66343ee1-098a-4c18-91c8-21bb71492a09",
+          "id": "3ef4f500-ed31-4913-abb6-2cf4bc5a4644",
           "prompt": "How does Amazon S3 handle directory structures?",
           "options": [
             {
@@ -432,10 +452,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "b7d80b7f-ba8a-4498-9128-740c0cab8325",
+          "id": "25da55cf-c012-4936-a194-fc76ee56222e",
           "prompt": "What is the maximum size allowed for a single object uploaded to S3?",
           "options": [
             {
@@ -455,10 +476,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "1f09ba4c-7386-480d-9fb2-f0f7c7c332d7",
+          "id": "0c0809eb-06f9-44e1-a89b-5a0a90045cf7",
           "prompt": "By default, how many S3 buckets are allowed per AWS account?",
           "options": [
             {
@@ -478,10 +500,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "4a3f2cf0-488b-4b10-88bd-a0a92a9dc963",
+          "id": "47e8671d-b2f0-43c2-a693-2773d6908916",
           "prompt": "How does S3 achieve high data durability and availability?",
           "options": [
             {
@@ -501,10 +524,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "d42101d0-39b6-4bba-8f1c-30f655730110",
+          "id": "d183a8e7-1088-40c7-91ed-d719f5b1005a",
           "prompt": "In a web application architecture, what is a primary benefit of using S3 alongside a web server?",
           "options": [
             {
@@ -524,10 +548,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "430c6c99-5e8d-4f4c-9ac3-74d74273f78d",
+          "id": "483421fc-fe21-436d-b728-913a6eff515a",
           "prompt": "Which set of components correctly defines an S3 object?",
           "options": [
             {
@@ -547,10 +572,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "c2cac6ed-730f-4917-914e-c4e34aaf636d",
+          "id": "f7a50f68-9d2b-4e0f-a796-af6f85a8599e",
           "prompt": "Which AWS service is integrated with S3 to control access via policies and roles?",
           "options": [
             {
@@ -570,10 +596,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "9b161ef6-a90a-47f6-9e96-7ff7f0d8605d",
+          "id": "49ab42d5-14de-4f97-a071-12aa694e20a0",
           "prompt": "If you need file-based storage (traditional directory structure) rather than object storage, which service does the text recommend?",
           "options": [
             {
@@ -593,7 +620,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -602,9 +630,10 @@
     "url": "https://gemini.google.com/share/d6773d66d832",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "S3",
       "questions": [
         {
-          "id": "9c633230-67ae-4669-8881-af4c668701bb",
+          "id": "107e02d2-7676-4a11-a967-07124caafde3",
           "prompt": "Your developer suggests storing user uploads (photos/videos) on the same EC2 instance that runs the Node.js backend to keep things simple. Why do you, as the Architect, reject this proposal in favor of S3?",
           "options": [
             {
@@ -624,10 +653,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "25fa96e8-f2dc-4f77-9279-f407a877719c",
+          "id": "37dccc12-4214-4d97-b1dc-2f607f85d98e",
           "prompt": "You decide to use S3. You attempt to create a bucket named 'petgram-media'. The console throws an error saying the bucket name is invalid or taken. You check your account, and you have 0 buckets. What is the most likely cause?",
           "options": [
             {
@@ -647,10 +677,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "bfba5602-a760-4aa6-a0df-2f75ae0400a3",
+          "id": "fecb028c-3b17-4616-911f-836306bfc406",
           "prompt": "To organize the data, your lead developer wants to create a folder structure: Users/UserID/Albums/AlbumName/Photo.jpg. How does S3 handle this request?",
           "options": [
             {
@@ -670,10 +701,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "10610a18-6835-42ab-b032-2d6a55b87614",
+          "id": "5acd4611-4a0a-4943-b43b-139d447da2b8",
           "prompt": "A user accidentally uploads a 6 Terabyte raw video file of their cat sleeping. The upload fails. Why?",
           "options": [
             {
@@ -693,10 +725,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "48aa4f2d-3ca9-40a5-8f2b-96d37e1915a4",
+          "id": "3eaf4081-860a-41ec-b5c5-d0d77c34dcdf",
           "prompt": "Management is worried about data loss. They ask: 'If the specific server holding our data in the AWS data center fails, do we lose the cat photos?' What is your answer?",
           "options": [
             {
@@ -716,7 +749,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -725,9 +759,10 @@
     "url": "https://gemini.google.com/share/712c1bae795c",
     "quiz": {
       "type": "THEORY",
+      "topic": "FSx for Windows NetApp Lustre OpenZFS",
       "questions": [
         {
-          "id": "dd300c06-0832-409c-849c-6f7fca7a52cc",
+          "id": "50abc55e-df9f-426f-b7bc-af50c9d581f5",
           "prompt": "Which Amazon FSx solution is specifically optimized for High-Performance Computing (HPC), Machine Learning, and scientific computing workloads?",
           "options": [
             {
@@ -747,10 +782,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "eecab2d1-7626-4afd-a784-bb43b0399faa",
+          "id": "022483b0-c89b-43c0-bee1-68723a595eae",
           "prompt": "Unlike Amazon EFS, which supports only Linux environments, what is a key operating system advantage of Amazon FSx?",
           "options": [
             {
@@ -770,10 +806,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "899abe61-b943-4aa1-a970-fda8bb356282",
+          "id": "7687fbb8-a4b2-485d-bbe2-f5d3af2b93ff",
           "prompt": "Which Amazon FSx type provides native integration with Microsoft Active Directory and uses the SMB protocol?",
           "options": [
             {
@@ -793,10 +830,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "42f5d9b7-cf40-4394-bbfe-85f3f3998a52",
+          "id": "5e8580e8-7d1c-45df-937d-fbf0fb5dc463",
           "prompt": "Regarding deployment availability, what is a specific limitation of Amazon FSx for Lustre compared to the other FSx types?",
           "options": [
             {
@@ -816,10 +854,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "c1d2caad-655b-49cc-91e1-6e5a32f35637",
+          "id": "03d70f4f-3d66-4f10-a53b-966194e51eaa",
           "prompt": "Which file sharing protocols does Amazon FSx for NetApp ONTAP support according to the text?",
           "options": [
             {
@@ -839,10 +878,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "5a8250a3-5ee8-4aa4-91db-c03cc080fdac",
+          "id": "c16f6938-e8ec-4180-bfb0-0501f19b3da5",
           "prompt": "Amazon FSx for Lustre integrates deeply with which AWS service to allow efficient scaling with workload demands?",
           "options": [
             {
@@ -862,10 +902,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "2ee80c05-11e4-4f32-90b2-53ceeeb0a00c",
+          "id": "03c748ab-52d2-4089-a428-bf639d7936a2",
           "prompt": "Which FSx variant is built on open-source technology and uses the NFS protocol to support Linux, Windows, and macOS?",
           "options": [
             {
@@ -885,10 +926,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "e4716712-4e4d-4e3d-9bb8-ae3689818494",
+          "id": "90aa2273-36e3-427b-9864-f869c25a6833",
           "prompt": "What specific management task does Amazon FSx automate for you?",
           "options": [
             {
@@ -908,10 +950,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "5ade0dec-5690-4dc4-8c6a-9abcf92d303c",
+          "id": "33d8f3df-d6f6-4e4b-8665-b4f9acd00b1b",
           "prompt": "Which features are specifically highlighted as benefits of Amazon FSx for Windows File Server?",
           "options": [
             {
@@ -931,10 +974,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         },
         {
-          "id": "63aeba28-a238-4118-b397-99676c9ec3ad",
+          "id": "08692271-cfc5-4ddd-be0b-a3fff6956a03",
           "prompt": "Which FSx option allows for data access via NFS, SMB, and iSCSI concurrently?",
           "options": [
             {
@@ -954,7 +998,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "FSx"
         }
       ]
     }
@@ -963,9 +1008,10 @@
     "url": "https://gemini.google.com/share/a37225411092",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "FSx for Windows NetApp Lustre OpenZFS",
       "questions": [
         {
-          "id": "2b43392e-a4ad-4372-b473-f244d8ea82e3",
+          "id": "8c95c1ce-eadf-44b3-bf05-5e8db2921750",
           "prompt": "Scenario Part 1: Service Selection. The law firm needs to migrate 50 TB of Windows-based file shares while keeping all their existing Windows Access Control Lists (ACLs) intact. Which service is the best fit?",
           "options": [
             {
@@ -985,10 +1031,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "8727e1c1-7536-48ff-9aed-4c4d0aa40357",
+          "id": "61f9c4aa-271a-445f-b162-4652c087902a",
           "prompt": "Scenario Part 2: High Availability. The firm requires that the file system remains available even if an entire Availability Zone (data center) goes offline. Which deployment type must you select?",
           "options": [
             {
@@ -1008,10 +1055,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "9c407c97-f0f8-4878-94f1-d3d178109f22",
+          "id": "90220eb9-fd86-4d8a-aa7d-052519501b49",
           "prompt": "Scenario Part 3: Integration. Employees want to use their existing usernames and passwords to access the new AWS file shares. How do you achieve this?",
           "options": [
             {
@@ -1031,7 +1079,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -1040,9 +1089,10 @@
     "url": "https://gemini.google.com/share/3298ab647234",
     "quiz": {
       "type": "THEORY",
+      "topic": "CloudFront",
       "questions": [
         {
-          "id": "1eabe5d4-0685-4139-9f31-c7a1375343f3",
+          "id": "e68c98cf-2181-4ddc-b175-4e6ab0bb7b9b",
           "prompt": "What is the primary mechanism Amazon CloudFront uses to reduce latency for users located far from the origin server?",
           "options": [
             {
@@ -1062,10 +1112,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ac2ef08a-afbd-4da8-8642-94d4820944f7",
+          "id": "375e6cbe-7609-4694-a0a7-8aaa1e9cd33f",
           "prompt": "In the context of CloudFront architecture, what is an \"Origin\"?",
           "options": [
             {
@@ -1085,10 +1136,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5f214290-9c65-42b1-9e9c-bea44f075cd0",
+          "id": "64f26664-6e5f-4954-8599-e3a71b60313c",
           "prompt": "What happens when a user requests content that is NOT currently present in the nearest edge location's cache?",
           "options": [
             {
@@ -1108,10 +1160,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "50e676c2-ebce-4ea5-ad0b-deb29b9e5a3b",
+          "id": "e1db4c14-da34-4bc9-8df8-c7ec5c042963",
           "prompt": "What is the purpose of a CloudFront \"Distribution\"?",
           "options": [
             {
@@ -1131,10 +1184,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f967f652-615b-408f-b867-ad45e87ec424",
+          "id": "00eaf538-d856-4697-94e8-c611dbd7e8f3",
           "prompt": "What is the default Time to Live (TTL) for content cached in CloudFront?",
           "options": [
             {
@@ -1154,10 +1208,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "1b8cab8b-d51d-45fa-9552-aaf7a014667d",
+          "id": "d6bebc88-f952-4bcf-8b25-e34a3ff239a3",
           "prompt": "Why would a Solutions Architect perform a \"Cache Invalidation\"?",
           "options": [
             {
@@ -1177,10 +1232,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "128876ae-4c18-474e-acb0-9541b225a678",
+          "id": "1af72613-500a-4b3b-a49d-e7003982f0f1",
           "prompt": "Which types of content can CloudFront distribute?",
           "options": [
             {
@@ -1200,10 +1256,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "6666a5d8-b62d-4c57-bbfd-cf68254d81f6",
+          "id": "02fbe0ff-156a-4ce1-a881-b9994aec75c4",
           "prompt": "How does CloudFront handle SSL/TLS for secure connections by default?",
           "options": [
             {
@@ -1223,10 +1280,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b15b6d2c-778a-4162-90d4-bba8d3c4e564",
+          "id": "fc55a879-543e-4aa2-918e-14176027581c",
           "prompt": "Which AWS service does CloudFront integrate with to provide operational metrics?",
           "options": [
             {
@@ -1246,10 +1304,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "cad9d398-6198-4a2c-beac-e61ae3b3cc32",
+          "id": "da5772e8-567f-40d8-adea-95dd6312b2a1",
           "prompt": "Which of the following use cases is specifically mentioned for CloudFront?",
           "options": [
             {
@@ -1269,7 +1328,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -1278,9 +1338,10 @@
     "url": "https://gemini.google.com/share/7c037719606f",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "CloudFront",
       "questions": [
         {
-          "id": "4def3757-eef2-405b-a4ac-4ab016ad88f7",
+          "id": "8702d9c6-2f14-4f1a-b759-e7df25821c66",
           "prompt": "Scenario: StreamGlobal has a library of 4K videos stored in an S3 bucket in the us-east-1 region. Users in Tokyo are complaining about constant buffering. You decide to implement CloudFront. However, to ensure security, you must guarantee that users cannot bypass CloudFront and access the S3 bucket files directly via the S3 URL. Which architectural pattern should you implement?",
           "options": [
             {
@@ -1300,10 +1361,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "d4d16be2-7188-41c1-b32d-3322edf10ff3",
+          "id": "a818572f-59b8-4c0f-a77a-4bbf54ee1f0e",
           "prompt": "Scenario: StreamGlobal is launching a 'Premium' tier. Paid subscribers should be able to access high-definition content, while free users should be blocked. The content consists of thousands of video files. Which CloudFront feature allows you to securely serve this private content to authorized users efficiently?",
           "options": [
             {
@@ -1323,10 +1385,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "dc97389f-14a7-4b16-92ed-7c02223a4821",
+          "id": "b16d3fbd-85b9-46d6-a27d-10e00718557d",
           "prompt": "Scenario: Your marketing team pushed a new banner.jpg to the S3 bucket for a holiday promotion, replacing the old file. However, customers are calling to say they still see the old summer banner. The marketing manager wants this fixed immediately and suggests setting the TTL to 0 for all future files to prevent this. As the Architect, what is your response?",
           "options": [
             {
@@ -1346,10 +1409,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "7ba074a1-6f02-42b8-939c-7f9a96b8c7a5",
+          "id": "597d7abd-1a6e-453c-88d9-010542f7ed07",
           "prompt": "Scenario: StreamGlobal has a compliance requirement to store logs of every single user request delivered through CloudFront for audit purposes. These logs must be analyzed later using Athena. Where should you configure these logs to be delivered?",
           "options": [
             {
@@ -1369,10 +1433,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "cb60b754-36bb-4f74-836e-7b86532c109c",
+          "id": "694c663e-a104-4137-8713-a6af7867272e",
           "prompt": "Scenario: You are building a localized version of the site. You want to automatically redirect users to fr.streamglobal.com if they are in France, and de.streamglobal.com if they are in Germany. Which CloudFront capability allows you to execute this logic closest to the user with the lowest latency?",
           "options": [
             {
@@ -1392,10 +1457,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "97b1517a-01e4-4d3e-9d91-36bc42e5bd4e",
+          "id": "6cec015d-aac7-48e3-92dd-86b598e7b1eb",
           "prompt": "Scenario: StreamGlobal allows users to upload custom avatars. You want to ensure that if a user uploads a malicious file or a huge 4GB image as an avatar, the upload is rejected before it wastes bandwidth reaching your origin S3 bucket. How can you enforce a size limit on uploads at the CloudFront level?",
           "options": [
             {
@@ -1415,10 +1481,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "b6231208-44d6-47a8-ba7f-ef0ae7358880",
+          "id": "e06d6eaa-6f25-44db-b0d2-7c6a7a7267d7",
           "prompt": "Scenario: You need to support HTTPS for your custom domain www.streamglobal.com. You have obtained a certificate from a third-party Certificate Authority (CA), not AWS Certificate Manager (ACM). How can you use this certificate with CloudFront?",
           "options": [
             {
@@ -1438,10 +1505,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "80fc9e82-7484-4feb-9f72-c30f45e95280",
+          "id": "80ac85b0-9c4c-41fc-8db4-9b2c3e0ad1b7",
           "prompt": "Scenario: Your CFO notices that CloudFront costs are high because you are serving data to users in expensive regions (like South America and Australia) where you have very few premium customers. How can you reduce costs while keeping the service running for your main markets in US and Europe?",
           "options": [
             {
@@ -1461,10 +1529,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "38380c9c-9af2-4d8b-8a6a-edf18a455eca",
+          "id": "f465cabf-ee95-4ad5-887b-90c5e42be925",
           "prompt": "Scenario: You have a dynamic API running on EC2 instances behind an Application Load Balancer (ALB). You want to use CloudFront to improve performance. Since the content is dynamic (API responses), you set the TTL to 0. Is there still a benefit to using CloudFront?",
           "options": [
             {
@@ -1484,10 +1553,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "61a334c1-74ee-4738-8f1a-26832b913c36",
+          "id": "5f89c2ef-b61a-4d86-88b4-558f9d0f6f9d",
           "prompt": "Scenario: StreamGlobal requires that all traffic between CloudFront and your custom Origin (an HTTP server on EC2) be encrypted. However, your origin server is using a self-signed certificate. Will CloudFront accept this connection?",
           "options": [
             {
@@ -1507,7 +1577,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         }
       ]
     }
@@ -1516,9 +1587,10 @@
     "url": "https://gemini.google.com/share/011acdfd8eca",
     "quiz": {
       "type": "THEORY",
+      "topic": "EFS",
       "questions": [
         {
-          "id": "fff5560a-0787-4509-9d5e-a4ffc978b4c1",
+          "id": "bfd5dece-25d5-4b22-bc01-1bf542bfe437",
           "prompt": "Which network file sharing protocol does Amazon EFS support to enable connectivity with applications?",
           "options": [
             {
@@ -1538,10 +1610,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ea466975-b020-45cc-9542-4398968a0eac",
+          "id": "0a145018-2b9a-4022-914d-14bf1dcf370d",
           "prompt": "Which of the following operating systems is supported for Amazon EFS client instances according to the text?",
           "options": [
             {
@@ -1561,10 +1634,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "e25674c8-e64d-4cdf-a413-e6dd256c045a",
+          "id": "fac752b7-9345-4eb9-abfd-d9f3655af5b0",
           "prompt": "What is a primary advantage of EFS regarding how EC2 instances access the data?",
           "options": [
             {
@@ -1584,10 +1658,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "e8382e3d-e31d-423c-a00d-6e94d86b4170",
+          "id": "08d204f0-6a87-4725-a6bf-05d1492b5cfe",
           "prompt": "To connect an EC2 instance to an EFS file system within a VPC, what must be created in the subnets?",
           "options": [
             {
@@ -1607,10 +1682,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "97795aa3-2d3a-48f1-8418-d69f981a46bd",
+          "id": "0da230a6-afda-4c7d-b561-7b9198ddce57",
           "prompt": "Which EFS Performance Mode is recommended for latency-sensitive environments like web applications?",
           "options": [
             {
@@ -1630,10 +1706,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "0add5921-2fd0-4493-b828-bc94d66ac758",
+          "id": "1a243203-d22e-41ee-b44e-28bc6f0eca5b",
           "prompt": "What is the primary trade-off when using Max I/O Performance Mode?",
           "options": [
             {
@@ -1653,10 +1730,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3a610847-fc79-467d-b7c5-feedb602c18d",
+          "id": "e6c0d7db-342b-4da8-8329-3f51b1d682ef",
           "prompt": "Which throughput mode automatically adjusts throughput performance based on workload requirements?",
           "options": [
             {
@@ -1676,10 +1754,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5ab8f3d5-d5ab-48b5-b836-5a102207ed89",
+          "id": "50d78b5e-012c-42da-9a23-680b807ea1b4",
           "prompt": "How does EFS One Zone storage class differ from EFS Standard?",
           "options": [
             {
@@ -1699,10 +1778,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c8837c4e-7fae-49df-9eeb-4f45faaa0fa2",
+          "id": "4244b861-c4fa-48e8-b597-28c066886079",
           "prompt": "What is a critical limitation of EFS regarding operating systems?",
           "options": [
             {
@@ -1722,10 +1802,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "994d76d7-8df9-48c5-8402-2273f0d59964",
+          "id": "baa4ef07-312c-4e5a-90ca-9e5a74d2b377",
           "prompt": "Which utility package must be installed on the Linux instance to manage EFS mounts easily?",
           "options": [
             {
@@ -1745,7 +1826,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -1754,9 +1836,10 @@
     "url": "https://gemini.google.com/share/63f23138933f",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "EFS",
       "questions": [
         {
-          "id": "ad12a817-1f85-485c-b21c-cb2f5c963e39",
+          "id": "75e7e2f3-47c0-43d5-b76c-e435244c066b",
           "prompt": "Scenario Part 1: Diagnosis. PixelShare recently moved from a single EC2 instance to an Auto Scaling Group with two instances behind an Application Load Balancer. They store user uploads locally on the instance disk. Users report that uploaded profile pictures disappear when they refresh the page (404 Error), but sometimes reappear on a second refresh. What is the root architectural cause of this behavior?",
           "options": [
             {
@@ -1776,10 +1859,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "95e732da-89e0-40bc-b58d-c5a614dac75f",
+          "id": "a7a263e7-87ac-4113-9133-377d1eb98e2d",
           "prompt": "Scenario Part 2: Design. You decide to implement Amazon EFS to resolve the 'vanishing upload' issue. Which implementation step allows both EC2 instances to serve the exact same set of images seamlessly?",
           "options": [
             {
@@ -1799,10 +1883,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "938afac5-bdec-4590-8491-0dfe0a77522a",
+          "id": "b8c7eeee-6cbb-4e90-93df-a2b64149b0ec",
           "prompt": "Scenario Part 3: Security. To make this work securely, you have created a Security Group for your Web Servers ('Web-SG') and a new Security Group for your EFS Mount Targets ('EFS-SG'). What INBOUND rule must you add to the 'EFS-SG' to allow the web servers to connect?",
           "options": [
             {
@@ -1822,7 +1907,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -1831,9 +1917,10 @@
     "url": "https://gemini.google.com/share/44f5cbc66f14",
     "quiz": {
       "type": "THEORY",
+      "topic": "S3 Versioning",
       "questions": [
         {
-          "id": "d22584bb-2e83-4569-ae69-64f3e27af9a7",
+          "id": "56bffa97-a825-4f85-9712-7c972e58b2b5",
           "prompt": "A bucket has versioning enabled. A user accidentally deletes an object by clicking 'Delete' in the console without specifying a version ID. What is the result of this action?",
           "options": [
             {
@@ -1853,10 +1940,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5943260e-db55-4c77-95df-93b05dc56bef",
+          "id": "8cee8c3f-6db0-44cc-b990-806fdd2b0fd3",
           "prompt": "Once a bucket has had versioning enabled, which of the following is true regarding its future state?",
           "options": [
             {
@@ -1876,10 +1964,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "1c3c4e06-e566-4607-9d3c-ae56de935d8e",
+          "id": "1ee6db20-735f-4249-bc74-6bafa834849e",
           "prompt": "An architect suspends versioning on a bucket that previously had it enabled. What happens to new objects uploaded to the bucket after this change?",
           "options": [
             {
@@ -1899,10 +1988,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5d8560ac-2d3a-4946-96b2-90a0a5b9cdbc",
+          "id": "6322c86d-08de-4455-aece-01f3548f224c",
           "prompt": "A company has a 10 GB file in an S3 bucket. They upload a new 10 GB version of the same file five times with versioning enabled. How much storage are they billed for?",
           "options": [
             {
@@ -1922,10 +2012,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "1c9eee3a-7a09-44f1-a3ca-584b87fa7e54",
+          "id": "d70182b1-e98d-4c7d-8504-0b23507d68da",
           "prompt": "Which layer of security requires the use of the AWS CLI to be enabled and prevents the accidental deletion of specific object versions?",
           "options": [
             {
@@ -1945,10 +2036,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "13c27ce5-8fcd-402a-83e2-e25c9a45d2f7",
+          "id": "f4aab7c6-ac39-4fe3-86b0-562cab086caa",
           "prompt": "A developer wants to restore an object that was 'deleted' (a delete marker was applied). What is the simplest way to make the previous version of the file visible again?",
           "options": [
             {
@@ -1968,10 +2060,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "db007468-caba-4edb-a6c1-f0cff6ba3b54",
+          "id": "7b5c6aff-7775-476d-9795-e673cfd67b60",
           "prompt": "In a bucket where versioning is suspended, a user uploads an object with a key that already exists. What happens to the 'current' version of that object?",
           "options": [
             {
@@ -1991,10 +2084,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "dabf68e1-5c92-4698-b79f-7bbaec002ae4",
+          "id": "169041eb-61f8-4332-bf88-e521d2c13155",
           "prompt": "What is the primary benefit of using versioning in a production environment for an application that frequently updates configuration files?",
           "options": [
             {
@@ -2014,10 +2108,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "829b8aea-cea3-4b58-9c36-2743d3a05aee",
+          "id": "71367154-f208-4b59-b121-5ff70fedb689",
           "prompt": "Which of the following operations specifically requires Multi-Factor Authentication when MFA Delete is enabled?",
           "options": [
             {
@@ -2037,10 +2132,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "45fe746d-6097-4732-a203-36f6b2087dd1",
+          "id": "44c0ce42-9496-4125-a837-554f96cdf9bb",
           "prompt": "If a bucket is in the 'Unversioned' state and a user uploads 'photo.jpg' and then later uploads a different file also named 'photo.jpg', what is the state of the first file?",
           "options": [
             {
@@ -2060,7 +2156,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -2069,9 +2166,10 @@
     "url": "https://gemini.google.com/share/7adee6fae698",
     "quiz": {
       "type": "THEORY",
+      "topic": "S3 Storage Classes",
       "questions": [
         {
-          "id": "aa858093-4ba9-42b3-8fe6-d022269f8a9a",
+          "id": "87ca243a-dd91-49b7-89fa-204b56655a36",
           "prompt": "An architect is looking for the most cost-effective storage for data that is rarely accessed and can tolerate a retrieval time of 48 hours. Which storage class should be selected?",
           "options": [
             {
@@ -2091,10 +2189,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "14d1f371-6b52-4000-817a-f3bad4f6a58a",
+          "id": "4a3fc1bb-1ff2-4cfa-99ec-7ee9600e4ec5",
           "prompt": "What is the minimum object size for which AWS will charge a user in the S3 Standard-IA storage class?",
           "options": [
             {
@@ -2114,10 +2213,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "6e1fd0a2-f7b0-4825-af9e-ccc33024ff11",
+          "id": "9217bd79-f04d-48e2-a88d-f11d26539efa",
           "prompt": "A company has secondary backup data that can be easily recreated if lost. They want to minimize costs for infrequent access and do not require multi-AZ resilience. Which class fits best?",
           "options": [
             {
@@ -2137,10 +2237,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "8dac4c6c-572b-4941-88fc-47e52bbd7591",
+          "id": "ba98bdba-fc30-44f7-87be-f3338089e63c",
           "prompt": "When using S3 Glacier Flexible, which retrieval option typically takes between 3 and 5 hours?",
           "options": [
             {
@@ -2160,10 +2261,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "905d5c02-5d83-4fbe-9f64-6579bf359385",
+          "id": "118f83e1-ee8a-4e0a-88af-e0c820a4e9b9",
           "prompt": "An object is uploaded to S3 Standard-IA and deleted after 10 days. For how many days will the user be charged for that object?",
           "options": [
             {
@@ -2183,10 +2285,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "6289348b-1106-47d8-a7ce-18a513b3baed",
+          "id": "e4f8a393-2628-47d5-8def-1ae4a4736b2a",
           "prompt": "Which storage class is most appropriate for data with unpredictable or changing access patterns?",
           "options": [
             {
@@ -2206,10 +2309,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ff428a4c-7473-42ef-b575-28e24ca20b36",
+          "id": "654e3572-38da-4ddd-b865-f4545e0a384d",
           "prompt": "What happens to data stored in S3 Glacier Flexible during the retrieval process?",
           "options": [
             {
@@ -2229,10 +2333,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "98d8b7bc-9a2c-480f-a649-e74752dc49c0",
+          "id": "1f81cb58-9a38-446a-bdbc-f363452e393f",
           "prompt": "In the S3 Standard storage class, how many Availability Zone (AZ) failures can the system tolerate without losing data?",
           "options": [
             {
@@ -2252,10 +2357,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "63b09a1f-bd8e-4db4-b618-88ddd40f94ce",
+          "id": "a3723835-ac4d-4cd1-93f2-5fd1eadf023a",
           "prompt": "Which of the following is TRUE regarding data ingress (uploading) for the S3 Standard storage class?",
           "options": [
             {
@@ -2275,10 +2381,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "d86ca805-ee1f-470a-baa2-01f6e993a834",
+          "id": "cb53894f-43b5-4041-bb12-411b78728278",
           "prompt": "S3 Glacier Instant differs from S3 Glacier Flexible primarily because:",
           "options": [
             {
@@ -2298,7 +2405,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         }
       ]
     }
@@ -2307,9 +2415,10 @@
     "url": "https://gemini.google.com/share/a8a41d3e7170",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "S3 Storage Classes",
       "questions": [
         {
-          "id": "6a03b9f3-ca93-4e21-a0c8-e561a2a05dad",
+          "id": "e83b33d1-ad94-4fc9-8e62-9c1d72cfd33b",
           "prompt": "A financial services company must store transaction logs for 7 years to meet regulatory requirements. The logs are never accessed unless a formal audit is triggered, which has a 48-hour SLA for data provision. Which strategy minimizes cost while meeting compliance?",
           "options": [
             {
@@ -2329,10 +2438,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "cc9ca2b1-4cfe-47b8-8c14-160d13b707e3",
+          "id": "dbb4d832-74f0-476c-9b5f-73f51991b46b",
           "prompt": "An image processing application generates thumbnail versions of high-resolution photos. These thumbnails can be easily recreated from the source images if lost. How should these thumbnails be stored to minimize costs?",
           "options": [
             {
@@ -2352,10 +2462,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5c896e25-9a36-482c-81d0-20a3265dabb8",
+          "id": "6175a9a2-b4e1-4000-9756-f01355fb00a1",
           "prompt": "A data lake receives 1 TB of telemetry data daily. Access patterns are unknown for the first 30 days, but data is rarely accessed after 90 days. What is the most automated way to manage this without manual intervention?",
           "options": [
             {
@@ -2375,10 +2486,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "476c59cd-08de-40ec-bb02-d99b54952164",
+          "id": "f6fff00d-e869-435a-baa8-59266629f770",
           "prompt": "You are transitioning 1,000,000 objects (each 50 KB) from S3 Standard to S3 Glacier Flexible Retrieval. Why might your first monthly bill be higher than expected despite the lower storage rate?",
           "options": [
             {
@@ -2398,10 +2510,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "ab6b4a12-afae-4fa1-94f0-9615d72464ba",
+          "id": "c89950c3-092b-4e71-b5ea-6b5eabcddd0b",
           "prompt": "A legal firm stores case files that must be available for millisecond retrieval for 90 days. After that, they are accessed once every 6 months but still require millisecond access when requested. Which transition is best?",
           "options": [
             {
@@ -2421,10 +2534,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "fc5b111f-0aac-4b6f-b6eb-eca2dd33afbd",
+          "id": "a380b813-7702-417b-a7e0-157f7afeafee",
           "prompt": "Your application requires high-throughput access to large datasets in a single AWS Region. High availability is required, but you want to save 20% compared to Standard-IA. Why is One Zone-IA likely the wrong choice despite the cost saving?",
           "options": [
             {
@@ -2444,10 +2558,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "9aa017b7-963a-4142-820f-39d7f72e5299",
+          "id": "b9713571-5fff-4d8c-b81d-5aa9d893ac13",
           "prompt": "Which retrieval method for S3 Glacier Flexible Retrieval should be used for a 10 TB dataset restore where cost must be minimized and time is not a factor?",
           "options": [
             {
@@ -2467,10 +2582,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "80277ff2-8108-48ca-b5f8-01c862168844",
+          "id": "e8a5e41a-f485-4ca8-a031-3de3b7f25585",
           "prompt": "An architect is using S3 Intelligent-Tiering. An object has not been accessed for 35 days and has moved to the Infrequent Access tier. If a user suddenly downloads the object today, what happens?",
           "options": [
             {
@@ -2490,10 +2606,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "cfed1351-bbf6-4f89-ad2e-bb317db067bb",
+          "id": "e9171980-34b8-4933-91d2-4bc9c617702c",
           "prompt": "Why would an architect choose S3 Standard-IA over S3 Glacier Instant Retrieval for data that is accessed once a month?",
           "options": [
             {
@@ -2513,10 +2630,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "8b4ed5d4-c339-4627-95da-93e0e70fedc7",
+          "id": "3fc789be-3819-4e41-82a8-98b4afba30bc",
           "prompt": "A media company wants to move petabytes of data from an on-premises tape library to AWS. They want the lowest possible cost and don't mind waiting days for a restore. Which header should they use in their PUT request?",
           "options": [
             {
@@ -2536,7 +2654,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -2545,9 +2664,10 @@
     "url": "https://gemini.google.com/share/ac56c26a065c",
     "quiz": {
       "type": "THEORY",
+      "topic": "S3 Pre-signed URLs",
       "questions": [
         {
-          "id": "95c7fc47-6df9-4a4b-87ab-ad1b5854b7d7",
+          "id": "265b9481-02b2-48f4-b072-725e422e3b3f",
           "prompt": "When a public user accesses an S3 object via a pre-signed URL, whose permissions are being evaluated by AWS to authorize the request?",
           "options": [
             {
@@ -2567,10 +2687,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "bb4292d8-fda6-44f4-9f9f-7e4c24eed483",
+          "id": "705c6479-034f-407f-8bf8-d2bbe37ad2fd",
           "prompt": "What is a primary architectural benefit of using pre-signed URLs for user profile picture uploads instead of a traditional API proxy?",
           "options": [
             {
@@ -2590,10 +2711,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "39230832-9a48-4dbc-b063-d394cb445430",
+          "id": "516f3c64-4308-46ec-916b-2ec29854edc5",
           "prompt": "An IAM user creates a pre-signed URL for an object but forgets that they don't actually have 's3:GetObject' permission for that specific file. What happens when someone tries to use the URL?",
           "options": [
             {
@@ -2613,10 +2735,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "IAM"
         },
         {
-          "id": "5b0028af-e423-47a8-9044-84b13d91cd8d",
+          "id": "ca335559-3ac1-4af1-a1d4-1b68649f983e",
           "prompt": "When using standard IAM user credentials to sign a URL, what is the maximum duration the URL can remain valid?",
           "options": [
             {
@@ -2636,10 +2759,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "IAM"
         },
         {
-          "id": "70d392b5-8155-4d9a-86b4-e346d639cc4a",
+          "id": "d286271d-220c-44c7-9189-94b075910c8b",
           "prompt": "Which of the following is a security risk associated with sharing a pre-signed URL?",
           "options": [
             {
@@ -2659,10 +2783,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "852a32b8-8d60-448e-b4c9-38e9e3ee458d",
+          "id": "c9cb68f7-5596-4452-965f-acaddbb17826",
           "prompt": "In a video streaming scenario (like Netflix), why would a server generate a unique pre-signed URL for each user instead of one for everyone?",
           "options": [
             {
@@ -2682,10 +2807,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "40107ede-a7dc-465c-b54d-b9fd8d29e434",
+          "id": "016f6709-2bf6-4260-a5fe-df20c0b61d23",
           "prompt": "True or False: To generate a pre-signed URL, the application must make a network call to the AWS S3 service every time. True Not quite While an API call is used conceptually, the signature is often calculated locally by the SDK without a round-trip to S3 during generation. False Right answer The pre-signing process is a mathematical calculation performed locally by the AWS SDK; S3 only validates it when the URL is actually used. Show hint Think about whether 'generating' the link requires an internet connection if you already have the access keys. Back Next Report content Opens in a new window Try Gemini Canvas",
           "options": [
             {
@@ -2697,10 +2823,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "a0916a18-6dac-4088-8e5f-7d9290edd83b",
+          "id": "dd213cf2-c09b-4490-8a7f-fc9b085bf6d9",
           "prompt": "What happens if the IAM user who generated a pre-signed URL is deleted before the URL expires?",
           "options": [
             {
@@ -2720,10 +2847,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "IAM"
         },
         {
-          "id": "59ca19b5-1ec9-4d54-a72e-2c8860418a95",
+          "id": "4edd259d-143d-48fa-bf68-835f18f20970",
           "prompt": "A developer wants to allow users to upload files to S3. Which HTTP method must the pre-signed URL be configured to support?",
           "options": [
             {
@@ -2743,10 +2871,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "269e0d18-1860-458b-8888-30a3a12e08e1",
+          "id": "3575173e-fb46-4d46-9084-fb645f2210c5",
           "prompt": "Which of the following scenarios is NOT a good use case for S3 Pre-signed URLs?",
           "options": [
             {
@@ -2766,7 +2895,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         }
       ]
     }
@@ -2775,9 +2905,10 @@
     "url": "https://gemini.google.com/share/cd791e5699bd",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "S3 Pre-signed URLs",
       "questions": [
         {
-          "id": "933033dd-9f28-4a52-ae1e-6afd7737c479",
+          "id": "1d654a7b-a685-4ced-93ca-ac0257f08c77",
           "prompt": "Standard S3 Pre-signed PUT URLs do not allow you to restrict the size of the uploaded file. To enforce a 1GB limit for SecureShot, which alternative S3 feature should you use?",
           "options": [
             {
@@ -2797,10 +2928,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "c098797a-ad1c-46ab-b291-4c1abcd92cc4",
+          "id": "c7100147-44d0-4926-9607-72987ed12107",
           "prompt": "For the requirement that client download links must work for 48 hours, what is the most secure way to handle the credentials if your application runs on EC2 instances using IAM Roles?",
           "options": [
             {
@@ -2820,10 +2952,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "91cee2f3-9126-4d29-ab09-32805b02420e",
+          "id": "52d5931a-a0c9-4d0c-b3ea-ebc1a7c373f1",
           "prompt": "Clients complain about slow downloads of 500MB files from us-east-1. To solve this globally, you decide to use Amazon CloudFront. When using CloudFront, how should you secure the private files?",
           "options": [
             {
@@ -2843,10 +2976,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "d36b56c4-cf61-4675-977f-0576446fad32",
+          "id": "e1be22cf-3e84-46e6-99ed-c63f326ab7d2",
           "prompt": "To ensure only photographers can upload and not random public users, where should the 'Pre-signing' logic happen in the SecureShot architecture?",
           "options": [
             {
@@ -2866,10 +3000,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ffb39310-e4be-4c4a-9925-ba321be28109",
+          "id": "8a72be93-e5fc-4378-9ea3-5aa320abc1b6",
           "prompt": "You use CloudFront to serve the photos. To ensure clients cannot bypass CloudFront and download files directly from S3, what configuration is required?",
           "options": [
             {
@@ -2889,10 +3024,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "0a22cb87-2c03-4269-9b82-dee7f0eea176",
+          "id": "4427cfbc-fbce-442f-b361-ea78ea6ce8a9",
           "prompt": "A photographer needs to upload a 500MB RAW file. Using a Pre-signed POST policy, how can you ensure they don't accidentally upload a .exe malware file instead of a .raw file?",
           "options": [
             {
@@ -2912,10 +3048,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ddcf32ce-72cf-4167-9a67-1c592612c243",
+          "id": "b2f1a929-8e39-4f58-9a1e-e4b44ced80ae",
           "prompt": "Your 48-hour client links are working perfectly. However, the legal team wants to be able to 'cancel' a specific link immediately if a contract is terminated. How do you handle this with Pre-signed URLs?",
           "options": [
             {
@@ -2935,10 +3072,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3135a45b-8d75-46d5-a34b-b81dc5588c51",
+          "id": "6d0112f0-344c-42ce-95b6-4c333dfc76d0",
           "prompt": "If you want to use CloudFront Signed URLs for your clients, what is the main architectural difference in the 'signing' process compared to S3 Pre-signed URLs?",
           "options": [
             {
@@ -2958,10 +3096,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "ad3709fb-6278-4f63-a586-82aa3bfec3d7",
+          "id": "da5ef551-4c29-4abc-8016-58a1e92c95dd",
           "prompt": "A photographer's upload fails with a '403 Forbidden' error even though the URL is valid. You notice the photographer is trying to upload from a different domain (e.g., photographer-site.com) than your application domain. What is likely missing?",
           "options": [
             {
@@ -2981,10 +3120,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5720a6ed-de7e-42fe-a174-58d00c803f4f",
+          "id": "e46c88f4-4d8a-4fe4-9e49-75f73191eb0d",
           "prompt": "SecureShot is booming! You now have 1 million clients. If you generate 1 million unique S3 Pre-signed URLs per hour, what is the primary bottleneck you might face?",
           "options": [
             {
@@ -3004,7 +3144,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         }
       ]
     }
@@ -3013,9 +3154,10 @@
     "url": "https://gemini.google.com/share/cc820c296a31",
     "quiz": {
       "type": "THEORY",
+      "topic": "Security Groupes & NACLs",
       "questions": [
         {
-          "id": "23df11c8-c7f4-476d-8c03-a89f023c4e6a",
+          "id": "e2b769f9-45bd-47a1-9665-049d08320de2",
           "prompt": "Which of the following best describes a 'Stateless' firewall?",
           "options": [
             {
@@ -3035,10 +3177,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c8e8770e-df5f-495f-80e2-28894f5c2e95",
+          "id": "a3037177-bab2-48e4-97a2-aca8e9b2f242",
           "prompt": "In the context of a stateless firewall configuration for a web server, why must you allow traffic to the 'Ephemeral Port Range' (1024-65535)?",
           "options": [
             {
@@ -3058,10 +3201,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "82a85a7e-4e1d-4113-a591-859fa25d6b48",
+          "id": "a2ba660a-a263-4ead-bf24-d01e76d425e2",
           "prompt": "What is the primary scope of protection for an AWS Network Access Control List (NACL)?",
           "options": [
             {
@@ -3081,10 +3225,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "018e1909-7134-4a25-9d02-a0d67bd1c269",
+          "id": "7f12c5e1-db7c-461b-8268-e9138ef38e39",
           "prompt": "Which of the following is a key characteristic of AWS Security Groups?",
           "options": [
             {
@@ -3104,10 +3249,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c4b0af2d-8b98-423f-adc6-9e2393a27645",
+          "id": "78d01e6f-ea9e-4d9d-902f-efb63a01e8d1",
           "prompt": "If you assign multiple Security Groups to a single EC2 instance, how does AWS evaluate the rules?",
           "options": [
             {
@@ -3127,10 +3273,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "87cbcb3c-67ab-4707-a79c-5984e610c714",
+          "id": "f2fb9cdf-b599-4ac8-adb8-92e510794d8e",
           "prompt": "How does a Network ACL determine which rule to apply when evaluating traffic?",
           "options": [
             {
@@ -3150,10 +3297,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "2e174368-c263-4f70-a4bf-0edcfa19a9f1",
+          "id": "e6e3bd93-cf93-48c6-b60a-b80416ae62f3",
           "prompt": "What is the default behavior of a Security Group if no rules are defined?",
           "options": [
             {
@@ -3173,10 +3321,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "fc522e9e-d875-4cc9-902c-aa94e7e3b67f",
+          "id": "4f6641ed-31b7-4855-bff0-1b1aae8d92fd",
           "prompt": "Which of the following traffic types is EXEMPT from NACL filtering?",
           "options": [
             {
@@ -3196,10 +3345,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f1aaf2e3-349c-4626-a961-493521f1f7e1",
+          "id": "fd0c8097-799d-4cab-9179-ac9d45625db5",
           "prompt": "Does a Network ACL filter traffic between two instances located in the SAME subnet?",
           "options": [
             {
@@ -3219,10 +3369,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "4b61bd05-a7a2-403b-a9f5-de13426cd5e3",
+          "id": "fee117e7-d0b6-4300-b6fe-4ab104125317",
           "prompt": "What does it mean that a Security Group is 'Stateful'?",
           "options": [
             {
@@ -3242,7 +3393,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -3251,9 +3403,10 @@
     "url": "https://gemini.google.com/share/9de271d203a2",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Security Groupes & NACLs",
       "questions": [
         {
-          "id": "f81382dc-1a52-440b-bed1-c679487fd20d",
+          "id": "85246a78-10ed-4c3a-826d-b3fe5e15ddb5",
           "prompt": "Scenario: You have a Web Server in a Public Subnet and a Database in a Private Subnet. You want to allow the Web Server to connect to the Database. What is the most secure and manageable way to configure the Database's Security Group 'Inbound' rule?",
           "options": [
             {
@@ -3273,10 +3426,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "20b8c1cc-1201-4167-9e92-de2db7f83be3",
+          "id": "ab83aa16-eda8-4b34-956b-4e6e48838c24",
           "prompt": "Scenario: You are configuring a Network ACL for a public subnet. You have added an Inbound Rule allowing HTTP (80) traffic from 0.0.0.0/0. However, users report they cannot load the website. You suspect the issue is the 'Stateless' nature of the NACL. What Outbound Rule is missing?",
           "options": [
             {
@@ -3296,10 +3450,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "29fd72fa-1e69-4d2c-9863-6fd371956ef3",
+          "id": "2a90c4e1-d0bb-4219-a65a-50ac0b38398f",
           "prompt": "Scenario: A junior engineer is trying to block a specific malicious IP 203.0.113.1 from accessing your instances. He adds a 'Deny' rule to the Security Group attached to the instances. What will happen?",
           "options": [
             {
@@ -3319,10 +3474,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "cf8a7c83-af31-483c-9f90-6297d8ac9a36",
+          "id": "11ceaba6-8ee8-444f-8bbe-c647657917fb",
           "prompt": "Scenario: You have a Network ACL with the following rules: Rule 100: Allow SSH (22) from 10.0.0.5/32 (Admin IP) Rule 200: Deny All Traffic from 0.0.0.0/0 Rule * (Default): Deny All Traffic You are trying to SSH from 10.0.0.5 but the connection fails. Why?",
           "options": [
             {
@@ -3342,10 +3498,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "7c215d3a-8b79-495f-a88e-7f2242aef88a",
+          "id": "adf8c3af-8894-4ab5-9d7f-338905a54b50",
           "prompt": "Scenario: You are troubleshooting connectivity. You try to ping an EC2 instance. If the request Time Out (no response), it is likely a _____ issue. If the request returns Connection Refused, it is likely a _____ issue.",
           "options": [
             {
@@ -3365,7 +3522,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         }
       ]
     }
@@ -3374,9 +3532,10 @@
     "url": "https://gemini.google.com/share/c07fee578212",
     "quiz": {
       "type": "THEORY",
+      "topic": "Elastic Load Balancers ELB",
       "questions": [
         {
-          "id": "06774c2b-0c12-42af-bc6c-1c8ab9094500",
+          "id": "17e028dc-c455-412e-9add-6c2b45810f2e",
           "prompt": "According to the text, what is the primary solution a load balancer offers for an application running on multiple EC2 instances with different IP addresses?",
           "options": [
             {
@@ -3396,10 +3555,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "163b9b95-9d98-40da-b3ad-0c4ff4a55419",
+          "id": "c5f41ba5-1c2f-4bfb-9c46-e08e44945a4a",
           "prompt": "Why is the Classic Load Balancer (CLB) considered less favorable for modern applications that require multiple SSL certificates?",
           "options": [
             {
@@ -3419,10 +3579,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "9cbc460b-f0ed-413d-9644-cc57df89a316",
+          "id": "14013214-9877-4c3e-9916-bd6283d5eee1",
           "prompt": "At which OSI layer does the Application Load Balancer (ALB) operate, and what specific capability does this enable?",
           "options": [
             {
@@ -3442,10 +3603,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "499722d8-ba07-4fd7-9bc3-186480379b0c",
+          "id": "0b93e396-2dbb-4ae9-b31e-bda8a735b72e",
           "prompt": "Which Load Balancer type is best suited for scenarios requiring high throughput, low latency, and support for non-HTTP protocols?",
           "options": [
             {
@@ -3465,10 +3627,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "4b087eb1-e899-4148-aacd-801b5b1b398d",
+          "id": "34b0030e-8c25-4bbf-a7a6-daedb4cdb422",
           "prompt": "How is SSL/TLS termination typically handled when using an Application Load Balancer (ALB) versus a Network Load Balancer (NLB)?",
           "options": [
             {
@@ -3488,10 +3651,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3ddc9fa3-54af-478d-ba71-0f7e8ed941d7",
+          "id": "2b272c7e-3e01-4f59-b446-c50c8630094d",
           "prompt": "What is the function of 'Cross-Zone Load Balancing'?",
           "options": [
             {
@@ -3511,10 +3675,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5ae19146-9578-4291-ad10-f3ae3a99e880",
+          "id": "9fafd905-6a2d-4a2b-b6e1-d7eb2713c887",
           "prompt": "In the 'Layered Application Architecture' example, where should the load balancer for the Database Layer be placed?",
           "options": [
             {
@@ -3534,10 +3699,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "RDS"
         },
         {
-          "id": "e38c990e-a7b0-4f87-b585-e282206beadd",
+          "id": "eaa9e961-d834-4f80-84a9-99b691f07f0a",
           "prompt": "What is a 'Listener' in the context of an Elastic Load Balancer?",
           "options": [
             {
@@ -3557,10 +3723,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "7950b22d-2b38-4b45-b2a9-6b330369c474",
+          "id": "4dffa12b-8f9c-4e5e-8f44-eba15d2b17a3",
           "prompt": "What is the purpose of a 'Target Group'?",
           "options": [
             {
@@ -3580,10 +3747,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "571a7120-b02e-41cc-bb44-6a7334a59d04",
+          "id": "5a1dafa8-5570-4e3a-81a9-92b31d8edb73",
           "prompt": "If you have an application that uses WebSockets, which load balancer type does the text recommend?",
           "options": [
             {
@@ -3603,7 +3771,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -3612,9 +3781,10 @@
     "url": "https://gemini.google.com/share/e8eaa6710385",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Elastic Load Balancers ELB",
       "questions": [
         {
-          "id": "5aeda386-a2f3-4f88-81ea-5dead57b98c0",
+          "id": "968f6dfb-8f22-48b5-8cc3-7f94b068433e",
           "prompt": "Scenario: You are designing a high-frequency trading platform where every millisecond counts. The application uses a custom proprietary protocol over TCP (not HTTP). The business requirement is strictly 'lowest possible latency' and 'maximum throughput'. Which architecture do you choose?",
           "options": [
             {
@@ -3634,10 +3804,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b2cdceeb-37ae-43b4-ba4e-b1f4e42bddc6",
+          "id": "3ba01474-f4e7-4cb0-b527-0286299d6c8a",
           "prompt": "Scenario: You are migrating a monolithic e-commerce application to microservices. You want to route traffic to different backend service clusters based on the URL path (e.g., /api/orders goes to the Order Service, /api/users goes to the User Service). How do you achieve this?",
           "options": [
             {
@@ -3657,10 +3828,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b7374bda-abdb-416a-9e96-cb278077c728",
+          "id": "af39bcfe-f3ef-4bcf-94e6-05d0d7108335",
           "prompt": "Scenario: A healthcare client requires strict 'Zero Trust' security. They mandate that the SSL/TLS connection must NOT be terminated by the cloud provider; the encrypted traffic must travel all the way to the application server to be decrypted there. Which component fits this constraint?",
           "options": [
             {
@@ -3680,10 +3852,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b5664622-dfb4-4827-91e9-c03dc295c29a",
+          "id": "ff794a45-46ec-4d22-a6cf-cbd96fd9085b",
           "prompt": "Scenario: You have a backend SQL Database cluster running on EC2 instances. You want to ensure traffic is distributed evenly among the DB nodes, but for security reasons, these DB instances—and the load balancer distributing traffic to them—must NEVER be accessible from the public internet. What is your design?",
           "options": [
             {
@@ -3703,10 +3876,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "de246c67-fa4b-4b41-b2c6-fb7c57705cbb",
+          "id": "0ad1bcd6-8d9e-439a-a8c4-2a231df342ca",
           "prompt": "Scenario: Your application has a real-time chat feature using WebSockets. You want a single load balancer that handles the main website (HTTP) and the chat feature (WebSockets) seamlessly, maintaining persistent connections for the chat users. Which choice is optimized for this?",
           "options": [
             {
@@ -3726,7 +3900,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -3735,9 +3910,10 @@
     "url": "https://gemini.google.com/share/3a949f701a67",
     "quiz": {
       "type": "THEORY",
+      "topic": "LambdaAtEdge and CloudFront functions",
       "questions": [
         {
-          "id": "be8fd91a-a271-4a0f-ab90-d4904da1c9e9",
+          "id": "decea740-8c19-44e0-85d4-854224435af8",
           "prompt": "What is the primary benefit of using services like CloudFront Functions and Lambda@Edge compared to running all logic on your origin server?",
           "options": [
             {
@@ -3757,10 +3933,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "710ca5d5-b0a3-469d-a8c0-a307222c2952",
+          "id": "731df0cf-0e12-464e-953d-903c1d38b0ed",
           "prompt": "Which specific event triggers are available for CloudFront Functions?",
           "options": [
             {
@@ -3780,10 +3957,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "33ef01d0-73f1-4e59-bde0-8d2238b3e981",
+          "id": "946bd08c-1835-4623-b87a-7f33a6e3cca3",
           "prompt": "If you need to execute code that requires network access to call an external API or a third-party library, which service should you choose?",
           "options": [
             {
@@ -3803,10 +3981,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "fca4374f-fee1-4b9c-a85d-7a7e8392d5eb",
+          "id": "8821cc0c-b3f0-494a-a06f-7d229c40cd81",
           "prompt": "What is a common use case for CloudFront Functions mentioned in the text?",
           "options": [
             {
@@ -3826,10 +4005,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c8752794-2ac9-4a96-94f4-0dcabd5f4979",
+          "id": "7171f8f3-1b00-446d-9817-6f71ca3ba86f",
           "prompt": "Which service is optimized for sub-millisecond execution times?",
           "options": [
             {
@@ -3849,10 +4029,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "0520b2a0-6458-44f0-a44c-66fe5d960664",
+          "id": "e9c4049c-a219-4355-b99c-cb85b6c0893d",
           "prompt": "You need to modify the response body content (e.g., injecting HTML) before it is sent to the user. Which service supports accessing the request/response body?",
           "options": [
             {
@@ -3872,10 +4053,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "4fc619dd-58b4-457a-bdc7-02fd9e1f36f4",
+          "id": "0f26c555-5e74-4827-b2bd-9ad3cce23abd",
           "prompt": "When does a Lambda@Edge function configured for 'Origin Request' execute?",
           "options": [
             {
@@ -3895,10 +4077,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ce20a704-a2e4-4c31-a75e-8ec9f247f618",
+          "id": "ade416f6-bbaf-4c64-9ea6-f40df07f2c4c",
           "prompt": "Which of the following is a valid use case for CloudFront Functions regarding authorization?",
           "options": [
             {
@@ -3918,10 +4101,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "31b10a0e-9251-4522-81f5-c8c66a8b74f8",
+          "id": "5e3638ae-4fc9-4963-9d29-a762ec6df741",
           "prompt": "What capability regarding the file system does Lambda@Edge possess?",
           "options": [
             {
@@ -3941,10 +4125,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "821c35c6-23bf-4adc-85be-1e177f6955bf",
+          "id": "3c4d2e9a-0a6e-41ea-917e-f7c538b6881a",
           "prompt": "To perform a URL rewrite (e.g., changing /old-path to /new-path) for every single user request with minimal latency, which tool is recommended?",
           "options": [
             {
@@ -3964,7 +4149,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -3973,9 +4159,10 @@
     "url": "https://gemini.google.com/share/2deb6b605d35",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "LambdaAtEdge and CloudFront functions",
       "questions": [
         {
-          "id": "f59882ea-2df9-406d-a98a-133070342ba3",
+          "id": "4b07ca95-5351-4bdd-bb0a-eb8fe6a198a2",
           "prompt": "Scenario: ShopEdge needs to authenticate users for premium content. You want to validate JSON Web Tokens (JWTs) for every request. If the token is invalid, the request should be rejected immediately without hitting the origin. The validation logic is self-contained (checking the signature using a stored key) and does not need to call an external database. Which solution offers the lowest latency and cost?",
           "options": [
             {
@@ -3995,10 +4182,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "d403b4c3-ff2f-4780-a3bf-ec55755d754d",
+          "id": "9ebc4604-5dec-4856-91aa-9908248cdead",
           "prompt": "Scenario: You need to implement A/B testing. Logic: When a user visits the homepage, you want to assign them to Group A or Group B by setting a cookie. Constraint: You need to make a network call to a 3rd-party analytics service to record which user was assigned to which group before they see the page. Which compute option must you use?",
           "options": [
             {
@@ -4018,10 +4206,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "66722a99-2b59-462b-aa29-bb4e51c1848d",
+          "id": "d248e714-0d66-4121-86e9-9b236c442dea",
           "prompt": "Scenario: ShopEdge serves a global audience. You want to serve a localized version of the index.html file (e.g., index_fr.html for France) based on the viewer's country. You want to change the path of the request internally so the user still sees www.shopedge.com/ in their browser, but CloudFront fetches the French file from the origin. Which trigger is best for this URL rewriting?",
           "options": [
             {
@@ -4041,10 +4230,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f8cc79b8-65c7-404f-ad9f-bfc47ce5d079",
+          "id": "f14e112b-6d7c-42ce-a3ba-03ceb235af69",
           "prompt": "Scenario: You have a legacy application on your origin server that crashes if it receives any HTTP headers that are not strictly defined in the RFC standard. You want to strip out all non-standard headers (like X-Amz-Meta-...) from the request before it hits your origin server to prevent crashes. The content is rarely cached. Which trigger is the most appropriate place to do this cleaning?",
           "options": [
             {
@@ -4064,10 +4254,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3bb2bb2c-7312-4169-b555-7a5614c66be6",
+          "id": "4fe89069-e52a-4033-96f4-389c07a3bd8c",
           "prompt": "Scenario: You are using Lambda@Edge to generate dynamic SEO meta-tags for your HTML pages based on the content. Sometimes, your Lambda function times out or errors. You want to ensure that if the Lambda fails, the user doesn't see a 500 error page, but instead sees the original, unmodified page from the origin. How can you achieve this?",
           "options": [
             {
@@ -4087,7 +4278,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -4096,9 +4288,10 @@
     "url": "https://gemini.google.com/share/f67b202a0577",
     "quiz": {
       "type": "THEORY",
+      "topic": "Internet and NAT Gateways",
       "questions": [
         {
-          "id": "44505c66-280d-44b4-a890-fd29be9acb16",
+          "id": "085411ee-c60a-473e-92cf-ae4f18db1158",
           "prompt": "What is the default state of a subnet when it is first created in a VPC?",
           "options": [
             {
@@ -4118,10 +4311,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c110fc83-150b-4aca-a510-cd78aab74ce9",
+          "id": "8ee123d6-5216-4779-8f51-ea5ef50282cd",
           "prompt": "What is the limit regarding the number of Internet Gateways attached to a single VPC?",
           "options": [
             {
@@ -4141,10 +4335,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "d9b57b74-9d61-4d01-8ced-afeb70ddfb48",
+          "id": "0624aeed-e3bc-4c46-a7d4-a43f9178f588",
           "prompt": "Which of the following statements about Internet Gateway availability is true?",
           "options": [
             {
@@ -4164,10 +4359,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "113fc19c-58b5-4be7-a0b4-efee58f3c1d3",
+          "id": "fa7c0b34-ed13-4e42-bc75-1a29af000a56",
           "prompt": "Does an EC2 instance in a public subnet know its own Public IP address?",
           "options": [
             {
@@ -4187,10 +4383,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "5e85314f-1622-452c-a75a-32f24fddd618",
+          "id": "71042dcf-0a9f-48dd-8502-4f6b67ba2c87",
           "prompt": "What is the primary security advantage of using a NAT Gateway over an Internet Gateway for private servers?",
           "options": [
             {
@@ -4210,10 +4407,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "0d045bd8-a904-4cf4-9ec2-fcff2657f8e3",
+          "id": "7a7c82b6-b66b-477c-86e6-49177126d789",
           "prompt": "Where must a NAT Gateway be deployed to function correctly?",
           "options": [
             {
@@ -4233,10 +4431,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "83dcf072-ed8b-431a-83bf-6ca92367bb88",
+          "id": "0104daaa-2147-4476-8474-4ebe110fa9ce",
           "prompt": "How do you configure the route table for a Private Subnet to use a NAT Gateway?",
           "options": [
             {
@@ -4256,10 +4455,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "233ef756-a9ec-4eca-ab70-e2c23535b922",
+          "id": "5e2a35d4-72ce-4772-b964-ab85ffebafd3",
           "prompt": "Regarding High Availability (HA), how does a NAT Gateway differ from an Internet Gateway?",
           "options": [
             {
@@ -4279,10 +4479,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "2aff5611-a381-4abb-ae2d-db96c9927d9d",
+          "id": "3ccf4546-55f8-47cf-a67f-de123742d06d",
           "prompt": "What is a key dependency for a NAT Gateway to work?",
           "options": [
             {
@@ -4302,10 +4503,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b635ba21-4faa-47f3-a1de-af2aa53e4d8b",
+          "id": "fa88c380-da5f-48d6-9ad0-28c7d74c9ef3",
           "prompt": "How is NAT Gateway usage billed?",
           "options": [
             {
@@ -4325,7 +4527,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -4334,9 +4537,10 @@
     "url": "https://gemini.google.com/share/a1f5dadb085a",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Internet and NAT Gateways",
       "questions": [
         {
-          "id": "79b2226e-497d-4ff9-8c7f-0dd52e7eda27",
+          "id": "8882965b-f659-44b7-a42e-6ba33046ce94",
           "prompt": "Scenario: You have a fleet of EC2 instances in a Private Subnet. You notice your AWS bill has spiked due to 'Data Transfer' costs. Upon investigation, you see that the instances are downloading massive datasets from Amazon S3. How can you reduce these costs without compromising security?",
           "options": [
             {
@@ -4356,10 +4560,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "30b23551-8c0e-4eb8-84e9-eaca67d1abea",
+          "id": "87114119-854b-448a-92c8-e5ebf8e4917d",
           "prompt": "Scenario: A junior admin accidentally deletes the Route Table associated with your Public Subnet. Suddenly, your web servers (which have Public IPs) are unreachable. The admin quickly creates a new Route Table and adds a route 0.0.0.0/0 -> igw-xxxx. He associates it with the subnet. However, traffic is still failing. What did he likely forget? He forgot to reboot the instances to pick up the new route. Not quite Route table changes take effect immediately; no reboot is required. He needs to re-attach the Internet Gateway to the VPC. He forgot to add the 'local' route for the VPC CIDR. Explicitly associate the subnet with the new custom route table. Right answer Creating a table isn't enough; you must explicitly break the association with the Main table by associating with the custom one. He likely triggered a change in the Subnet Association, but network ACLs might be blocking traffic. Enable route propagation. Delete the Main route table. Add a NAT Gateway to the subnet. Show hint This question is a bit tricky. Let's pivot to a clearer scenario about the 'Main' Route Table. Revised Question: A subnet is currently associated with the 'Main' route table, which has no internet access. You create a custom route table with an IGW route. What is the final step to make the subnet public? Back Next Report content Opens in a new window Try Gemini Canvas",
           "options": [
             {
@@ -4395,10 +4600,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c7717d3a-5ee5-4735-8117-0b2e3726ecfe",
+          "id": "3dbedfe6-a05b-47f1-b219-bfd4a2e0bef4",
           "prompt": "Scenario: You have a database in a private subnet. You want to allow a third-party vendor to access this database for analytics. The vendor asks for the IP address they should whitelist on their firewall to allow your database to connect to them. Which IP address do you give them?",
           "options": [
             {
@@ -4418,10 +4624,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f91e45ac-360c-4e55-aacb-65801f356dd1",
+          "id": "cfb05bf1-423f-4368-bb00-37772146ae88",
           "prompt": "Scenario: You are designing a VPC for a highly regulated banking application. Security policy states: 'No resource may ever have a Public IP address directly attached to it.' How do you grant internet access to your application servers while adhering to this policy?",
           "options": [
             {
@@ -4441,10 +4648,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "4c448e29-efde-4b61-8154-14e76482264c",
+          "id": "c73c6738-a16f-445e-84ce-acc54cc03438",
           "prompt": "Scenario: Your NAT Gateway is in us-east-1a. You have a private subnet in us-east-1b. You configure the route table of the subnet in 1b to use the NAT Gateway in 1a. Is this a valid configuration, and what are the implications?",
           "options": [
             {
@@ -4464,7 +4672,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -4473,9 +4682,10 @@
     "url": "https://gemini.google.com/share/9be666c1c8a7",
     "quiz": {
       "type": "THEORY",
+      "topic": "VPC",
       "questions": [
         {
-          "id": "464edfc2-5f5f-47c8-af3f-05f8b20a152f",
+          "id": "f1cb5cb3-6c37-450a-8810-421704f17c18",
           "prompt": "What is the primary definition of a Virtual Private Cloud (VPC) within AWS?",
           "options": [
             {
@@ -4495,10 +4705,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "9ec3b931-d6dd-4917-97c3-a2cc97d5bf16",
+          "id": "71bd434b-f2e2-4381-b976-c4dfe8b6aa96",
           "prompt": "Which of the following statements about VPC deployment and regions is correct?",
           "options": [
             {
@@ -4518,10 +4729,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "76f3b5e0-f128-48c2-aeaa-3eb64ce6855b",
+          "id": "68cde02d-8c6b-4e74-b459-fe0863a8b6e3",
           "prompt": "What is the allowed range of block sizes for the primary IPv4 CIDR block of a VPC?",
           "options": [
             {
@@ -4541,10 +4753,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f0d2302c-04ae-4f61-856c-edad27d1065d",
+          "id": "5c4d3c1f-20fb-474b-be10-643638436f8b",
           "prompt": "What is the specific CIDR block assigned to the Default VPC created by AWS?",
           "options": [
             {
@@ -4564,10 +4777,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "425f1a0f-c760-4d2d-8b86-02c8df0104c6",
+          "id": "9c00ddc6-7dd5-45f7-ab4e-b18439afaa58",
           "prompt": "Which component is pre-attached to a Default VPC to ensure immediate internet connectivity?",
           "options": [
             {
@@ -4587,10 +4801,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "58d47364-8ac5-4556-85f3-cf98467fbb6b",
+          "id": "cfd413ae-44e6-426c-b9d4-9d615d8b2d62",
           "prompt": "How are subnets configured within a Default VPC?",
           "options": [
             {
@@ -4610,10 +4825,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c10950fc-5347-4985-9989-6e298cf55621",
+          "id": "4d0f0574-50a3-4171-b4db-ffaaed6bdb1d",
           "prompt": "Regarding IPv6, what is the maximum number of IPv6 CIDR blocks you can add to a VPC?",
           "options": [
             {
@@ -4633,10 +4849,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "e81cceb3-4075-4bb1-a0b0-62513ffad58e",
+          "id": "025cbf07-e20e-4146-9b4a-3adc0b7cbc1c",
           "prompt": "What is the default configuration for the Network ACL (NACL) in a Default VPC?",
           "options": [
             {
@@ -4656,10 +4873,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "e0a120d9-d276-4a89-87b7-f9fc4f9716d6",
+          "id": "54cbf459-4894-4b48-9627-9b40998a35f5",
           "prompt": "Which two features are explicitly mentioned for managing traffic flow within a VPC?",
           "options": [
             {
@@ -4679,10 +4897,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "69e462bd-9999-47bc-a91e-5e19d7362715",
+          "id": "15140618-7b15-485e-9963-7b1ac6289c09",
           "prompt": "Why might a user choose to create a Custom VPC instead of using the Default VPC?",
           "options": [
             {
@@ -4702,7 +4921,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -4711,9 +4931,10 @@
     "url": "https://gemini.google.com/share/034f17ec83eb",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "VPC",
       "questions": [
         {
-          "id": "ab597f17-89f3-4d7d-a817-fe7bbb73ce54",
+          "id": "999e04b2-5d5d-431a-9c8a-05cb6dc6b845",
           "prompt": "SCENARIO: You are designing a VPC for a new startup. They require a public web server and a private database backend. You create a VPC with CIDR 10.0.0.0/16. You create two subnets: Subnet A (10.0.1.0/24) and Subnet B (10.0.2.0/24). You attach an Internet Gateway to the VPC. You update the Route Table for Subnet A to point 0.0.0.0/0 to the Internet Gateway. You leave Subnet B associated with the default Main Route Table, which has NO route to the Internet Gateway. Where should you place your Database?",
           "options": [
             {
@@ -4733,10 +4954,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "5949b274-7e33-43a9-80b4-f30423e770f0",
+          "id": "aa568046-2407-4d21-bdd5-15048d9d9f4e",
           "prompt": "SCENARIO: Your company acquires a smaller firm. You need to connect your VPC (10.0.0.0/16) to their VPC using VPC Peering. Their engineer sends you their documentation, showing their VPC is configured as 10.0.0.0/16. What is your immediate architectural assessment?",
           "options": [
             {
@@ -4756,10 +4978,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "a3c04f70-5070-4772-b841-7637b1c131ea",
+          "id": "2d261fa2-274a-49c1-913d-fcc4c2551889",
           "prompt": "SCENARIO: You have a web server in a Public Subnet. Users are complaining the site is down. Investigation: The Route Table points to the IGW. The NACL allows Inbound Port 80 and Outbound Port 80. The Security Group allows Inbound Port 80. The application is running on the server. Why is the connection failing?",
           "options": [
             {
@@ -4779,10 +5002,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "df742b5a-c393-420b-a424-6949fe96a59a",
+          "id": "c8235ba4-d2a0-48c2-947e-ebb2b8ec34a8",
           "prompt": "SCENARIO: You are building a High Availability (HA) architecture. You have created a Custom VPC in the us-east-1 region. You created one Public Subnet in us-east-1a and launched two EC2 instances there. To make this architecture Highly Available (tolerant to a data center failure), what is the minimal necessary change?",
           "options": [
             {
@@ -4802,10 +5026,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "07d765ea-9e99-4e69-8e67-1eaf915818c5",
+          "id": "3dca762a-7a14-4e48-ab77-564721bf7443",
           "prompt": "SCENARIO: A junior developer creates a VPC with a CIDR of 10.0.0.0/24. They create a subnet with the exact same CIDR: 10.0.0.0/24. Later, they need to add a second subnet for a new database layer. What happens?",
           "options": [
             {
@@ -4825,7 +5050,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -4834,9 +5060,10 @@
     "url": "https://gemini.google.com/share/23fabb1efb4f",
     "quiz": {
       "type": "THEORY",
+      "topic": "DNS and Elastic IPs",
       "questions": [
         {
-          "id": "affc3753-0010-451b-9e87-e02debab000c",
+          "id": "b4318d01-6f65-402e-acaf-f6b81d1f1006",
           "prompt": "In a VPC with the CIDR block 10.50.0.0/16, what is the IP address of the Amazon-provided DNS server reserved by AWS?",
           "options": [
             {
@@ -4856,10 +5083,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "98dd1e83-a46e-4d88-b848-9d89b6bc792d",
+          "id": "0743f15e-25b5-4d16-b5ff-7fea64b70c80",
           "prompt": "Besides the VPC-specific CIDR address, what is the universal 'special IP' that all resources in a VPC can query for DNS resolution?",
           "options": [
             {
@@ -4879,10 +5107,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f0d39cd7-7870-4702-b70d-d685b0d53630",
+          "id": "c581320d-646c-464c-93c4-5d98303e1f11",
           "prompt": "You have launched an EC2 instance with a Public IP, but you notice it does not have a public DNS hostname (e.g., ec2-x-x-x-x.compute-1.amazonaws.com). Which VPC setting must be enabled to fix this?",
           "options": [
             {
@@ -4902,10 +5131,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "5eda00a2-a5cf-4ab2-91f6-9b5c9dc16d52",
+          "id": "a499d9f5-3575-4830-a52f-40b2ddb21f3d",
           "prompt": "If you disable the 'Enable DNS Support' setting in your VPC, what is the immediate consequence?",
           "options": [
             {
@@ -4925,10 +5155,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "9c44c099-1f00-45f0-bace-6d2e29c13f0b",
+          "id": "ac583958-12be-44b6-857d-407e6e51f848",
           "prompt": "According to the text, which type of IP address automatically receives a corresponding DNS entry by default in a VPC?",
           "options": [
             {
@@ -4948,10 +5179,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "d5400040-6c4f-4a7a-b099-4a23ba7ffb6e",
+          "id": "4df0b2a0-bc1f-45c2-8512-db71f5f957f2",
           "prompt": "What is the primary drawback of the standard public IP address automatically assigned to an EC2 instance in a public subnet?",
           "options": [
             {
@@ -4971,10 +5203,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "39505a9b-b892-45e2-b8ca-3209b6780615",
+          "id": "533a6b70-8c97-483b-af34-1a4311f010b1",
           "prompt": "What happens to an Elastic IP (EIP) once it is allocated to your account?",
           "options": [
             {
@@ -4994,10 +5227,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "23c32e40-275a-49aa-939a-55aa09d8987a",
+          "id": "918eddb7-9cc2-41c6-b06b-87feae2d3411",
           "prompt": "Under which scenario will you incur charges for an Elastic IP?",
           "options": [
             {
@@ -5017,10 +5251,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "7289160a-dbe9-414d-81c9-71a14ed2ae3f",
+          "id": "42ccde52-4f63-447d-b109-af22e52d6932",
           "prompt": "You have an Elastic IP allocated in the us-east-1 region. Can you associate this IP with an EC2 instance in us-west-1?",
           "options": [
             {
@@ -5040,10 +5275,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "913a6771-0e94-4b6b-9415-50eac5874fbe",
+          "id": "86d087b5-2270-4b53-bdac-2b76affad062",
           "prompt": "Which of the following is a key benefit of using an Elastic IP during server maintenance?",
           "options": [
             {
@@ -5063,7 +5299,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -5072,9 +5309,10 @@
     "url": "https://gemini.google.com/share/6fe1ce5f2154",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "DNS and Elastic IPs",
       "questions": [
         {
-          "id": "3a457d41-8914-490b-be25-3e8a87b391f3",
+          "id": "c1478a1e-5698-4d48-82b9-859e69218c53",
           "prompt": "Scenario: You have launched an EC2 instance in a public subnet with a Public IP. You are trying to connect to it using its public DNS name (e.g., ec2-54-1-2-3.compute-1.amazonaws.com), but the name does not resolve. You check the VPC settings and see EnableDnsSupport = True. What is the missing configuration?",
           "options": [
             {
@@ -5094,10 +5332,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "3b1b1ab4-3b14-4b88-b0c6-553cfe927d03",
+          "id": "5362273d-3d9b-4837-a9fb-990ac9a8df7a",
           "prompt": "Scenario: You are auditing a client's AWS bill and notice they are being charged for 5 Elastic IPs (EIPs) every month, even though they claim all their instances are stopped at night to save money. Why is the client still paying for the EIPs?",
           "options": [
             {
@@ -5117,10 +5356,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "70df2c71-7852-4c9a-8b5b-18fc8b3d3e40",
+          "id": "466504fe-fcdc-407a-be89-2bcc4c70f5d8",
           "prompt": "Scenario: You have a legacy application running in us-east-1 that requires a hardcoded IP address in its configuration files. You are migrating this application to us-west-2 for better latency for West Coast users. You attempt to move the Elastic IP from us-east-1 to us-west-2 but cannot find the option. What is the limitation?",
           "options": [
             {
@@ -5140,10 +5380,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "16110c7f-380a-41b5-ae4f-0a4e7877ce55",
+          "id": "193b0f8c-5f49-4b06-9cff-996d80ff2570",
           "prompt": "Scenario: Your application servers in a private subnet need to resolve google.com to download updates, but the DNS lookup is timing out. You verify that the Route Table has a NAT Gateway and Security Groups allow outbound traffic. However, you notice EnableDnsSupport is set to False on the VPC. Why is this causing the failure?",
           "options": [
             {
@@ -5163,10 +5404,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "936de4cc-7d3e-49bb-84c9-d9072507e662",
+          "id": "80041699-0f5b-463b-a112-6133699cfd36",
           "prompt": "Scenario: You have a critical database server. During a disaster recovery drill, you stop the instance and start a backup instance in a different Availability Zone (but same Region). Your application fails to connect because it was configured with the database's specific IP address. Which architecture would have prevented this reconfiguration work?",
           "options": [
             {
@@ -5186,7 +5428,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -5195,9 +5438,10 @@
     "url": "https://gemini.google.com/share/5ddef4464827",
     "quiz": {
       "type": "THEORY",
+      "topic": "Subnets",
       "questions": [
         {
-          "id": "6da4e2ff-4a64-4738-ae38-19571d8bcd78",
+          "id": "3c631f0c-ecbe-4a05-aee2-453340516db6",
           "prompt": "What is the relationship between a Subnet and an Availability Zone (AZ)?",
           "options": [
             {
@@ -5217,10 +5461,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "e0beb764-ed65-453c-9493-3c8d4f0e7dc6",
+          "id": "b577fbb6-be13-45c1-96bc-34fbda95a903",
           "prompt": "What distinguishes a Public Subnet from a Private Subnet?",
           "options": [
             {
@@ -5240,10 +5485,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "8222c133-6349-44f9-b2a5-767b49f9c77e",
+          "id": "e2f4f54e-b3f4-48a8-8091-debacad7decb",
           "prompt": "If your VPC has a CIDR of 192.168.0.0/16, which of the following subnet definitions is INVALID?",
           "options": [
             {
@@ -5263,10 +5509,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c8e35307-a995-40af-a8ea-4b4815324ae3",
+          "id": "e908c956-1721-4608-877f-c97968e4ad55",
           "prompt": "How many IP addresses are reserved by AWS in every subnet?",
           "options": [
             {
@@ -5286,10 +5533,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3f28cb1f-de8e-4215-bdba-df9f28810a7f",
+          "id": "2e026c5a-8efb-46d5-bfc9-b59146d4730b",
           "prompt": "Which of the following uses is NOT one of the specific reservations for the first four IPs?",
           "options": [
             {
@@ -5309,10 +5557,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ef25886c-5109-46a9-b1c7-9aad8b9d0d4a",
+          "id": "d611eb52-6af4-42b7-bf52-7777f0149fef",
           "prompt": "What is the rule regarding overlapping subnets?",
           "options": [
             {
@@ -5332,10 +5581,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "0457cd79-ceab-475f-945b-0b74b2bbeebb",
+          "id": "72f0d1de-c995-4beb-8ab3-ca06f855888d",
           "prompt": "What is the purpose of the 'Auto-assign Public IP' subnet setting?",
           "options": [
             {
@@ -5355,10 +5605,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c901c1e0-a4d0-42b9-bb6f-1716f5de2b00",
+          "id": "aa821f91-f703-4382-9061-845b4edafc51",
           "prompt": "The text mentions the last IP address in a subnet is reserved for what purpose?",
           "options": [
             {
@@ -5378,10 +5629,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "a7bba4d5-792e-4d5d-8e5e-1e492b3f6d10",
+          "id": "9d5484e8-6144-414c-8b7d-1885b4c38c6e",
           "prompt": "How do resources in different subnets within the same VPC communicate by default?",
           "options": [
             {
@@ -5401,10 +5653,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f757a389-1a2a-492c-bd1a-6c988d0b0e65",
+          "id": "8776a041-0cb7-4dfb-a4ac-e112f892de93",
           "prompt": "If you need a database that should NOT be accessible from the internet, which subnet type should you choose?",
           "options": [
             {
@@ -5424,7 +5677,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -5433,9 +5687,10 @@
     "url": "https://gemini.google.com/share/eecf80397601",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Subnets",
       "questions": [
         {
-          "id": "7bb77dc5-afac-4961-bcd7-5257dcb3fdb0",
+          "id": "ccb1af41-8c72-4841-ac4c-8960476ff852",
           "prompt": "SCENARIO: You are designing a VPC for a banking application (Strict Compliance). The app needs a public load balancer, a backend application server, and a database. You create the following structure in Availability Zone A: Subnet 1 (10.0.1.0/24): Route to Internet Gateway. Contains Load Balancer. Subnet 2 (10.0.2.0/24): No Route to Internet Gateway. Contains App Server. Subnet 3 (10.0.3.0/24): No Route to Internet Gateway. Contains Database. The App Server in Subnet 2 needs to download a software patch from the internet. How do you enable this WITHOUT making Subnet 2 public?",
           "options": [
             {
@@ -5455,10 +5710,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "d6900ed9-2f6c-4ef5-81ef-2d298936bd65",
+          "id": "1c9f303b-00bf-4a22-a05d-ab58f4e72548",
           "prompt": "SCENARIO: You are launching a fleet of EC2 instances for a batch processing job. These instances will run for 3 hours, crunch data, and terminate. They do NOT need to be reached from the internet, but they need to send their results to S3. You have a VPC with: CIDR: 10.0.0.0/16 Subnet A: 10.0.0.0/16 You try to create Subnet B (10.0.1.0/24) for a different department but get an error. Why?",
           "options": [
             {
@@ -5478,10 +5734,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "2539723a-55c3-4542-8c13-9eccc9d6ec67",
+          "id": "92e4276b-dcee-43cd-98f4-a80b38f42731",
           "prompt": "SCENARIO: You have a Web Server in a Public Subnet (us-east-1a). You have 'Auto-assign Public IP' DISABLED on the subnet settings. You launch an EC2 instance into this subnet. What is the network state of this instance immediately after launch?",
           "options": [
             {
@@ -5501,10 +5758,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "ed66bb63-fb8f-4b72-8f38-849d2290924e",
+          "id": "6f2a622a-a087-4f14-8ff5-12e09290f649",
           "prompt": "SCENARIO: Your boss asks you to expand your network. You currently have a VPC (10.1.0.0/16) with subnets in us-east-1. You want to create a subnet for disaster recovery in the us-west-1 region (California) INSIDE the same VPC. Is this possible?",
           "options": [
             {
@@ -5524,10 +5782,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "d0c10572-03b4-41f3-8fab-b07a4779e5f5",
+          "id": "d2468f0c-c503-48ec-b68b-6b56ce2afa52",
           "prompt": "SCENARIO: You are troubleshooting a database connectivity issue. The Database is in Subnet A (10.0.1.0/24). The Web Server is in Subnet B (10.0.2.0/24). Both subnets are in the SAME VPC. Network ACLs allow all traffic. Security Groups allow the traffic. The Junior Engineer suggests: 'Maybe we need to add a route to the Route Table to tell Subnet A how to reach Subnet B.' Is the Junior Engineer correct?",
           "options": [
             {
@@ -5547,7 +5806,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -5556,9 +5816,10 @@
     "url": "https://gemini.google.com/share/3ff6122ddb48",
     "quiz": {
       "type": "THEORY",
+      "topic": "Transit Gateway",
       "questions": [
         {
-          "id": "1aa6770d-0cf8-495a-94a8-e7b6a0c99007",
+          "id": "8d88c12a-7899-4566-ac84-c37dba77331c",
           "prompt": "In a network architecture using standard VPC peering, if VPC A is peered with VPC B, and VPC B is peered with VPC C, why can't VPC A communicate directly with VPC C?",
           "options": [
             {
@@ -5578,10 +5839,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b2edd1a6-4cbf-4ee5-9ce5-175a5c9b4b74",
+          "id": "460faf65-d1a2-4216-844d-8e8971c8ebbd",
           "prompt": "Without a Transit Gateway, how must you configure four VPCs if you require full connectivity between every single VPC?",
           "options": [
             {
@@ -5601,10 +5863,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b15be2b1-f569-41a5-b48b-136a33ff9b6b",
+          "id": "a010ec5c-ed4e-439a-a170-3dfc480f8254",
           "prompt": "Functionally, how does an AWS Transit Gateway operate within a multi-VPC architecture?",
           "options": [
             {
@@ -5624,10 +5887,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "e9b9772a-8e54-46c2-95f1-ae6d2a91a688",
+          "id": "c3bea524-47c3-41cd-b3bc-a4699f09dffc",
           "prompt": "When attaching a VPC to a Transit Gateway, what is a specific subnet requirement you must adhere to?",
           "options": [
             {
@@ -5647,10 +5911,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "9b2dbd91-6f50-4f34-a6ab-821d4bf58118",
+          "id": "f9e2254f-1a7b-4063-9dc9-eeba0a0884bc",
           "prompt": "How does implementing a Transit Gateway improve the architecture for connecting an on-premises data center to multiple VPCs?",
           "options": [
             {
@@ -5670,10 +5935,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "70dddbce-5f41-4277-9f22-df2dc25f5480",
+          "id": "16386ea7-ae87-42ce-9e36-8df7080bf211",
           "prompt": "Which AWS networking service can be combined with Transit Gateway to provide a dedicated, high-performance physical connection from on-premises to AWS?",
           "options": [
             {
@@ -5693,10 +5959,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "1f1eef75-d0dd-497e-a47e-a7cbc22b97c8",
+          "id": "05638465-da20-4e58-a03d-d413d833b137",
           "prompt": "If you need to connect resources in a VPC in the US-East-1 region with resources in a VPC in the EU-West-1 region using Transit Gateways, what feature would you utilize?",
           "options": [
             {
@@ -5716,10 +5983,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f2a2e073-2928-4c51-a0cf-e9d76b7cfc4c",
+          "id": "b475a7b7-66ff-4c37-8497-5e5969f19d78",
           "prompt": "Does AWS Transit Gateway support connectivity across different AWS accounts?",
           "options": [
             {
@@ -5739,10 +6007,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "cc4502f0-140b-4f6b-8a76-fb9bbf5eaae7",
+          "id": "3d69c47f-797f-415b-bf12-5b56afcf1abb",
           "prompt": "As you scale the number of VPCs in your environment, why does a Transit Gateway architecture become easier to manage than a VPC Peering mesh?",
           "options": [
             {
@@ -5762,10 +6031,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "41316f1e-8b9d-4a91-8d06-a9a438e0dbeb",
+          "id": "4d67648f-4061-4b96-9d54-a30e6502dbd6",
           "prompt": "What is the primary routing benefit of Transit Gateway that standard VPC peering lacks?",
           "options": [
             {
@@ -5785,7 +6055,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -5794,9 +6065,10 @@
     "url": "https://gemini.google.com/share/957ccb6849a2",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Transit Gateway",
       "questions": [
         {
-          "id": "2543c427-0c7e-458d-9cbe-8e964569b271",
+          "id": "60a44cbc-6bed-4868-a286-6c3e774acb0b",
           "prompt": "Scenario: You are architecting a network for a large enterprise. You have a 'Shared Services' VPC (tools, logging) and 50 'Application' VPCs. Requirement: All Application VPCs must be able to access the Shared Services VPC, but Application VPCs must NOT be able to access each other.",
           "options": [
             {
@@ -5816,10 +6088,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "649ded68-8fd2-492f-af7b-77ef8afab210",
+          "id": "a19f8d9d-afbc-472a-9bb6-0563e518fe23",
           "prompt": "Scenario: Your company acquires a smaller startup. You need to connect their AWS environment (VPC C) to your Transit Gateway. However, you discover that VPC C uses the IP range 10.0.0.0/16, which exactly overlaps with your main Production VPC A.",
           "options": [
             {
@@ -5839,10 +6112,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "79cbe932-0892-4847-9db7-cf42c59840f0",
+          "id": "43c90781-74fd-44c9-a53d-1e7a7553f1ff",
           "prompt": "Scenario: You have a compliance requirement to inspect all traffic leaving your VPCs destined for the Internet (Egress) using a fleet of 3rd-party Firewalls. You want a centralized design.",
           "options": [
             {
@@ -5862,10 +6136,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f8e34888-9151-4dd8-a246-0bd7b0da0af5",
+          "id": "fed96f4a-8e1d-405a-8354-a1430e6a60c1",
           "prompt": "Scenario: You are connecting your on-premises data center to AWS. You have a 1Gbps Direct Connect (DX) connection attached to the Transit Gateway. You also want a VPN connection as a backup. How do you ensure traffic prefers the Direct Connect line and only uses VPN if DX fails?",
           "options": [
             {
@@ -5885,10 +6160,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f469ebbe-59f5-4f61-a04c-185f2a177072",
+          "id": "b208c568-ac60-4c6c-8992-3e5acc126b96",
           "prompt": "Scenario: A financial trading application requires IP Multicast to distribute market data to hundreds of EC2 instances across multiple VPCs. How do you support this?",
           "options": [
             {
@@ -5908,10 +6184,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "7e367682-db71-46f9-8b4f-cc8c03f43548",
+          "id": "1f45975b-a99e-4982-9e0f-67715352d95e",
           "prompt": "Scenario: You are designing for High Availability. You attached your VPC to the Transit Gateway, but you only selected subnets in Availability Zones 1 and 2. Your EC2 fleet scales out to Availability Zone 3. What happens to traffic from the instance in Zone 3 trying to reach the TGW?",
           "options": [
             {
@@ -5931,10 +6208,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "df530ad0-941f-4576-9c52-6874b31faefa",
+          "id": "7b9d241e-f4b4-4ffa-985e-bc972335232d",
           "prompt": "Scenario: You have established TGW Peering between US-East-1 and EU-West-1. Traffic is flowing, but you notice the data transfer costs are higher than expected. Why?",
           "options": [
             {
@@ -5954,10 +6232,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "117225bf-ef5b-4e2b-941c-cf11d68ecf1d",
+          "id": "b9bab604-f628-45a7-b1ba-30e041d560c7",
           "prompt": "Scenario: You need to inspect traffic between two VPCs (East-West traffic) using a firewall appliance. You set up the routes: VPC A -> TGW -> Firewall VPC -> TGW -> VPC B. However, the firewall sees the request packet but never sees the return packet. What is likely the issue?",
           "options": [
             {
@@ -5977,10 +6256,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c77f9089-5dfc-4eae-b7a7-d03f896de2df",
+          "id": "ecc5d31f-578d-4fae-88b0-92963c16dee0",
           "prompt": "Scenario: You have a Transit Gateway with 'Default Route Propagation' enabled. You attach a new VPN connection. What happens to the default Transit Gateway Route Table?",
           "options": [
             {
@@ -6000,10 +6280,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "fdf5452b-3848-46ed-98f1-8d208e57fee8",
+          "id": "5d30776b-3ac1-44db-9eed-940e3990d115",
           "prompt": "Scenario: You have a single 10Gbps Direct Connect link. You want to connect it to 3 different Transit Gateways in 3 different regions. How do you achieve this with the least physical infrastructure?",
           "options": [
             {
@@ -6023,7 +6304,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -6032,9 +6314,10 @@
     "url": "https://gemini.google.com/share/486ed5deaa94",
     "quiz": {
       "type": "THEORY",
+      "topic": "Routing in VPC",
       "questions": [
         {
-          "id": "f81e32c5-3f12-498b-8dee-fb8ad8133ab8",
+          "id": "fb3a3349-5224-4c84-a18b-92537ff45e4a",
           "prompt": "In an Amazon VPC, which component is responsible for directing traffic between subnets and to external networks?",
           "options": [
             {
@@ -6054,10 +6337,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "7fe8cbd7-f499-43b9-a587-c62625938b6d",
+          "id": "fc921a59-f1a3-451b-9a32-6f4a31d92377",
           "prompt": "If you have a subnet with the CIDR block 192.168.1.0/24, what IP address is automatically assigned to the VPC router's interface for that subnet?",
           "options": [
             {
@@ -6077,10 +6361,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b3d2c4bd-4fd9-4000-a173-b8685f2e942b",
+          "id": "ca736900-cf01-4201-ac19-69d22a088069",
           "prompt": "Which attribute of an outbound packet does the VPC router inspect to make routing decisions?",
           "options": [
             {
@@ -6100,10 +6385,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c88bf32d-ef29-43d8-a73e-e3654ceba784",
+          "id": "1097e143-e009-4f60-9327-3c31ad4e036d",
           "prompt": "When multiple routes in a route table match a packet's destination, which route does the router prioritize?",
           "options": [
             {
@@ -6123,10 +6409,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "eac45e29-4768-4344-8334-f86c169b81e2",
+          "id": "1873098e-8e94-4126-be8b-fe37b7b30db7",
           "prompt": "What is the purpose of the mandatory 'local' route found in every VPC route table?",
           "options": [
             {
@@ -6146,10 +6433,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "08e0cf50-83b5-4705-b358-095ccf3a4636",
+          "id": "9a2ed26b-5480-48b3-bc41-0402bb3e3b11",
           "prompt": "Which of the following is NOT a valid relationship between subnets and route tables?",
           "options": [
             {
@@ -6169,10 +6457,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "60dcb121-fa21-4ac2-a9c5-2ef6ed41bf31",
+          "id": "5399a0be-3ba7-4057-9289-f85d67e13af8",
           "prompt": "What happens when you create a new subnet without explicitly specifying a route table?",
           "options": [
             {
@@ -6192,10 +6481,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "3ec85488-17fe-4ea4-a25f-e7be34a2d9d8",
+          "id": "3b96ea4c-18a5-47f4-97c8-0064b144550e",
           "prompt": "According to the provided text, which of the following is a valid target for a route in a VPC route table?",
           "options": [
             {
@@ -6215,10 +6505,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f1dd3268-f2c1-4ff6-b564-8ff559f70fa1",
+          "id": "01097767-f192-4a97-8235-7da8f57830eb",
           "prompt": "If a packet is destined for 10.16.1.5, and the route table has routes for 10.16.0.0/16 (Target A) and 10.16.1.0/24 (Target B), where will the packet be sent?",
           "options": [
             {
@@ -6238,10 +6529,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f81aa74b-7988-4fc7-856c-26f34b749518",
+          "id": "a73d5208-d552-4a79-b6e6-63a1a8fcf171",
           "prompt": "Why might you associate multiple subnets with the same route table?",
           "options": [
             {
@@ -6261,7 +6553,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -6270,9 +6563,10 @@
     "url": "https://gemini.google.com/share/eeb88f3328eb",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Routing in VPC",
       "questions": [
         {
-          "id": "385ac26f-8f2a-4975-98d6-f0356ed8644e",
+          "id": "d99b4e75-0799-4b33-887f-0fb888c6e602",
           "prompt": "Scenario: You have deployed a database in a Private Subnet. The database needs to download a security patch from the internet, but it cannot connect. You check the Route Table and see a route: 0.0.0.0/0 -> igw-xxxx (Internet Gateway). Why is the download failing, and how should you fix it?",
           "options": [
             {
@@ -6292,10 +6586,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "50ae0608-1e38-4be8-95e8-d93ebef3f193",
+          "id": "e9d041c2-85de-4960-a2ec-25d41d6eb223",
           "prompt": "Scenario: Your company acquires another firm. You need to peer your VPC (CIDR 10.0.0.0/16) with their VPC (CIDR 10.0.0.0/16) to migrate data. You set up the Peering Connection, but you cannot create the route in your Route Table. What is the problem?",
           "options": [
             {
@@ -6315,10 +6610,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "afdcdb1a-ca51-48fe-8f8c-7f3d97248cec",
+          "id": "4e7b7047-533a-4295-bc15-a25d9e34357a",
           "prompt": "Scenario: A junior engineer created a subnet 10.0.5.0/24 and associated it with a custom Route Table containing only the default local route. He launches a web server there and complains it cannot be reached from the internet. What is the absolute minimum routing change required to make this subnet 'Public'?",
           "options": [
             {
@@ -6338,10 +6634,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b1b0cb2b-5884-4dd5-8af7-3e3885a7234d",
+          "id": "b6d99d57-e3d1-4444-8153-187fd915a844",
           "prompt": "Scenario: You have a specific requirement to route all traffic destined for 192.168.1.55 (a partner's legacy database) through a specific EC2 instance running a custom firewall (i-12345678), rather than the default NAT Gateway. The rest of the internet traffic must still go to the NAT Gateway. How do you configure the Route Table?",
           "options": [
             {
@@ -6361,10 +6658,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "6abc2673-a4f6-454f-8ba7-dcdf50695df9",
+          "id": "ee8153ff-d34f-44ac-921b-1249701411e4",
           "prompt": "Scenario: You are designing a High Availability (HA) architecture. You have two public subnets (AZ-A, AZ-B) and two private subnets (AZ-A, AZ-B). You want the private subnets to reach the internet. Which architecture provides the highest availability?",
           "options": [
             {
@@ -6384,10 +6682,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "1c2b1b50-393b-4ba9-a460-cb6661fa992f",
+          "id": "bc45a10a-3024-4b6d-99d5-9f37168b1fba",
           "prompt": "Scenario: You have a VPC connected to an On-Premises network via a Virtual Private Gateway (VGW) and VPN. You enabled 'Route Propagation' on your Route Table. Your on-prem network advertises the route 172.16.0.0/16. However, your VPC also has a subnet with CIDR 172.16.0.0/24. Where will traffic destined for 172.16.0.10 go?",
           "options": [
             {
@@ -6407,10 +6706,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "9111a78a-44f2-4f7c-90a4-1e1841618cd3",
+          "id": "3fda079f-8b6d-4713-a075-6d88b648a66e",
           "prompt": "Scenario: You have a 'Management' VPC and a 'Production' VPC. You want to ensure that if a route is added to the Management VPC, the Production VPC automatically knows how to reach it. You decide to use VPC Peering. Does VPC Peering support transitive routing (e.g., A peers with B, B peers with C, can A reach C)?",
           "options": [
             {
@@ -6430,10 +6730,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "1a2dac38-69e8-4005-bee6-b7b4fa347437",
+          "id": "0123383b-91d9-4b3c-bc97-a7c206558291",
           "prompt": "Scenario: A secure subnet uses a NAT Gateway to reach the internet. You want to cut costs and decide to delete the NAT Gateway and replace it with a NAT Instance (an EC2 instance). You launch the instance, update the route table (0.0.0.0/0 -> i-xxxx), but traffic still fails. Security Groups are open. What critical check must be disabled on the NAT Instance's ENI (Network Interface)?",
           "options": [
             {
@@ -6453,7 +6754,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         }
       ]
     }
@@ -6462,9 +6764,10 @@
     "url": "https://gemini.google.com/share/6c0b2c5bbb34",
     "quiz": {
       "type": "THEORY",
+      "topic": "S3 Bucket Policies",
       "questions": [
         {
-          "id": "d9ce1783-05b1-41eb-94f6-6b9b3c9e2c87",
+          "id": "a477f486-0c08-434e-8d02-2a855cd83ae6",
           "prompt": "A user in your AWS account has an IAM policy that allows 's3:PutObject' for a specific bucket. However, the S3 Bucket Policy for that same bucket has a statement with an 'Effect: Deny' for that user for all actions. What happens when the user tries to upload a file?",
           "options": [
             {
@@ -6484,10 +6787,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "74356a58-d2e6-4c5d-9ce6-e720a8bf996d",
+          "id": "aff7e43a-3885-430a-a223-c0d4c73ca3c4",
           "prompt": "Which JSON component of a bucket policy specifies the actual AWS entity (user, role, or account) to which the permissions are being granted or denied?",
           "options": [
             {
@@ -6507,10 +6811,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "2164338b-4591-4436-9298-d72e75a3157a",
+          "id": "089bf598-6865-430e-85c9-402d2880ce5f",
           "prompt": "What is the primary reason AWS recommends using Bucket Policies over legacy Access Control Lists (ACLs)?",
           "options": [
             {
@@ -6530,10 +6835,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "a8443c67-df39-4ffe-82f2-21f1fc25058b",
+          "id": "0ff95004-be63-4e83-b0bd-06a18a2ce037",
           "prompt": "An architect wants to allow a specific user to only see objects inside a folder named 'confidential' within a bucket. Which part of the ARN in the 'Resource' section must be configured?",
           "options": [
             {
@@ -6553,10 +6859,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "97fa8a0a-b403-4e14-b244-61d410c85887",
+          "id": "6c32447d-6559-4716-ba86-a9187d24ff3d",
           "prompt": "Even if a bucket policy is set to 'Allow' for 'Principal': '*', why might a user from the internet still receive a '403 Forbidden' error when trying to access an object?",
           "options": [
             {
@@ -6576,10 +6883,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "d3f6fed3-5d24-46ef-a166-2db6e3712678",
+          "id": "e73ac05b-ccba-40d8-a45f-410ec3be27f8",
           "prompt": "What happens if a bucket policy has two statements: one allowing 'UserA' access to the bucket, and another allowing 'Principal': '*' access, but no explicit Deny exists?",
           "options": [
             {
@@ -6599,10 +6907,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c9258660-9515-4c93-908e-e1a96ee2decc",
+          "id": "0fa71b7f-441d-421e-9900-dd106a9d86ba",
           "prompt": "Which component would you use in a JSON policy to ensure that a bucket is only accessible from a specific office network (e.g., 203.0.113.0/24)?",
           "options": [
             {
@@ -6622,10 +6931,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "7a325ee6-cfc3-4603-b3c3-bc916e183404",
+          "id": "94985857-d3f0-4383-9d5c-fba5275bccee",
           "prompt": "How do IAM Policies and S3 Bucket Policies interact when a user from Account A tries to access a bucket in Account B (Cross-Account Access)?",
           "options": [
             {
@@ -6645,10 +6955,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "e794269e-0053-4401-aab0-fb6432037b51",
+          "id": "3734e5ac-08b3-4f52-8db2-fd9e71ea3bd9",
           "prompt": "A bucket policy contains the action 's3:GetObject'. Which specific task does this allow a principal to perform?",
           "options": [
             {
@@ -6668,10 +6979,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "9ea5df20-93e1-4c02-a228-3cb362c362dc",
+          "id": "bb8df725-7e10-4624-bdd8-c4cac950b7cb",
           "prompt": "When writing a JSON policy, what does the Version '2012-10-17' represent?",
           "options": [
             {
@@ -6691,7 +7003,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -6700,9 +7013,10 @@
     "url": "https://gemini.google.com/share/aa5ee96e3e7d",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "S3 Bucket Policies",
       "questions": [
         {
-          "id": "4277d23a-2d7b-4da9-8aef-384cb6b9ff5b",
+          "id": "9798c62b-008c-46d9-a658-3ec2c7578642",
           "prompt": "Scenario: A startup has a 'public-assets' bucket. They want to allow anyone on the internet to read the files, but they want to ensure that only their specific CI/CD server (IP: 1.2.3.4) can upload new files. How should you configure this?",
           "options": [
             {
@@ -6722,10 +7036,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "1b324a82-fc7c-4e62-94ab-a4cc01e095d2",
+          "id": "0fe87928-7bdb-4895-ade1-85b58a25b516",
           "prompt": "Scenario: A government agency must store sensitive records that must never be deleted for 10 years, even in the event of a compromised Root account. They have a physical backup, but the cloud copy is the primary legal record. Which configuration is required?",
           "options": [
             {
@@ -6745,10 +7060,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "1a3a4269-50a7-453f-a74a-6d8b2286d8fd",
+          "id": "cb67ec7a-1277-4742-9594-acfc57262bbb",
           "prompt": "Scenario: You are working in a multi-account environment. You need to allow an IAM Role in Account B to list the contents of a bucket in Account A. You have added 's3:ListBucket' to the Role's IAM policy in Account B. What is the correct 'Resource' ARN to use in the Bucket Policy of Account A to allow this listing?",
           "options": [
             {
@@ -6768,7 +7084,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         }
       ]
     }
@@ -6777,9 +7094,10 @@
     "url": "https://gemini.google.com/share/582552700d11",
     "quiz": {
       "type": "THEORY",
+      "topic": "VPN vs Direct Connect",
       "questions": [
         {
-          "id": "e5d25082-02ca-4f2d-a833-8de5cc5cf079",
+          "id": "0ed4727d-311e-43f4-a5a6-2c61147f588d",
           "prompt": "What is the primary function of an AWS Site-to-Site VPN?",
           "options": [
             {
@@ -6799,10 +7117,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "d7bbef3e-c448-47ff-9289-dc5fe497277e",
+          "id": "93a2c6cc-1154-44c9-a078-6e3528e0ff8c",
           "prompt": "In a VPN architecture, where is the Customer Gateway (CGW) located?",
           "options": [
             {
@@ -6822,10 +7141,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "b0e8154a-64e9-4d1f-80d2-4ec4d9a72afd",
+          "id": "4c6690f1-eb20-4b37-9afb-26f0670d6e9c",
           "prompt": "Which routing method allows the AWS VPC to automatically learn routes from your on-premises network?",
           "options": [
             {
@@ -6845,10 +7165,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "c3a396a3-3698-42c6-9976-08bac8727898",
+          "id": "2c6717b4-cc58-4190-bbed-b0cf48f8511b",
           "prompt": "What is the standard bandwidth limit for a single VPN tunnel according to the text?",
           "options": [
             {
@@ -6868,10 +7189,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "2e1ad66f-7a78-4439-b44c-ded4fa3e5667",
+          "id": "974e8ed1-8eaf-49db-be07-1a618e58c685",
           "prompt": "If you need more bandwidth than a single VPN tunnel provides, what feature should you use?",
           "options": [
             {
@@ -6891,10 +7213,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "909ce20c-829e-441c-99f7-e806ad6f2f76",
+          "id": "0a96ce78-e28e-4293-b4b0-95320c5f4576",
           "prompt": "How does AWS Direct Connect differ fundamentally from a VPN?",
           "options": [
             {
@@ -6914,10 +7237,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "6d13ed12-4496-49e6-be00-1476c524371c",
+          "id": "4372faf9-ba00-48c6-8839-0a00a728a96d",
           "prompt": "In the Direct Connect architecture, what physically links your router to the AWS router?",
           "options": [
             {
@@ -6937,10 +7261,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "650593a9-e78c-4482-bcae-cc3792625dae",
+          "id": "ee32f8d2-1501-407c-9680-bbb8ceaf30e0",
           "prompt": "If you want to connect to private VPC resources using Direct Connect, what AWS component is required?",
           "options": [
             {
@@ -6960,10 +7285,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "84b1f055-6c3b-4bea-aa18-14b388879397",
+          "id": "383dc19e-df56-4885-a492-f0ce7dbbbe06",
           "prompt": "How does pricing for Direct Connect differ from VPN pricing?",
           "options": [
             {
@@ -6983,10 +7309,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "77c1bef7-0962-4813-9cb4-efa15ce518b3",
+          "id": "8e47c98a-c93a-4e35-b328-9e58ed1bbfa4",
           "prompt": "Which option is best for a client requiring 100 Gbps throughput and extremely stable latency?",
           "options": [
             {
@@ -7006,7 +7333,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -7015,9 +7343,10 @@
     "url": "https://gemini.google.com/share/78ba4a4286f6",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "VPN vs Direct Connect",
       "questions": [
         {
-          "id": "fbaad745-1d1e-4c39-9ed4-007d37513cba",
+          "id": "9909f2c6-98cd-4b0e-bc22-a6614cc1487f",
           "prompt": "Scenario: A startup needs to connect their office to AWS quickly (within 24 hours) to start a proof-of-concept project. Budget is tight, and bandwidth needs are low (< 50 Mbps). Which solution do you recommend?",
           "options": [
             {
@@ -7037,10 +7366,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "78beec1b-fc7c-4923-8a01-d68e186bdc1a",
+          "id": "ed4120fb-90b1-4d93-8588-e51b8fc63dca",
           "prompt": "Scenario: A large financial institution requires a connection to AWS. Compliance explicitly forbids their internal financial traffic from ever traversing the public internet, even if encrypted. Which option is viable?",
           "options": [
             {
@@ -7060,10 +7390,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b4249903-57f7-4cf9-878d-f6948c9abeb2",
+          "id": "5d5b97e9-0fe2-4c0f-a258-6ca159e0bc07",
           "prompt": "Scenario: You have a Direct Connect link for your primary production workload. However, you want a backup connection in case the physical fiber is cut. You want a cost-effective backup solution that doesn't require waiting for a second physical line to be installed. What is a common pattern?",
           "options": [
             {
@@ -7083,10 +7414,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "70cad430-4391-4986-a472-544bc5397a23",
+          "id": "c289776f-01dc-4c5e-8e68-453d2332cc0a",
           "prompt": "Scenario: Your company has offices in London, Paris, and New York. You want to connect all of them to your AWS VPCs in multiple regions. You have Direct Connect set up in London. What modern AWS component allows you to use that single London Direct Connect connection to reach VPCs in other regions globally?",
           "options": [
             {
@@ -7106,10 +7438,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "0e9fd1e7-2c07-410b-80ce-69b7c7ebf992",
+          "id": "a6f86765-95ff-4c2b-b9c3-fc86cf3557a3",
           "prompt": "Scenario: You are setting up a VPN. You want the routing to automatically update if you add a new subnet in your office network. Which configuration is required?",
           "options": [
             {
@@ -7129,7 +7462,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -7138,9 +7472,10 @@
     "url": "https://gemini.google.com/share/cf467fe671ba",
     "quiz": {
       "type": "THEORY",
+      "topic": "Route 53 Application Recovery Controller",
       "questions": [
         {
-          "id": "88970a5e-59df-4d20-8778-cce0dcbda5b0",
+          "id": "6d7ded76-cfdb-4e75-a20f-9b5d27db901d",
           "prompt": "What is the primary purpose of the Amazon Route 53 Application Recovery Controller service?",
           "options": [
             {
@@ -7160,10 +7495,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "d79f8206-ea72-456e-a685-62918cf9e0ea",
+          "id": "fafa3229-1af3-480a-81c0-41ceabf6888b",
           "prompt": "In the architecture of Route 53 Application Recovery Controller, what does the term 'Cell' refer to?",
           "options": [
             {
@@ -7183,10 +7519,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "c1cff940-ff88-4d1a-aa45-d066e85a2aa2",
+          "id": "8092bd9c-ef5a-427b-82d8-776448dc5864",
           "prompt": "What is the definition of a 'Recovery Group' within the context of application recovery?",
           "options": [
             {
@@ -7206,10 +7543,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "675ff265-3090-4b82-8a39-edc56bd75b73",
+          "id": "bf73b042-9444-4d37-8142-7c37dec6149e",
           "prompt": "Which of the following best describes a 'Resource Set' in the Route 53 Application Recovery Controller?",
           "options": [
             {
@@ -7229,10 +7567,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "6ca7c49d-3247-4af8-879a-f0c527c6a448",
+          "id": "c5d38d27-0979-43ad-861c-5577ba6311a4",
           "prompt": "In a typical multi-region active/standby architecture using this controller, how is the DynamoDB database layer typically configured?",
           "options": [
             {
@@ -7252,10 +7591,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "RDS"
         },
         {
-          "id": "a15cf1e0-5e0f-41dd-a755-e8868eb51c2e",
+          "id": "f478f232-b73c-45f9-a6bf-f72f123bc80c",
           "prompt": "When configuring automated monitoring for failover, which of the following is a typical criterion for diverting traffic?",
           "options": [
             {
@@ -7275,10 +7615,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "fccbf639-fb05-4a0d-bb41-7895065d35ea",
+          "id": "2a35bb82-857c-44e6-8f41-b15c49563bf0",
           "prompt": "What mechanism does Route 53 primarily use to execute a failover between sites?",
           "options": [
             {
@@ -7298,10 +7639,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "87bcd1dc-95b6-4e7a-8f31-d5f11afdacb4",
+          "id": "00c170d4-e77e-4df9-a949-213cd49fd1eb",
           "prompt": "What capability does the 'routing control' feature provide to system operators?",
           "options": [
             {
@@ -7321,10 +7663,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "20c0bf37-1b85-4a5b-9fa2-2c2c53b47d81",
+          "id": "623855b7-363b-4e5a-9779-9d486d5053f5",
           "prompt": "The Application Recovery Controller performs continuous 'readiness checks'. What is the primary target of these checks?",
           "options": [
             {
@@ -7344,10 +7687,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "f13a1660-1ab7-489a-9e45-626840c70716",
+          "id": "a593551b-5b5f-4a35-913a-e13e302dd421",
           "prompt": "Why is it considered a best practice to regularly test the standby environment?",
           "options": [
             {
@@ -7367,7 +7711,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         }
       ]
     }
@@ -7376,9 +7721,10 @@
     "url": "https://gemini.google.com/share/ff257550cfb2",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Route 53 Application Recovery Controller",
       "questions": [
         {
-          "id": "b4bdfd99-bcc5-4cac-ab81-82937c94f498",
+          "id": "7d0c9056-edfc-4e3e-9844-bbd4afb78a20",
           "prompt": "You are managing a global financial application with an Active-Standby architecture. Users report that the application is extremely slow, but your standard Route 53 Health Checks are passing because the servers are returning HTTP 200 OK responses. How can you utilize Route 53 Application Recovery Controller to resolve this 'grey failure'?",
           "options": [
             {
@@ -7398,10 +7744,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "2b2d0360-751a-47dc-8eec-4649b780b064",
+          "id": "a986b2b4-64ce-40c9-985f-d0f6205c3cda",
           "prompt": "A junior engineer accidentally toggles the Routing Control state for the Primary Region to 'OFF' while the Secondary Region is also 'OFF' for maintenance. This causes a total outage. Which Application Recovery Controller feature should have been configured to prevent this?",
           "options": [
             {
@@ -7421,10 +7768,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "b391db41-1ca3-46bc-8ffa-71d2a9e7f5a3",
+          "id": "e8c3b24d-06d1-4e2c-9453-3e6ff735a207",
           "prompt": "You have configured a Readiness Check for your standby region. The check is currently failing. What is the most likely consequence if you attempt a failover right now?",
           "options": [
             {
@@ -7444,10 +7792,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "2c6aad62-3430-4642-b94e-5c3ca6d4dbff",
+          "id": "02e3cc47-7131-4510-b291-28f6cc5bfaa2",
           "prompt": "Your architecture consists of three Cells: Cell A (US-East), Cell B (EU-West), and Cell C (AP-Southeast). You want to perform software updates on Cell A without risking global availability. How does the concept of 'Cells' in ARC assist with this?",
           "options": [
             {
@@ -7467,10 +7816,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "01899f07-7511-4cd7-9946-8bb497fb5689",
+          "id": "6db79f56-007a-4d31-bc28-e2f1d3d3b79b",
           "prompt": "You are designing the Recovery Group for a complex application that includes a frontend fleet, a backend API, and a payment processor. Which approach aligns best with the ARC definitions?",
           "options": [
             {
@@ -7490,10 +7840,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ffc59989-3e94-4131-b32c-9aa76ee85ba6",
+          "id": "16f67f38-30d9-422e-8caa-35a55e01605f",
           "prompt": "An e-commerce company uses Route 53 ARC. They have a Global DynamoDB Table. During a failover test, the traffic successfully shifts to the Standby region, but users complain that their shopping carts are empty. What is the most likely cause?",
           "options": [
             {
@@ -7513,10 +7864,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "RDS"
         },
         {
-          "id": "86526d64-db95-42fd-8694-97350e067e21",
+          "id": "2649a898-0eef-458c-a42e-73415da932f3",
           "prompt": "You want to automate failover using Route 53 ARC, but you are worried about 'flapping' (traffic rapidly switching back and forth between regions due to intermittent errors). How can you mitigate this within the ARC Routing Control context?",
           "options": [
             {
@@ -7536,10 +7888,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "5de0664e-86a4-4e4b-9767-ca5d61e95686",
+          "id": "5a362a74-8af8-4d9b-a492-59532d82c0d9",
           "prompt": "Your organization requires a Recovery Point Objective (RPO) of near-zero. You are using Route 53 ARC to manage failover for a web application. Which component is MOST critical to satisfying the RPO requirement?",
           "options": [
             {
@@ -7559,10 +7912,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "8a58871e-fad1-4329-ad29-f8ec8072cfa6",
+          "id": "8df31580-489e-4261-851a-9f57c9eb256e",
           "prompt": "In a 5-cell architecture managed by ARC, you notice Cell 3 is performing poorly (high latency). You want to stop sending traffic to Cell 3 immediately but keep the other 4 cells active. What is the most precise action?",
           "options": [
             {
@@ -7582,10 +7936,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "87c1b44a-2ead-4a42-8e48-8550f1349e6e",
+          "id": "2f9c6c1e-bbc5-460f-982c-88eebd899706",
           "prompt": "Why does Route 53 ARC recommend using 'Resource Sets' to group global resources like DynamoDB tables, separate from the Cells?",
           "options": [
             {
@@ -7605,7 +7960,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "RDS"
         }
       ]
     }
@@ -7614,9 +7970,10 @@
     "url": "https://gemini.google.com/share/8ae9ae451e8c",
     "quiz": {
       "type": "THEORY",
+      "topic": "Private Links",
       "questions": [
         {
-          "id": "06925283-83da-4a3c-b11f-7206cb4d3cbc",
+          "id": "6969fa19-1603-4963-9bf7-a8d9fc44366a",
           "prompt": "What is the primary security benefit of using AWS PrivateLink to access a service like Amazon CloudWatch from an EC2 instance?",
           "options": [
             {
@@ -7636,10 +7993,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "48d7daaa-3d27-4597-949f-0ea360f8781f",
+          "id": "531000c1-3680-4e39-ac95-b48aa7200af5",
           "prompt": "In a traditional architecture without PrivateLink, if an instance in a private subnet needs to access S3, what network component is typically required that introduces potential security risks?",
           "options": [
             {
@@ -7659,10 +8017,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "c85ebf8b-51d6-4e00-8297-553edbfa2ddf",
+          "id": "00bcca6e-b3d2-4216-8188-6aec316613dd",
           "prompt": "When you configure PrivateLink for a service, how does that service appear to the EC2 instances inside your VPC?",
           "options": [
             {
@@ -7682,10 +8041,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "a8f15f95-9ff6-48f0-9ab2-08f7127a7017",
+          "id": "2a71f348-c47c-4374-ad15-ca1f77612a3b",
           "prompt": "Can AWS PrivateLink be used to connect to services hosted by third-party SaaS vendors?",
           "options": [
             {
@@ -7705,10 +8065,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "6e85f202-bd35-49d3-9630-ca960b7ec353",
+          "id": "4a67bded-2022-42a2-aa9e-3431555effc4",
           "prompt": "Which specific AWS component is created in your VPC to establish a PrivateLink connection?",
           "options": [
             {
@@ -7728,10 +8089,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "46129fdb-60e3-4db7-b647-79fe4093604b",
+          "id": "5c6afe2b-309e-4e11-b362-8bc9694028f1",
           "prompt": "Does using PrivateLink require you to configure VPC Peering between the consumer VPC and the provider VPC?",
           "options": [
             {
@@ -7751,10 +8113,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "858dc683-f11b-4001-b186-96d60b8d3860",
+          "id": "ba563364-423b-49fd-ae77-6e1bc001163d",
           "prompt": "What is the primary risk exposure that PrivateLink eliminates compared to using a NAT Gateway?",
           "options": [
             {
@@ -7774,10 +8137,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "f077bc6d-71f3-4a25-93bc-34dfb46f856d",
+          "id": "a040de67-2987-4a88-af64-bccdc05b0389",
           "prompt": "Which direction of traffic flow does PrivateLink primarily facilitate?",
           "options": [
             {
@@ -7797,10 +8161,11 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "980b1c89-dbcf-43e4-95b4-daa2b2e5576e",
+          "id": "10d83b2d-cf8b-43d3-87ca-f6e6760e2ca1",
           "prompt": "How does PrivateLink handle IP addressing between the service consumer and the service provider?",
           "options": [
             {
@@ -7820,10 +8185,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "96c209c0-02ed-4843-b960-ebcf67d8b81e",
+          "id": "3692a827-ef5a-49cc-ba13-6ea619aaad58",
           "prompt": "What type of address allows the VPC resources to communicate with the PrivateLink endpoint?",
           "options": [
             {
@@ -7843,7 +8209,8 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }
@@ -7852,9 +8219,10 @@
     "url": "https://gemini.google.com/share/43d16516d2e3",
     "quiz": {
       "type": "ARCHITECT",
+      "topic": "Private Links",
       "questions": [
         {
-          "id": "33404dcd-5c0b-4a8a-a84e-8a5e1bdd2604",
+          "id": "4c2cf68d-8ad4-4f29-9cc0-6f0b21ebe32c",
           "prompt": "Scenario: You are architecting a solution for a highly regulated banking application. You need to access Amazon S3 and Amazon DynamoDB from your private VPC instances. Security policy dictates that traffic must NOT traverse the public internet, but you also want to avoid hourly processing charges for data transfer if possible.",
           "options": [
             {
@@ -7874,10 +8242,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "a55c1f44-cd6f-45d0-b7e5-ff3a110ba67e",
+          "id": "d15d5041-cab8-4331-ae7a-823f49760dec",
           "prompt": "Scenario: You have set up an Interface VPC Endpoint for an external SaaS payroll service. Your EC2 instances in the private subnet are trying to connect, but the connection times out. You have checked the Route Tables and they look fine. What is the most likely cause?",
           "options": [
             {
@@ -7897,10 +8266,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "EC2"
         },
         {
-          "id": "fc97297a-8390-4345-b79d-00197e5ac98b",
+          "id": "dec70831-e2c5-449f-89ec-9d681f24acac",
           "prompt": "Scenario: Your on-premises data center is connected to your VPC via AWS Direct Connect. You want your on-prem servers to access Amazon CloudWatch Logs via the private Interface Endpoint you created in your VPC. However, the connection is failing.",
           "options": [
             {
@@ -7920,10 +8290,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         },
         {
-          "id": "83cc9d8a-c8ff-47c9-ad6e-b2d7584d4af9",
+          "id": "009551b3-4e70-4821-bbd0-255af86eea89",
           "prompt": "Scenario: You are a Service Provider offering an analytics API. You want to ensure that only a specific list of customer AWS Principals (ARNs) can connect to your Endpoint Service. How do you enforce this?",
           "options": [
             {
@@ -7943,10 +8314,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ba367eb6-6332-481b-a495-abaed32df955",
+          "id": "8ceb1b38-924f-4ab0-a861-a703727e7a32",
           "prompt": "Scenario: A customer in the eu-central-1 region wants to connect to your PrivateLink service which is hosted in us-east-1. They cannot find your service name to connect. Why?",
           "options": [
             {
@@ -7966,10 +8338,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "deee00d9-7666-4993-bb3b-5c5d32766cb2",
+          "id": "1f67e490-88d4-4d5d-a37f-b4e301569aba",
           "prompt": "Scenario: You want to restrict your VPC Interface Endpoint for S3 so that it allows access only to a specific bucket named 'my-secure-data', blocking access to all other S3 buckets.",
           "options": [
             {
@@ -7989,10 +8362,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "7f30ae60-102a-4b22-977a-4d206f569c25",
+          "id": "413fbef1-c84e-4456-8c5f-244b6d77a643",
           "prompt": "Scenario: You enabled 'Private DNS' for your Interface Endpoint for an AWS service (e.g., ec2.us-east-1.amazonaws.com). However, the creation fails. What is a common prerequisite for enabling Private DNS?",
           "options": [
             {
@@ -8012,10 +8386,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "55a25a43-8b5d-4c38-9f85-5fecc6e3e10e",
+          "id": "3c656ad5-2382-4780-810d-44734f9255c0",
           "prompt": "Scenario: Your company runs a fleet of 100 EC2 instances that process large datasets from S3. You are currently using a NAT Gateway. You switch to a Gateway VPC Endpoint for S3. What is the immediate impact on your AWS bill?",
           "options": [
             {
@@ -8035,10 +8410,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "S3"
         },
         {
-          "id": "fd5ed58a-d794-446f-a8e3-84601a66e1b7",
+          "id": "418ecfc1-1f9a-4a57-ba33-bea64fdd55ee",
           "prompt": "Scenario: You have an application that uses a PrivateLink connection to a 3rd party service. The application is sensitive to TCP resets. You notice that idle connections are being dropped after 350 seconds.",
           "options": [
             {
@@ -8058,10 +8434,11 @@
               "correct": false
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "General"
         },
         {
-          "id": "ff949b5f-3696-44fd-a521-2ca4a04d25df",
+          "id": "e87ae5d7-1346-4816-807d-b3a8f33f0aac",
           "prompt": "Scenario: Can you attach an endpoint policy to a Gateway Endpoint for DynamoDB?",
           "options": [
             {
@@ -8081,7 +8458,8 @@
               "correct": true
             }
           ],
-          "hint": ""
+          "hint": "",
+          "topic": "VPC"
         }
       ]
     }

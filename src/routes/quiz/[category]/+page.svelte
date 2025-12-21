@@ -6,11 +6,18 @@
 		data: {
 			categoryId: string;
 			categoryName: string;
+			availableTopics: string[];
 		};
 	};
 
 	let { data }: Props = $props();
-	const vm = new QuizConfigVM(data.categoryId, data.categoryName);
+	let vm = $state(new QuizConfigVM(data.categoryId, data.categoryName, data.availableTopics));
+
+	$effect(() => {
+		if (vm.categoryId !== data.categoryId) {
+			vm = new QuizConfigVM(data.categoryId, data.categoryName, data.availableTopics);
+		}
+	});
 </script>
 
 <main class="min-h-screen bg-bg-dark px-4 py-8 md:px-8">
@@ -98,6 +105,57 @@
 					</button>
 				{/each}
 			</div>
+		</section>
+
+		<!-- Topics Selection -->
+		<section class="mb-10 animate-slide-up" style="animation-delay: 250ms">
+			<h2 class="font-display text-lg font-semibold text-white mb-4 flex items-center gap-2">
+				<span class="w-2 h-2 rounded-full bg-neon-yellow"></span>
+				Topics <span class="text-text-muted text-sm font-normal ml-2">(Optional)</span>
+			</h2>
+
+			{#if vm.availableTopics.length > 0}
+				<div class="flex flex-wrap gap-2 items-center">
+					<!-- 'All' Badge -->
+					<button
+						type="button"
+						class="px-4 py-2 rounded-full text-sm font-medium transition-all border-2 cursor-pointer"
+						class:bg-neon-yellow={vm.selectedTopics.length === 0}
+						class:bg-opacity-20={vm.selectedTopics.length === 0}
+						class:border-neon-yellow={vm.selectedTopics.length === 0}
+						class:text-neon-yellow={vm.selectedTopics.length === 0}
+						class:border-bg-elevated={vm.selectedTopics.length > 0}
+						class:text-text-secondary={vm.selectedTopics.length > 0}
+						class:hover:border-neon-yellow={vm.selectedTopics.length > 0}
+						class:hover:text-white={vm.selectedTopics.length > 0}
+						onclick={() => vm.clearTopics()}
+					>
+						All
+					</button>
+
+					<!-- Vertical Divider -->
+					<div class="w-px h-6 bg-bg-elevated mx-2"></div>
+
+					{#each vm.availableTopics as topic}
+						{@const isSelected = vm.selectedTopics.includes(topic)}
+						<button
+							type="button"
+							class="px-4 py-2 rounded-full text-sm font-medium transition-all border-2 cursor-pointer"
+							class:bg-neon-yellow={isSelected}
+							class:bg-opacity-20={isSelected}
+							class:border-neon-yellow={isSelected}
+							class:text-neon-yellow={isSelected}
+							class:border-bg-elevated={!isSelected}
+							class:text-text-secondary={!isSelected}
+							class:hover:border-neon-yellow={!isSelected}
+							class:hover:text-white={!isSelected}
+							onclick={() => vm.toggleTopic(topic)}
+						>
+							{topic}
+						</button>
+					{/each}
+				</div>
+			{/if}
 		</section>
 
 		<!-- Start Button -->

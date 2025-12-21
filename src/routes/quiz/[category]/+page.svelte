@@ -197,15 +197,6 @@
 
 <style lang="postcss">
   /*
-   lg grid for question type options
-  */
-  @media (min-width: 768px) {
-    .custom-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  /*
    default grid for question type options
   */
   .custom-grid {
@@ -216,5 +207,17 @@
 
   .custom-grid > :nth-child(3) {
     grid-column: span 2 / span 2;
+  }
+
+  /*
+   lg grid for question type options
+  */
+  @media (min-width: 768px) {
+    .custom-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .custom-grid > :nth-child(3) {
+      grid-column: span 1;
+    }
   }
 </style>

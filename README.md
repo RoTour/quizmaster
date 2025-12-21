@@ -99,6 +99,33 @@ Quiz questions are stored as JSON files in `static/data/<category-id>/`. Each ca
 - `THEORY` - Concept-focused questions
 - `ARCHITECT` - Scenario-based questions
 
+## Docker Deployment
+
+### Build and Run with Docker Compose
+
+```bash
+# Build and start the container
+docker compose up -d --build
+
+# View logs
+docker compose logs -f
+
+# Stop the container
+docker compose down
+```
+
+### Build Docker Image Manually
+
+```bash
+# Build the image
+docker build -t rotour/quizmaster:latest .
+
+# Run the container
+docker run -d -p 3000:3000 rotour/quizmaster:latest
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
 ## Available Scripts
 
 | Command | Description |
@@ -107,6 +134,7 @@ Quiz questions are stored as JSON files in `static/data/<category-id>/`. Each ca
 | `bun run build` | Build for production |
 | `bun run preview` | Preview production build |
 | `bun run check` | Run Svelte type checking |
+| `docker compose up -d` | Start production container |
 
 ## Design System
 

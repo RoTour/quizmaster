@@ -1,0 +1,29 @@
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Dependencies
+node_modules
+
+# Build artifacts
+.svelte-kit
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+
+# Misc
+README.md
+*.md
+.DS_Store

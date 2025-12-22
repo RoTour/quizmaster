@@ -1,6 +1,6 @@
 // src/routes/quiz/[category]/results/+page.ts
 
-import { getCategoryName, getQuestions } from '$lib/services/quiz-service';
+import { getCategoryName, getQuestions, isValidCategory } from '$lib/services/quiz-service';
 import type { Question } from '$lib/types/quiz';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
@@ -16,7 +16,11 @@ type ResultsData = {
 	}>;
 };
 
-export const load: PageLoad = async ({ params, url }) => {
+export const load: PageLoad = async ({ params, url, fetch }) => {
+	if (!isValidCategory(params.category)) {
+		throw error(404, 'Category not found');
+	}
+
 	const dataParam = url.searchParams.get('data');
 
 	if (!dataParam) {
@@ -27,7 +31,7 @@ export const load: PageLoad = async ({ params, url }) => {
 		const resultsData: ResultsData = JSON.parse(decodeURIComponent(dataParam));
 
 		// Fetch all questions to show in review
-		const questions = await getQuestions(params.category, 'RANDOM', 500);
+		const questions = await getQuestions(params.category, 'RANDOM', 500, [], fetch);
 
 		// Create a map for quick lookup
 		const questionMap = new Map<string, Question>();

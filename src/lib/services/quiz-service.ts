@@ -116,3 +116,7 @@ export async function getQuestions(
 export function getCategoryName(categoryId: string): string {
 	return CATEGORIES_META[categoryId]?.name ?? categoryId;
 }
+
+export function isValidCategory(categoryId: string): boolean {
+	return categoryId in CATEGORIES_META;
+}

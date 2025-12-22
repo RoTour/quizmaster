@@ -1,9 +1,14 @@
 // src/routes/quiz/[category]/+page.ts
 
-import { getAvailableTopics, getCategoryName } from '$lib/services/quiz-service';
+import { getAvailableTopics, getCategoryName, isValidCategory } from '$lib/services/quiz-service';
+import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params, fetch }) => {
+	if (!isValidCategory(params.category)) {
+		error(404, 'Category not found');
+	}
+
 	try {
 		const availableTopics = await getAvailableTopics(params.category, fetch);
 		

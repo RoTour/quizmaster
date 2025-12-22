@@ -41,6 +41,13 @@
 
 		<!-- Question Card -->
 		<div class="card neon-border mb-6 animate-slide-up">
+			{#if vm.currentQuestion.topic}
+				<div
+					class="inline-block px-3 py-1 rounded-full bg-neon-pink/10 border border-neon-pink/30 text-neon-pink text-xs font-bold uppercase tracking-wider mb-4"
+				>
+					{vm.currentQuestion.topic}
+				</div>
+			{/if}
 			<h2 class="font-display text-lg md:text-xl font-semibold text-white leading-relaxed">
 				{vm.currentQuestion.prompt}
 			</h2>

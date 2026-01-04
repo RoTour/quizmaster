@@ -1,0 +1,2095 @@
+[
+  {
+    "url": "https://gemini.google.com/share/edbfddc271c8",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "EC2 Image builder",
+      "questions": [
+        {
+          "id": "611e2449-806a-4dda-a504-dd30b05fff7e",
+          "prompt": "What is the primary function of the EC2 Image Builder service in AWS?",
+          "options": [
+            {
+              "content": "To manage the underlying physical hardware of EC2 hosts.",
+              "correct": false
+            },
+            {
+              "content": "To automate the creation, management, and deployment of customized AMI images.",
+              "correct": true
+            },
+            {
+              "content": "To manually configure EC2 instances for production environments.",
+              "correct": false
+            },
+            {
+              "content": "To monitor the health and performance of running EC2 instances.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "483a404a-7279-47eb-aed7-51741e6792db",
+          "prompt": "In the context of system deployment, what is a \"Golden Image\"?",
+          "options": [
+            {
+              "content": "A backup snapshot taken strictly for disaster recovery purposes.",
+              "correct": false
+            },
+            {
+              "content": "A raw, unconfigured operating system installation directly from the vendor.",
+              "correct": false
+            },
+            {
+              "content": "A pre-configured master image containing essential software and settings used as a standard template.",
+              "correct": true
+            },
+            {
+              "content": "The final production instance that is currently serving traffic.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "97cec97f-5213-4604-845e-13500fbe8c4b",
+          "prompt": "During the 'Build Phase' of creating a golden image, which activity typically takes place?",
+          "options": [
+            {
+              "content": "Defining the VPCs and subnets where the build instance will run.",
+              "correct": false
+            },
+            {
+              "content": "Launching the final fleet of EC2 instances for production traffic.",
+              "correct": false
+            },
+            {
+              "content": "Installing necessary applications and removing unwanted software.",
+              "correct": true
+            },
+            {
+              "content": "Selecting the AWS regions where the image will be stored.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "949e8dc7-f06d-40ca-a5dc-4c55fb910842",
+          "prompt": "What is the primary purpose of the 'Testing Phase' in the image creation workflow?",
+          "options": [
+            {
+              "content": "To select the instance type that will be used for the build process.",
+              "correct": false
+            },
+            {
+              "content": "To execute functional checks and security validation to ensure the image meets standards.",
+              "correct": true
+            },
+            {
+              "content": "To copy the image to multiple AWS regions for high availability.",
+              "correct": false
+            },
+            {
+              "content": "To compile the source code of the application being installed.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "55ba36f6-c185-47a9-b233-ebb8dbfb1d69",
+          "prompt": "Which component of the EC2 Image Builder pipeline defines 'what' is being built (the source and the changes)?",
+          "options": [
+            {
+              "content": "The Distribution Configuration",
+              "correct": false
+            },
+            {
+              "content": "The Infrastructure Configuration",
+              "correct": false
+            },
+            {
+              "content": "The Image Recipe",
+              "correct": true
+            },
+            {
+              "content": "The Run Stage",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cc69c5ec-3062-4174-a2a3-78a36a3f0485",
+          "prompt": "What is a key security benefit of using EC2 Image Builder?",
+          "options": [
+            {
+              "content": "It automates patch management and applies consistent security policies.",
+              "correct": true
+            },
+            {
+              "content": "It encrypts all data in transit between your EC2 instances and the internet.",
+              "correct": false
+            },
+            {
+              "content": "It automatically manages the security groups for your production application load balancers.",
+              "correct": false
+            },
+            {
+              "content": "It prevents users from logging into the AWS Management Console.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "dfe1ed61-ea9b-4974-8f21-a0a0a57f6bd2",
+          "prompt": "When configuring the infrastructure settings for an Image Builder pipeline, what specific resources must be defined?",
+          "options": [
+            {
+              "content": "VPC, subnets, and security groups.",
+              "correct": true
+            },
+            {
+              "content": "DynamoDB tables and Lambda functions.",
+              "correct": false
+            },
+            {
+              "content": "The specific AWS regions for distribution.",
+              "correct": false
+            },
+            {
+              "content": "Route 53 hosted zones and domain names.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "92f82b92-4109-40ef-a380-9b9dd090f84a",
+          "prompt": "In the 'Distribution Phase', what action can be automated regarding the final image?",
+          "options": [
+            {
+              "content": "Deleting the original base image from the marketplace.",
+              "correct": false
+            },
+            {
+              "content": "Running functional tests on the image.",
+              "correct": false
+            },
+            {
+              "content": "Installing the image onto physical on-premises servers.",
+              "correct": false
+            },
+            {
+              "content": "Sharing the image with other AWS accounts and copying it to different regions.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "680ce6f7-4d48-4ae3-b910-7ad3a85ba298",
+          "prompt": "How does EC2 Image Builder assist with 'Simplified Version Management'?",
+          "options": [
+            {
+              "content": "It automatically deletes old versions to save storage space immediately.",
+              "correct": false
+            },
+            {
+              "content": "It automatically updates the version number of the application code in Git.",
+              "correct": false
+            },
+            {
+              "content": "It prevents the creation of more than one image per day.",
+              "correct": false
+            },
+            {
+              "content": "It allows for easy rollback to previous images if a new version fails.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1dabd00f-a343-4ef3-bd02-ae8c5553608a",
+          "prompt": "Which of the following describes the 'Base Image' selection step?",
+          "options": [
+            {
+              "content": "Installing proprietary company software.",
+              "correct": false
+            },
+            {
+              "content": "Starting with a clean OS installation like Ubuntu or macOS.",
+              "correct": true
+            },
+            {
+              "content": "Defining the IAM roles for the pipeline.",
+              "correct": false
+            },
+            {
+              "content": "Verifying the image passes security checks.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/90476503643f",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "EC2 Image builder",
+      "questions": [
+        {
+          "id": "e240bfef-f0a0-44e2-b6ff-ccf31ca1e355",
+          "prompt": "Scenario: You are architecting for a financial trading platform. The application requires complex dependency compilation that takes 45 minutes. However, the business requirement is that the Auto Scaling Group must scale out and have new instances ready to accept traffic within 3 minutes of a traffic spike. Which strategy is most appropriate?",
+          "options": [
+            {
+              "content": "Use a Golden Image created by EC2 Image Builder containing the compiled dependencies.",
+              "correct": true
+            },
+            {
+              "content": "Use a base OS image and compiling dependencies via User Data (Bootstrapping).",
+              "correct": false
+            },
+            {
+              "content": "Increase the instance size (vertical scaling) to speed up compilation during boot.",
+              "correct": false
+            },
+            {
+              "content": "Use EC2 Image Builder to create a base OS image, then use AWS Lambda to compile dependencies after launch.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a51a2f14-ad3b-4e41-bea9-dbc372d6d3c3",
+          "prompt": "Scenario: Your Image Builder pipeline runs weekly. However, your security team complains that your production instances in the 'eu-west-1' region are missing a critical patch that was applied to the 'us-east-1' instances yesterday. You check the pipeline configuration, and it completed successfully. What is the most likely cause?",
+          "options": [
+            {
+              "content": "The Image Recipe did not include the 'Update OS' component.",
+              "correct": false
+            },
+            {
+              "content": "The Distribution Configuration in Image Builder did not include 'eu-west-1' as a target region.",
+              "correct": true
+            },
+            {
+              "content": "The Infrastructure Configuration selected the wrong subnet.",
+              "correct": false
+            },
+            {
+              "content": "The Test Phase failed in the 'eu-west-1' region.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2b8651e4-4bd2-4e1a-ba66-c33b6b4d0602",
+          "prompt": "Scenario: You have a legacy application that requires a specific, manual configuration of a license file that changes every time an instance launches (it uses the Instance ID). You want to use Image Builder to speed up the rest of the installation (Web Server, Python, Libraries). What is the best hybrid approach?",
+          "options": [
+            {
+              "content": "Bake the Web Server and Libraries into the Golden Image; use User Data to inject the license file at launch.",
+              "correct": true
+            },
+            {
+              "content": "Bootstrap everything using User Data scripts.",
+              "correct": false
+            },
+            {
+              "content": "Hardcode a dummy Instance ID in the Image Builder recipe.",
+              "correct": false
+            },
+            {
+              "content": "Bake everything, including the license file, into the Golden Image.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "57783b9c-6653-4198-98b1-4526e1f5f8cd",
+          "prompt": "Scenario: A compliance audit requires that you keep a history of all AMIs for 1 year, but to save costs, you want to delete the underlying snapshots for AMIs older than 30 days if they aren't used. How does Image Builder help here?",
+          "options": [
+            {
+              "content": "Image Builder automatically compresses snapshots to reduce costs after 30 days.",
+              "correct": false
+            },
+            {
+              "content": "Image Builder stores images in S3 Glacier by default to save money.",
+              "correct": false
+            },
+            {
+              "content": "You must manually write a Lambda function to check AMI age.",
+              "correct": false
+            },
+            {
+              "content": "You can configure 'Lifecycle Policies' within Image Builder (or Data Lifecycle Manager) to automate AMI deprecation and deletion.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/3859e3eb87d2",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Storage Gateways",
+      "questions": [
+        {
+          "id": "549dcee2-b1eb-4a03-8d46-ad0ac9b768a3",
+          "prompt": "Your on-premises application server uses iSCSI to connect to storage devices. You want to migrate its storage to AWS while keeping the application server on-premise. Which Storage Gateway type is compatible with this protocol?",
+          "options": [
+            {
+              "content": "File Gateway",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway",
+              "correct": true
+            },
+            {
+              "content": "S3 Gateway",
+              "correct": false
+            },
+            {
+              "content": "Glacier Gateway",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "77d28c96-5b46-40a1-aa78-b9f1a79addb6",
+          "prompt": "In 'Volume Gateway - Stored Mode', where is the PRIMARY copy of the data located?",
+          "options": [
+            {
+              "content": "In Amazon Glacier.",
+              "correct": false
+            },
+            {
+              "content": "On the Storage Gateway appliance's local physical disks.",
+              "correct": true
+            },
+            {
+              "content": "In an Amazon S3 bucket.",
+              "correct": false
+            },
+            {
+              "content": "In Amazon EBS volumes in the cloud.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f0525dc0-3a30-4904-86cc-e52a7e543909",
+          "prompt": "Which Storage Gateway configuration allows you to extend your on-premises storage with 'virtually unlimited' capacity by keeping only frequently accessed data locally?",
+          "options": [
+            {
+              "content": "Tape Gateway",
+              "correct": false
+            },
+            {
+              "content": "NFS Gateway",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Cached Mode",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4f351c57-80fb-43ab-bd1d-724a99871401",
+          "prompt": "When using File Gateway, how is a file (e.g., 'report.pdf') stored in the backend AWS service?",
+          "options": [
+            {
+              "content": "As an object in an S3 bucket, with the key matching the file path.",
+              "correct": true
+            },
+            {
+              "content": "As a block inside an EBS Snapshot.",
+              "correct": false
+            },
+            {
+              "content": "As a compressed archive in Glacier.",
+              "correct": false
+            },
+            {
+              "content": "As a virtual tape in a VTL.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4006e01a-58ea-450d-a1b8-9b2cc5d0c5ee",
+          "prompt": "Which protocols does the File Gateway support for connecting to on-premises servers?",
+          "options": [
+            {
+              "content": "iSCSI and Fibre Channel",
+              "correct": false
+            },
+            {
+              "content": "NFS and SMB",
+              "correct": true
+            },
+            {
+              "content": "FTP and SFTP",
+              "correct": false
+            },
+            {
+              "content": "HTTP and HTTPS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a78e04dc-5cae-4da7-96bc-b34221fad66b",
+          "prompt": "Tape Gateway allows you to replace physical tape infrastructure. Where is the data eventually archived for long-term retention?",
+          "options": [
+            {
+              "content": "Amazon EBS Snapshots",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3 Standard only",
+              "correct": false
+            },
+            {
+              "content": "On the local appliance disks",
+              "correct": false
+            },
+            {
+              "content": "Amazon Glacier (Virtual Tape Shelf)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "120a1d2d-5c14-4212-8385-952e56561106",
+          "prompt": "In 'Volume Gateway - Stored Mode', how is data protected in the cloud?",
+          "options": [
+            {
+              "content": "It is not protected in the cloud; Stored Mode is local only.",
+              "correct": false
+            },
+            {
+              "content": "It is converted into individual S3 Objects.",
+              "correct": false
+            },
+            {
+              "content": "It is asynchronously replicated to AWS S3 as EBS Snapshots.",
+              "correct": true
+            },
+            {
+              "content": "It is continuously streamed to Kinesis Firehose.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b9c4de28-a681-4af4-b811-864c6f42914a",
+          "prompt": "What is the primary architectural benefit of Volume Gateway - Cached Mode regarding on-premises infrastructure?",
+          "options": [
+            {
+              "content": "It converts all your block data into readable PDF and JPG files.",
+              "correct": false
+            },
+            {
+              "content": "It allows you to decommission your on-premises internet connection.",
+              "correct": false
+            },
+            {
+              "content": "It improves the speed of data transfer to the internet.",
+              "correct": false
+            },
+            {
+              "content": "It eliminates the need for large, expensive on-premises storage arrays (SAN/NAS).",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "5f8ed67a-e061-41ba-bfc6-4fbdb096197a",
+          "prompt": "Tape Gateway emulates a 'VTL'. What does VTL stand for?",
+          "options": [
+            {
+              "content": "Volume Tape Layer",
+              "correct": false
+            },
+            {
+              "content": "Virtual Tape Library",
+              "correct": true
+            },
+            {
+              "content": "Virtual Transfer Link",
+              "correct": false
+            },
+            {
+              "content": "Verified Tape Location",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4032aba8-5f8a-4699-ba6a-57d669e6a03c",
+          "prompt": "What happens if you write a file to a File Gateway that is larger than the local cache?",
+          "options": [
+            {
+              "content": "The file is written to S3 directly, bypassing the cache entirely.",
+              "correct": true
+            },
+            {
+              "content": "The write fails immediately.",
+              "correct": false
+            },
+            {
+              "content": "The gateway pauses until space is cleared.",
+              "correct": false
+            },
+            {
+              "content": "The file is truncated to fit the cache.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/efe559ccc670",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Storage Gateways",
+      "questions": [
+        {
+          "id": "8e0a58f9-73ad-40d5-a761-d1c1566bb030",
+          "prompt": "A media company has 500 TB of video archives stored on an on-premises NAS. They want to move this data to Amazon S3 for cheaper storage and to allow their cloud-based transcoding applications to process the files. However, their local editors still need low-latency read access to the most recently uploaded videos via a standard SMB share.",
+          "options": [
+            {
+              "content": "Use File Gateway.",
+              "correct": true
+            },
+            {
+              "content": "Use Amazon S3 Transfer Acceleration.",
+              "correct": false
+            },
+            {
+              "content": "Use Tape Gateway.",
+              "correct": false
+            },
+            {
+              "content": "Use Volume Gateway - Stored Mode.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bc28eab0-36b7-4c99-98e9-de001d2e50cc",
+          "prompt": "A law firm is closing its physical data center. They have a requirement to keep their historical backup tapes for 7 years. They currently use a physical Tape Library with 'Backup Exec' software. They want to migrate to AWS with minimal disruption to their current backup workflows.",
+          "options": [
+            {
+              "content": "Use Volume Gateway - Cached Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use File Gateway to store the backup files in S3 Glacier.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Snowball Edge to move the data.",
+              "correct": false
+            },
+            {
+              "content": "Use Tape Gateway.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0763aee9-d041-419e-a9de-c774856e9e28",
+          "prompt": "You have an on-premises database that is 5 TB in size. You have exactly 6 TB of local disk space available. You want to use Storage Gateway to back up this database to AWS, but you are worried about network latency affecting the database performance. Which mode ensures the database reads are always served from local disk speed?",
+          "options": [
+            {
+              "content": "File Gateway.",
+              "correct": false
+            },
+            {
+              "content": "Direct Connect.",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode.",
+              "correct": true
+            },
+            {
+              "content": "Volume Gateway - Cached Mode.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3960e9fe-22ba-4254-b804-3cab443647c5",
+          "prompt": "You are using File Gateway to upload data to an S3 bucket. A developer modifies one of the objects directly in the S3 bucket using the AWS Console. However, the users on-premise cannot see the updated file in their SMB share. Why?",
+          "options": [
+            {
+              "content": "SMB protocols do not support file modification.",
+              "correct": false
+            },
+            {
+              "content": "File Gateway is write-only; it cannot read data back from S3.",
+              "correct": false
+            },
+            {
+              "content": "The object was uploaded to the wrong storage class.",
+              "correct": false
+            },
+            {
+              "content": "The File Gateway cache is out of sync and needs to be refreshed.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "08c8c72e-84d4-40a6-a100-9c601019aa9e",
+          "prompt": "A branch office has limited internet bandwidth. They need to access a large shared dataset of design files (100 TB) stored in S3. They only access about 5% of these files daily. Which solution minimizes the internet bandwidth usage?",
+          "options": [
+            {
+              "content": "Volume Gateway - Cached Mode (or File Gateway).",
+              "correct": true
+            },
+            {
+              "content": "S3 Replication.",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use an Edge Location.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/db0218f75d62",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Access Points",
+      "questions": [
+        {
+          "id": "5a04ede1-0bf1-43a8-9fed-3eb92716845e",
+          "prompt": "An S3 bucket contains data for three distinct departments: Finance, Sales, and Legal. Managing permissions for all three in a single Bucket Policy has become complex and error-prone. What is the primary architectural benefit of introducing S3 Access Points in this scenario?",
+          "options": [
+            {
+              "content": "It increases the storage limit of the S3 bucket allowing more data from each department.",
+              "correct": false
+            },
+            {
+              "content": "It replicates the data into three separate buckets to ensure total isolation.",
+              "correct": false
+            },
+            {
+              "content": "It automatically encrypts data differently for each department.",
+              "correct": false
+            },
+            {
+              "content": "It allows you to decompose one large bucket policy into separate, distinct policies for each department.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "112a0bdf-e9ab-4e23-8cd4-350740117774",
+          "prompt": "A developer needs to write an application that accesses a specific set of data in an S3 bucket. You have created an Access Point named 'dev-app-access' for this purpose. How should the application reference the bucket to utilize this Access Point?",
+          "options": [
+            {
+              "content": "The application must use the original Bucket Name combined with the Access Point ID.",
+              "correct": false
+            },
+            {
+              "content": "The application uses the standard Bucket URL but includes a header specifying the Access Point.",
+              "correct": false
+            },
+            {
+              "content": "The application must authenticate using the Access Point's IAM user credentials.",
+              "correct": false
+            },
+            {
+              "content": "The application must use the Access Point ARN (Amazon Resource Name) or alias instead of the Bucket name.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "47bb03cc-ee76-4042-856c-ca3407a2cd5b",
+          "prompt": "You need to ensure that an S3 bucket can only be accessed by EC2 instances running within a specific Virtual Private Cloud (VPC). How can S3 Access Points assist in enforcing this requirement?",
+          "options": [
+            {
+              "content": "By modifying the S3 Bucket Policy to block all public internet traffic.",
+              "correct": false
+            },
+            {
+              "content": "By installing an agent on the EC2 instances that routes traffic to the Access Point.",
+              "correct": false
+            },
+            {
+              "content": "By moving the S3 bucket inside the VPC subnet.",
+              "correct": false
+            },
+            {
+              "content": "By configuring the Access Point to restrict access to a specific VPC, ensuring requests only come from that network.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fdde2527-b7fa-4f6a-be98-075196a22fd8",
+          "prompt": "When setting up S3 Access Points to simplify management, you want to avoid updating the main S3 Bucket Policy every time you add or change a permission for a specific group. What configuration strategy allows for this?",
+          "options": [
+            {
+              "content": "Setting the Access Point to 'Administrator' mode which overrides the Bucket Policy.",
+              "correct": false
+            },
+            {
+              "content": "Using IAM Roles instead of Bucket Policies.",
+              "correct": false
+            },
+            {
+              "content": "Configuring the Bucket Policy to delegate access control to the Access Points.",
+              "correct": true
+            },
+            {
+              "content": "Deleting the Bucket Policy entirely so only Access Point policies are checked.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c0d39be2-2eea-448e-a40b-6cf45fdba80f",
+          "prompt": "In an architecture where multiple teams access a single S3 bucket, what is the primary risk of relying solely on a single Bucket Policy that S3 Access Points help mitigate?",
+          "options": [
+            {
+              "content": "The risk of hitting the maximum bandwidth limit for the bucket.",
+              "correct": false
+            },
+            {
+              "content": "The risk of accidental misconfiguration affecting all users when editing a complex, monolithic policy.",
+              "correct": true
+            },
+            {
+              "content": "The risk of data corruption due to simultaneous writes.",
+              "correct": false
+            },
+            {
+              "content": "The risk of the bucket URL changing unexpectedly.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ebc0cd0c-4aa5-4ba8-a57c-ee934338439d",
+          "prompt": "Which of the following best describes the structural relationship between an S3 Bucket and its Access Points?",
+          "options": [
+            {
+              "content": "A Bucket can have multiple Access Points, each with its own unique ARN and policy.",
+              "correct": true
+            },
+            {
+              "content": "One Access Point can be attached to multiple S3 buckets.",
+              "correct": false
+            },
+            {
+              "content": "Access Points are sub-folders within the S3 bucket structure.",
+              "correct": false
+            },
+            {
+              "content": "Access Points are only available for buckets created within a VPC.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "548a2191-636d-40eb-a390-895cf9fb2bd4",
+          "prompt": "You have an 'Analytics' Access Point and a 'Marketing' Access Point for the same bucket. You want to grant the Marketing team read access only to the '/images' folder. Where should you define this specific permission?",
+          "options": [
+            {
+              "content": "In the Service Control Policy (SCP) of the AWS Organization.",
+              "correct": false
+            },
+            {
+              "content": "In the IAM User policy of the Analytics team.",
+              "correct": false
+            },
+            {
+              "content": "In the specific policy attached to the 'Marketing' Access Point.",
+              "correct": true
+            },
+            {
+              "content": "It must be defined in the main Bucket Policy, as Access Points cannot restrict folder paths.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "72f07b6e-6782-4fb3-a7f7-1a71d74eb0d5",
+          "prompt": "What happens if you try to access data through an Access Point, but the Access Point Policy allows it while the underlying Bucket Policy explicitly denies it?",
+          "options": [
+            {
+              "content": "The request is routed to a secondary bucket.",
+              "correct": false
+            },
+            {
+              "content": "The request is queued for administrator approval.",
+              "correct": false
+            },
+            {
+              "content": "The request is allowed because Access Point policies override Bucket Policies.",
+              "correct": false
+            },
+            {
+              "content": "The request is denied.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "de848ee3-a66b-4479-8213-d43046880e15",
+          "prompt": "Why might an architect describe an S3 Access Point as a 'dedicated tunnel'?",
+          "options": [
+            {
+              "content": "Because it provides a direct fiber optic connection to the AWS datacenter.",
+              "correct": false
+            },
+            {
+              "content": "Because it encrypts traffic using a proprietary VPN protocol.",
+              "correct": false
+            },
+            {
+              "content": "Because it tunnels through the public internet avoiding all firewalls.",
+              "correct": false
+            },
+            {
+              "content": "Because it provides a specific entry path with its own rules, separate from other entry paths.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fe9e0a41-603d-4e91-9578-1ab48f53401e",
+          "prompt": "Regarding the implementation of Access Points, what is a valid 'Delegation' setup?",
+          "options": [
+            {
+              "content": "The Bucket Policy contains a statement allowing the Access Point to evaluate permissions.",
+              "correct": true
+            },
+            {
+              "content": "The Bucket Policy grants full access to the account's root user only.",
+              "correct": false
+            },
+            {
+              "content": "The IAM User is given permission to edit the Bucket Policy directly.",
+              "correct": false
+            },
+            {
+              "content": "The Access Point is configured to ignore the Bucket Policy.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/3ac44a973524",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3 Access Points",
+      "questions": [
+        {
+          "id": "995be749-7f4f-4908-918e-d5334eadecd9",
+          "prompt": "You are managing a massive 'Data Lake' S3 bucket that receives data from 60 different external partners. You are currently managing permissions via a single Bucket Policy. You have just received an error stating: 'Policy size exceeds the maximum limit.' How should you re-architect this solution using Access Points?",
+          "options": [
+            {
+              "content": "Create an S3 Access Point for each partner and move their specific permissions into the Access Point policies.",
+              "correct": true
+            },
+            {
+              "content": "Create 60 separate S3 buckets, one for each partner, and use Cross-Region Replication to merge them.",
+              "correct": false
+            },
+            {
+              "content": "Request a limit increase for the Bucket Policy size from AWS Support.",
+              "correct": false
+            },
+            {
+              "content": "Compress the policy text by removing whitespace to fit under the limit.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "de0ebf55-d992-4f8d-a001-8f5bfcd852b1",
+          "prompt": "A financial application running on EC2 instances inside a private VPC needs to write logs to a central S3 bucket. Compliance requires that this bucket must accept traffic ONLY from this specific VPC, and absolutely no traffic from the public internet or other VPCs. Which architecture achieves this most securely?",
+          "options": [
+            {
+              "content": "Use an IAM Role on the EC2 instances that allows 's3:PutObject'.",
+              "correct": false
+            },
+            {
+              "content": "Enable Server-Side Encryption (SSE-KMS) on the bucket.",
+              "correct": false
+            },
+            {
+              "content": "Configure Security Groups on the EC2 instances to allow outbound traffic to S3.",
+              "correct": false
+            },
+            {
+              "content": "Create an Access Point restricted to the VPC ID, and configure the Bucket Policy to delegate control to this Access Point.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "eb73e679-d6f6-4d0e-bc85-9f2c218fa3f6",
+          "prompt": "You have a legacy image processing application that is hard-coded to upload files to a bucket named 'prod-images'. You want to restrict this application so it can only upload to a specific folder '/raw', but you cannot change the application's source code to handle complex new logic. How can you implement this restriction?",
+          "options": [
+            {
+              "content": "Create a Lambda function to move files to the correct folder after upload.",
+              "correct": false
+            },
+            {
+              "content": "It is not possible without changing the application code.",
+              "correct": false
+            },
+            {
+              "content": "Update the DNS records of your network to point 'prod-images' to a different bucket.",
+              "correct": false
+            },
+            {
+              "content": "Create an Access Point with a policy allowing 'PutObject' only on '/raw', and configure the application to use the Access Point Alias as the bucket name.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3336bc89-c602-4049-a30a-9441d2d512d2",
+          "prompt": "You are the architect for a shared dataset used by 'Data Science' (Read/Write) and 'Auditing' (Read Only). The 'Auditing' team frequently hires short-term contractors, requiring frequent updates to their permissions. You want to minimize the risk of accidentally breaking the 'Data Science' team's access during these updates.",
+          "options": [
+            {
+              "content": "Create one Access Point for 'Data Science' and a separate Access Point for 'Auditing'.",
+              "correct": true
+            },
+            {
+              "content": "Give the Auditing team manager the root credentials so they can manage their own policy.",
+              "correct": false
+            },
+            {
+              "content": "Create two separate buckets and sync the data between them.",
+              "correct": false
+            },
+            {
+              "content": "Use S3 Object Tagging to identify which objects auditors can read.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e48161d5-d9e7-416e-bcde-12566a947a84",
+          "prompt": "You have configured an Access Point for a sensitive bucket. You want to ensure that NO traffic can access this bucket directly, bypassing the Access Point (e.g., someone trying to use the original Bucket URL). What is the most robust way to enforce this?",
+          "options": [
+            {
+              "content": "Delete the Bucket Policy.",
+              "correct": false
+            },
+            {
+              "content": "Add a statement to the Bucket Policy that explicitly Denies all requests that do not include the condition s3:DataAccessPointArn.",
+              "correct": true
+            },
+            {
+              "content": "Hide the Bucket Name so users cannot find it.",
+              "correct": false
+            },
+            {
+              "content": "Configure the Access Point to encrypt the bucket.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/34559ee679a8",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "EC2",
+      "questions": [
+        {
+          "id": "9bc9e9ec-1b06-4736-a186-5cbdd1a017f9",
+          "prompt": "Which AWS EC2 instance type is specifically designed for workloads that require high-performance processors for compute-bound applications?",
+          "options": [
+            {
+              "content": "Memory Optimized",
+              "correct": false
+            },
+            {
+              "content": "General Purpose",
+              "correct": false
+            },
+            {
+              "content": "Compute Optimized",
+              "correct": true
+            },
+            {
+              "content": "Storage Optimized",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f6288e09-8e77-4124-a894-d4d3e9fba210",
+          "prompt": "What is the primary role of an Amazon Machine Image (AMI) when launching an EC2 instance?",
+          "options": [
+            {
+              "content": "It acts as a firewall to control traffic to the instance.",
+              "correct": false
+            },
+            {
+              "content": "It automatically scales the number of instances based on demand.",
+              "correct": false
+            },
+            {
+              "content": "It serves as a blueprint containing the operating system and initial configuration.",
+              "correct": true
+            },
+            {
+              "content": "It provides a static IP address that persists after a restart.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b17ab701-a28e-4787-92d5-84d81cc187bb",
+          "prompt": "You need to ensure that a group of EC2 instances has the lowest possible network latency and high throughput between them for a high-performance computing task. Which Placement Group strategy should you use?",
+          "options": [
+            {
+              "content": "Spread Placement Group",
+              "correct": false
+            },
+            {
+              "content": "Cluster Placement Group",
+              "correct": true
+            },
+            {
+              "content": "Auto Scaling Group",
+              "correct": false
+            },
+            {
+              "content": "Partition Placement Group",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b8f35621-1710-40b8-99c7-2590fc505c46",
+          "prompt": "Which EC2 pricing model allows you to bid on unused AWS capacity for a significant discount, with the risk that the instance may be interrupted?",
+          "options": [
+            {
+              "content": "Spot Instances",
+              "correct": true
+            },
+            {
+              "content": "Reserved Instances",
+              "correct": false
+            },
+            {
+              "content": "On-Demand",
+              "correct": false
+            },
+            {
+              "content": "Dedicated Hosts",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bd4e4068-29ec-48b4-baed-fae45a1189bc",
+          "prompt": "What is the function of 'User Data' when launching an EC2 instance?",
+          "options": [
+            {
+              "content": "It stores persistent data that remains available after the instance is terminated.",
+              "correct": false
+            },
+            {
+              "content": "It allows you to provide a script that runs automatically during the instance startup.",
+              "correct": true
+            },
+            {
+              "content": "It defines the firewall rules for inbound and outbound traffic.",
+              "correct": false
+            },
+            {
+              "content": "It creates a backup of the instance's storage volume.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c90ff5e0-a8d6-4ac1-8537-4358364901a9",
+          "prompt": "How do Security Groups function in the context of an EC2 instance?",
+          "options": [
+            {
+              "content": "They encrypt the data stored on the instance's hard drive.",
+              "correct": false
+            },
+            {
+              "content": "They physically isolate the instance on dedicated hardware.",
+              "correct": false
+            },
+            {
+              "content": "They distribute incoming traffic across multiple instances to balance the load.",
+              "correct": false
+            },
+            {
+              "content": "They act as a virtual firewall to control inbound and outbound traffic.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e9590f0d-b219-4076-93e9-1af28ebb1f2e",
+          "prompt": "What happens to the public IP address of a standard EC2 instance (without an Elastic IP) when it is stopped and then restarted?",
+          "options": [
+            {
+              "content": "It is converted into a private IP address.",
+              "correct": false
+            },
+            {
+              "content": "It remains the same.",
+              "correct": false
+            },
+            {
+              "content": "It becomes permanently reserved for your account.",
+              "correct": false
+            },
+            {
+              "content": "It may change to a new address.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ce3390dc-654b-4ffd-b5d4-c1b4fd61486d",
+          "prompt": "Which AWS feature allows you to define a set of configuration parameters (like AMI, instance type, and security groups) to be reused for launching instances, especially with Auto Scaling?",
+          "options": [
+            {
+              "content": "Placement Groups",
+              "correct": false
+            },
+            {
+              "content": "Elastic Block Store",
+              "correct": false
+            },
+            {
+              "content": "Spot Requests",
+              "correct": false
+            },
+            {
+              "content": "Launch Templates",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1bd4295e-b182-42ab-8964-c068d171964d",
+          "prompt": "If an EC2 instance is in the 'Terminated' state, which of the following is true?",
+          "options": [
+            {
+              "content": "The instance has been permanently deleted and cannot be recovered.",
+              "correct": true
+            },
+            {
+              "content": "The instance is powered off but can be restarted later.",
+              "correct": false
+            },
+            {
+              "content": "The instance is currently rebooting.",
+              "correct": false
+            },
+            {
+              "content": "The instance is paused and its memory is saved to disk.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d704c0f0-e323-43f2-aa4c-69dcaf419f86",
+          "prompt": "Which storage service is scalable, provides persistent block storage for EC2 instances, and supports point-in-time snapshots?",
+          "options": [
+            {
+              "content": "Amazon S3",
+              "correct": false
+            },
+            {
+              "content": "Instance Store",
+              "correct": false
+            },
+            {
+              "content": "Elastic File System (EFS)",
+              "correct": false
+            },
+            {
+              "content": "Elastic Block Store (EBS)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/63a4c5c44373",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "EC2",
+      "questions": [
+        {
+          "id": "9c1d4e4d-cc40-4856-b5f4-5130098d26d5",
+          "prompt": "Component 1: The Primary Database. This database must be online 24/7/365 to store customer orders. It is stateful, and you cannot afford any interruption. You predict steady growth over the next 3 years.",
+          "options": [
+            {
+              "content": "Spot Instances",
+              "correct": false
+            },
+            {
+              "content": "On-Demand Instances",
+              "correct": false
+            },
+            {
+              "content": "Reserved Instances (3-year term)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f34c5a53-4adc-479c-9fac-4672fe7b450b",
+          "prompt": "Component 2: The Black Friday Auto-Scaling Fleet. Your web servers normally run on 5 instances, but during the Black Friday sale (which lasts 24 hours), traffic spikes 100x, requiring 500 instances. You cannot predict exactly when the spikes hit within that day, but the servers are stateless (if one dies, another replaces it instantly).",
+          "options": [
+            {
+              "content": "Spot Instances",
+              "correct": true
+            },
+            {
+              "content": "Dedicated Hosts",
+              "correct": false
+            },
+            {
+              "content": "Reserved Instances",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4017eb45-7e1d-4fc0-8926-4da79b01f1f2",
+          "prompt": "Component 3: The 'Dev/Test' Environment. Your developers spin up servers to test new features. They work from 9 AM to 5 PM. At 5 PM, they stop the servers to save money. They might need the servers for a week, or maybe just a few days.",
+          "options": [
+            {
+              "content": "Spot Instances",
+              "correct": false
+            },
+            {
+              "content": "Reserved Instances",
+              "correct": false
+            },
+            {
+              "content": "On-Demand Instances",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "adc5dc25-5466-4728-9f01-9a9d9dce1f25",
+          "prompt": "Component 4: The Monthly Data Cruncher. Once a month, you run a massive data analysis job that calculates sales reports. The job takes 10 hours to run, but it is 'checkpointed'—if the server crashes, it resumes from the last saved percentage (e.g., 50% complete) on a new server.",
+          "options": [
+            {
+              "content": "On-Demand Instances",
+              "correct": false
+            },
+            {
+              "content": "Spot Instances",
+              "correct": true
+            },
+            {
+              "content": "Reserved Instances",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/0faf7676b157",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Backup and Disaster Recovery DRS",
+      "questions": [
+        {
+          "id": "7eba4011-8e0c-47cb-a6f8-a8cdcad8b002",
+          "prompt": "Which statement best describes the distinction between a 'Backup' and 'Disaster Recovery'?",
+          "options": [
+            {
+              "content": "Backup guarantees zero data loss, whereas Disaster Recovery allows for some data loss.",
+              "correct": false
+            },
+            {
+              "content": "Disaster Recovery is only for natural disasters, while Backup is for hardware failure.",
+              "correct": false
+            },
+            {
+              "content": "Backup is the process of creating data copies, while Disaster Recovery is the broader strategy for restoring full system operations.",
+              "correct": true
+            },
+            {
+              "content": "Backup refers to on-premise storage, while Disaster Recovery refers to cloud storage.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d68380d6-de38-4f13-96ad-2c9a000c4716",
+          "prompt": "You are utilizing Amazon EBS Snapshots for data protection. What is a key characteristic of how these snapshots utilize storage?",
+          "options": [
+            {
+              "content": "They are incremental, meaning they only store data blocks that have changed since the last snapshot.",
+              "correct": true
+            },
+            {
+              "content": "They are always full copies, duplicating the entire disk volume every time.",
+              "correct": false
+            },
+            {
+              "content": "They automatically delete the original volume once the snapshot is complete.",
+              "correct": false
+            },
+            {
+              "content": "They are stored on the EC2 instance's local disk.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ba5959f1-bab2-42a7-ae76-aac6c221d5cb",
+          "prompt": "In the context of AWS Backup, what is the specific function of a 'Backup Plan'?",
+          "options": [
+            {
+              "content": "It defines the schedule, frequency, and retention policy for your backups.",
+              "correct": true
+            },
+            {
+              "content": "It is a document you must print and file for legal compliance.",
+              "correct": false
+            },
+            {
+              "content": "It is the encrypted container where the data is physically stored.",
+              "correct": false
+            },
+            {
+              "content": "It is the software agent installed on EC2 instances.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "025a84df-6c06-4090-b88a-79fdf881bcd4",
+          "prompt": "When using Elastic Disaster Recovery (DRS), what role does the 'Staging Area' play?",
+          "options": [
+            {
+              "content": "It is a storage bucket used solely for EBS Snapshots.",
+              "correct": false
+            },
+            {
+              "content": "It is a lightweight subnet used to receive and archive replicated data before failover occurs.",
+              "correct": true
+            },
+            {
+              "content": "It is the on-premise server where the replication agent is installed.",
+              "correct": false
+            },
+            {
+              "content": "It runs full-sized production instances 24/7 to ensure instant failover.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b60e241b-131f-44f1-b00a-9e5ca4b09b8a",
+          "prompt": "Which component of AWS Backup allows you to logically organize backups (e.g., 'Finance', 'HR') and control access using policies?",
+          "options": [
+            {
+              "content": "Backup Vault",
+              "correct": true
+            },
+            {
+              "content": "Lifecycle Policy",
+              "correct": false
+            },
+            {
+              "content": "Backup Plan",
+              "correct": false
+            },
+            {
+              "content": "Recovery Point",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8b017d26-dd01-4180-9f8c-e51a1ac4cc6a",
+          "prompt": "What is the primary financial advantage of using AWS Elastic Disaster Recovery (DRS) compared to a traditional on-premise disaster recovery site?",
+          "options": [
+            {
+              "content": "It removes the cost of data transfer.",
+              "correct": false
+            },
+            {
+              "content": "It eliminates the need to pay for idle physical infrastructure and compute resources until a disaster occurs.",
+              "correct": true
+            },
+            {
+              "content": "It makes backup storage completely free.",
+              "correct": false
+            },
+            {
+              "content": "It automatically discounts your EC2 production pricing.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "abac4d64-016e-4fc9-b05d-ec0c6e875984",
+          "prompt": "You need to ensure that your backups in AWS Backup are resilient against a region-wide failure (e.g., US-East-1 goes down). Which feature should you enable?",
+          "options": [
+            {
+              "content": "VPC Peering",
+              "correct": false
+            },
+            {
+              "content": "Cross-Region Copy",
+              "correct": true
+            },
+            {
+              "content": "Snapshot Locking",
+              "correct": false
+            },
+            {
+              "content": "Multi-AZ Deployment",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a8acd48c-64cf-4361-8a61-b1f1012124b7",
+          "prompt": "How does Elastic Disaster Recovery (DRS) keep the data on AWS synchronized with your on-premise source servers?",
+          "options": [
+            {
+              "content": "By using the AWS Replication Agent to continuously replicate block-level data.",
+              "correct": true
+            },
+            {
+              "content": "By manually uploading zip files to S3.",
+              "correct": false
+            },
+            {
+              "content": "By connecting via RDP/SSH and copying files.",
+              "correct": false
+            },
+            {
+              "content": "By taking nightly snapshots of the source server.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8e198bf8-45aa-4657-a016-2e449cbf387e",
+          "prompt": "In the context of AWS Backup, what is a 'Recovery Point'?",
+          "options": [
+            {
+              "content": "The maximum amount of data loss allowed.",
+              "correct": false
+            },
+            {
+              "content": "A specific snapshot or saved state of a resource at a particular time.",
+              "correct": true
+            },
+            {
+              "content": "The geographical location where the server will restart.",
+              "correct": false
+            },
+            {
+              "content": "The duration of time it takes to restore the system.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3fd02d6d-8a9c-4e88-bf88-55b4a56b91b2",
+          "prompt": "When configuring Elastic Disaster Recovery, what is the purpose of the 'Launch Template' (or Launch Settings)?",
+          "options": [
+            {
+              "content": "To store the replicated data.",
+              "correct": false
+            },
+            {
+              "content": "To calculate the estimated cost of the disaster.",
+              "correct": false
+            },
+            {
+              "content": "To install the replication agent on the source server.",
+              "correct": false
+            },
+            {
+              "content": "To define the configuration (instance type, security group) of the recovery instance.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/2e0ce78906f3",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Backup and Disaster Recovery DRS",
+      "questions": [
+        {
+          "id": "1476adac-6170-47d4-a291-77106e7eadfb",
+          "prompt": "A healthcare company requires that all backups of patient data be stored for 7 years to meet regulatory compliance. Furthermore, these backups must be immutable—meaning not even the root user of the AWS account can delete or alter them during this period to protect against ransomware. How do you implement this?",
+          "options": [
+            {
+              "content": "Encrypt the backups using a KMS key and delete the key material.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup and configure a Vault Lock in 'Governance Mode'.",
+              "correct": false
+            },
+            {
+              "content": "Enable S3 Versioning on the bucket where backups are stored.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup and configure a Vault Lock in 'Compliance Mode'.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "25eb6332-be26-4be5-b4d2-9c7ed6eb06f7",
+          "prompt": "You are architecting for a high-frequency trading platform. If the primary region fails, the business mandates that the system must be up and running in a secondary region within 15 minutes (RTO), with no more than 5 seconds of data loss (RPO). Which solution fits this requirement?",
+          "options": [
+            {
+              "content": "AWS Backup with Cross-Region Copy scheduled every hour.",
+              "correct": false
+            },
+            {
+              "content": "S3 Cross-Region Replication (CRR) for the application binaries.",
+              "correct": false
+            },
+            {
+              "content": "EBS Snapshots manually copied to the secondary region via a Lambda function.",
+              "correct": false
+            },
+            {
+              "content": "AWS Elastic Disaster Recovery (DRS) replicating to the secondary region.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1e1af46a-ee25-4b99-9cd6-4eb64788a51e",
+          "prompt": "A startup wants to protect their development environment EC2 instances. They want to be able to restore them if a developer breaks something, but they want to keep costs as low as possible. They do not need cross-region protection or fast failover. What is the most cost-effective approach?",
+          "options": [
+            {
+              "content": "Run a duplicate set of EC2 instances in a second Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "Use S3 Intelligent-Tiering to store the EC2 instances.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Elastic Disaster Recovery (DRS) with a Pilot Light strategy.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup to schedule daily snapshots with a 7-day retention.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4753e580-907c-431e-b40f-83547486377b",
+          "prompt": "You are using AWS Backup to protect an application running on EC2 with attached EBS volumes. You notice that when you restore the application, the database is sometimes corrupted because data was being written exactly when the backup occurred. How can you fix this?",
+          "options": [
+            {
+              "content": "Use S3 storage instead of EBS.",
+              "correct": false
+            },
+            {
+              "content": "Switch from EBS to Instance Store volumes.",
+              "correct": false
+            },
+            {
+              "content": "Increase the frequency of the backups to every 10 minutes.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'VSS-Consistent' (Windows) snapshots in the AWS Backup plan.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "164f4aaa-97e8-4800-9738-bbc18ead9008",
+          "prompt": "Your company uses AWS Organizations with 50 different AWS accounts. You need a centralized view to ensure that EVERY account is backing up their critical databases. You do not want to log into 50 different consoles to check.",
+          "options": [
+            {
+              "content": "Use CloudTrail to monitor for 'CreateSnapshot' events.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup's cross-account management features to apply a Backup Policy from the management account.",
+              "correct": true
+            },
+            {
+              "content": "It is not possible to manage backups across accounts; you must use a third-party tool.",
+              "correct": false
+            },
+            {
+              "content": "Create a Lambda script in each account to email you a report.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/aa8d0abfeae6",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "EC2 Network Interfaces",
+      "questions": [
+        {
+          "id": "7af1fa06-b606-4087-b54d-305c132b9a7a",
+          "prompt": "What is an Elastic Network Interface (ENI) in the context of Amazon EC2?",
+          "options": [
+            {
+              "content": "A specialized router used to connect VPCs together.",
+              "correct": false
+            },
+            {
+              "content": "A virtual network interface that can be attached to an instance within a VPC.",
+              "correct": true
+            },
+            {
+              "content": "A firewall rule that filters traffic at the subnet level.",
+              "correct": false
+            },
+            {
+              "content": "A physical network card installed in the AWS data center server.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "dfe560bb-f8ae-40d8-a4ee-847a01607ddb",
+          "prompt": "Which of the following statements is true regarding the 'Primary ENI' (eth0)?",
+          "options": [
+            {
+              "content": "It is permanently linked to the instance and cannot be detached.",
+              "correct": true
+            },
+            {
+              "content": "It does not support Security Groups.",
+              "correct": false
+            },
+            {
+              "content": "It is automatically deleted when the instance is stopped (but not terminated).",
+              "correct": false
+            },
+            {
+              "content": "It can be detached and moved to another instance for disaster recovery.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "096af2d2-df3c-472c-81b7-08a2c5ff099e",
+          "prompt": "What happens to the Primary ENI when the associated EC2 instance is terminated?",
+          "options": [
+            {
+              "content": "It is converted into an Elastic IP address.",
+              "correct": false
+            },
+            {
+              "content": "It is stored as a snapshot in S3.",
+              "correct": false
+            },
+            {
+              "content": "It is automatically deleted.",
+              "correct": true
+            },
+            {
+              "content": "It remains available in the VPC for future use.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "eb181814-3ebf-4d93-ad5e-80aef7ed45bd",
+          "prompt": "What key flexibility do 'Secondary ENIs' provide regarding Security Groups?",
+          "options": [
+            {
+              "content": "They can only use the default VPC security group.",
+              "correct": false
+            },
+            {
+              "content": "They bypass security groups entirely.",
+              "correct": false
+            },
+            {
+              "content": "They must share the exact same security groups as the primary ENI.",
+              "correct": false
+            },
+            {
+              "content": "They can have different security groups compared to the primary ENI.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c34ccab9-6e29-438c-a0e7-c39961386425",
+          "prompt": "From where does an ENI automatically receive its primary private IPv4 address?",
+          "options": [
+            {
+              "content": "From a hardcoded list provided by the user in the User Data script.",
+              "correct": false
+            },
+            {
+              "content": "From the underlying physical host's firmware.",
+              "correct": false
+            },
+            {
+              "content": "From the CIDR block of the subnet where the ENI is created.",
+              "correct": true
+            },
+            {
+              "content": "From the global pool of AWS public IP addresses.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bd115b52-a3c9-472e-8389-1f394420192b",
+          "prompt": "Which of the following is a capability of Secondary ENIs but NOT the Primary ENI?",
+          "options": [
+            {
+              "content": "Having a private IPv4 address.",
+              "correct": false
+            },
+            {
+              "content": "Having a MAC address.",
+              "correct": false
+            },
+            {
+              "content": "Being detached from an instance and reattached to another.",
+              "correct": true
+            },
+            {
+              "content": "Supporting Elastic IP association.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ab4be146-d6aa-4322-9100-5ff514ed534a",
+          "prompt": "What is the benefit of associating an Elastic IP with an ENI rather than directly with an instance ID?",
+          "options": [
+            {
+              "content": "It allows the instance to bypass the VPC Route Table.",
+              "correct": false
+            },
+            {
+              "content": "It increases the network bandwidth of the instance.",
+              "correct": false
+            },
+            {
+              "content": "The IP remains constant even if the ENI is moved to a different instance.",
+              "correct": true
+            },
+            {
+              "content": "It is cheaper to associate with an ENI.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3edb0cc7-dc1f-4331-8082-6f5bd1a9437e",
+          "prompt": "What configurable flag on an ENI is mentioned as a key property?",
+          "options": [
+            {
+              "content": "Jumbo Frame Enablement.",
+              "correct": false
+            },
+            {
+              "content": "Detailed Monitoring.",
+              "correct": false
+            },
+            {
+              "content": "Auto-Scaling Group Membership.",
+              "correct": false
+            },
+            {
+              "content": "Source/destination check.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b933c9d3-f73d-4783-b13c-9cfb3ecf59f1",
+          "prompt": "The text mentions 'Flow Logs' as a benefit of using ENIs. What is the purpose of Flow Logs?",
+          "options": [
+            {
+              "content": "To record API calls made to the ENI.",
+              "correct": false
+            },
+            {
+              "content": "To capture detailed IP traffic information for monitoring and troubleshooting.",
+              "correct": true
+            },
+            {
+              "content": "To log the console output of the operating system boot process.",
+              "correct": false
+            },
+            {
+              "content": "To cache web traffic for faster delivery.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b1baa0fa-012e-42eb-bf6f-a30edaa8f961",
+          "prompt": "Can a secondary ENI have both a Primary Private IP and Secondary Private IPs?",
+          "options": [
+            {
+              "content": "Yes, but only if IPv6 is disabled.",
+              "correct": false
+            },
+            {
+              "content": "No, an ENI can only have one IP address total.",
+              "correct": false
+            },
+            {
+              "content": "No, secondary ENIs can only have secondary private IPs.",
+              "correct": false
+            },
+            {
+              "content": "Yes, it can host a primary private IP along with multiple secondary private IP addresses.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/8794c1427ff3",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "EC2 Network Interfaces",
+      "questions": [
+        {
+          "id": "a3023113-23e8-41dc-8fe4-2aa1d729aa25",
+          "prompt": "Scenario: You are designing a licensing server application. The software vendor issues a license file that is cryptographically locked to the MAC address of the host server. The application must run on a high-memory instance type. What is the most resilient architecture to ensure you don't lose the license if the instance fails?",
+          "options": [
+            {
+              "content": "Create a Secondary ENI. Lock the license to the MAC address of this Secondary ENI. Attach it to the instance.",
+              "correct": true
+            },
+            {
+              "content": "Use an Elastic IP instead of a MAC address for the license.",
+              "correct": false
+            },
+            {
+              "content": "Lock the license to the MAC address of the Primary ENI (eth0).",
+              "correct": false
+            },
+            {
+              "content": "Hardcode the MAC address in the User Data script.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "afe5b743-3324-41e9-9d28-94b1f08624c5",
+          "prompt": "Scenario: You have a web server instance in a public subnet. It currently has a Primary ENI with a Public IP. You attach a Secondary ENI to this same instance, also in a public subnet. You attempt to access the web server via the Secondary ENI's Public IP, but it times out. You have checked the Security Groups and NACLs, and they allow traffic. What is the likely cause?",
+          "options": [
+            {
+              "content": "Secondary ENIs cannot have Public IPs.",
+              "correct": false
+            },
+            {
+              "content": "The instance needs to be rebooted to recognize the new ENI.",
+              "correct": false
+            },
+            {
+              "content": "The Source/Destination check is enabled.",
+              "correct": false
+            },
+            {
+              "content": "Asymmetric Routing: The return traffic is trying to leave via the Primary ENI (eth0) default gateway, causing the connection to drop.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "271abd43-22fa-4d72-b2d0-01c596b6f418",
+          "prompt": "Scenario: You are running a containerized application on a single EC2 instance using Docker. You want each container to have its own dedicated IP address on the network so they can have distinct Security Groups. How can you achieve this using ENIs?",
+          "options": [
+            {
+              "content": "You must use IPv6 for container networking.",
+              "correct": false
+            },
+            {
+              "content": "Use the Primary IP for all containers and use different ports.",
+              "correct": false
+            },
+            {
+              "content": "Attach one physical ENI for every single container.",
+              "correct": false
+            },
+            {
+              "content": "Assign multiple Secondary Private IPs to the instance's ENI and map them to containers.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6fcda06b-9361-4be2-a69a-efbd5b468a97",
+          "prompt": "Scenario: A junior admin accidentally detached the Secondary ENI from your production database instance while trying to troubleshoot. The application immediately stopped working. They reattached the ENI, but the application is still failing to connect. What is the most likely reason?",
+          "options": [
+            {
+              "content": "The MAC address changed upon reattachment.",
+              "correct": false
+            },
+            {
+              "content": "The ENI was attached as a 'Hot Swap' interface and the OS probably renamed the device (e.g., from eth1 to eth2), breaking the app config.",
+              "correct": true
+            },
+            {
+              "content": "The Security Groups were reset to default upon detachment.",
+              "correct": false
+            },
+            {
+              "content": "The Private IP address changed when it was detached.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  }
+]

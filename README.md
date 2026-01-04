@@ -31,17 +31,20 @@ A sleek, neon-themed quiz application built with SvelteKit 5 and Tailwind CSS v4
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd quizmaster
    ```
 
 2. Install dependencies:
+
    ```bash
    bun install
    ```
 
 3. Start the development server:
+
    ```bash
    bun run dev
    ```
@@ -94,6 +97,8 @@ Quiz questions are stored as JSON files in `static/data/<category-id>/`. Each ca
 }
 ```
 
+**After adding a file in `./static/data/`, add its key to `./src/lib/services/quiz-service.ts`**
+
 ### Question Types
 
 - `THEORY` - Concept-focused questions
@@ -128,12 +133,12 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start development server |
-| `bun run build` | Build for production |
-| `bun run preview` | Preview production build |
-| `bun run check` | Run Svelte type checking |
+| Command                | Description                |
+| ---------------------- | -------------------------- |
+| `bun run dev`          | Start development server   |
+| `bun run build`        | Build for production       |
+| `bun run preview`      | Preview production build   |
+| `bun run check`        | Run Svelte type checking   |
 | `docker compose up -d` | Start production container |
 
 ## Design System

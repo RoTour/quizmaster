@@ -64,17 +64,15 @@ export async function getAvailableTopics(
   for (const file of meta.files) {
     const response = await customFetch(`/data/${categoryId}/${file}`);
     const data: QuizData[] = await response.json();
+    console.debug(`Processing file: ${file} for topics`, data);
 
-    for (const quizData of data) {
-      for (const question of quizData.quiz.questions) {
-        if (question.topic) {
-          topics.add(question.topic);
-        }
-      }
-    }
+    data.forEach((quizData) => {
+      topics.add(quizData.quiz.topic);
+    });
   }
-
-  return Array.from(topics).sort();
+  const result = Array.from(topics).sort();
+  console.debug(`Available topics for category "${categoryId}":`, result);
+  return result;
 }
 
 export async function getQuestions(

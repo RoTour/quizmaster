@@ -84,10 +84,18 @@ export async function getQuestions(
 ): Promise<Question[]> {
   const meta = CATEGORIES_META[categoryId];
   if (!meta) {
+    console.debug(`Category "${categoryId}" not found`);
     throw new Error(`Category "${categoryId}" not found`);
   }
 
   const allQuestions: Question[] = [];
+
+  console.debug({
+    categoryId,
+    type,
+    count,
+    selectedTopics,
+  });
 
   for (const file of meta.files) {
     const response = await customFetch(`/data/${categoryId}/${file}`);
@@ -98,19 +106,9 @@ export async function getQuestions(
       if (type !== "RANDOM" && quizData.quiz.type !== type) {
         continue;
       }
-
-      // Filter by Topics
-      const filteredQuestions = quizData.quiz.questions.filter((q) => {
-        // If no topics selected, include all (or maybe all that have a topic? No, usually all)
-        if (selectedTopics.length === 0) return true;
-        // If question has no topic, maybe exclude it? Or include?
-        // The requirement is "select topic(s) ... as an optional input".
-        // If user selects topics, they probably only want those topics.
-        // If question has no topic, it doesn't match the selection.
-        return q.topic && selectedTopics.includes(q.topic);
-      });
-
-      allQuestions.push(...filteredQuestions);
+      if (selectedTopics.includes(quizData.quiz.topic)) {
+        allQuestions.push(...quizData.quiz.questions);
+      }
     }
   }
 

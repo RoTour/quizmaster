@@ -1,0 +1,4335 @@
+[
+  {
+    "url": "https://gemini.google.com/share/81f703a079f6",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Aurora",
+      "questions": [
+        {
+          "id": "922f73de-d92c-4809-ab41-21413f369d54",
+          "prompt": "What is the primary architectural difference between Amazon Aurora and traditional database architectures described in the text?",
+          "options": [
+            {
+              "content": "Aurora uses a single instance for both compute and storage to maximize speed.",
+              "correct": false
+            },
+            {
+              "content": "Aurora removes the need for replicas by using a single super-computer node.",
+              "correct": false
+            },
+            {
+              "content": "Aurora decouples compute from storage, allowing them to scale independently.",
+              "correct": true
+            },
+            {
+              "content": "Aurora stores data strictly in RAM to achieve higher throughput.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "029777ee-ce4b-4a38-bce2-cada1702016e",
+          "prompt": "How does Aurora ensure data durability across Availability Zones (AZs)?",
+          "options": [
+            {
+              "content": "It keeps one copy in the Primary AZ and one copy in a Standby AZ.",
+              "correct": false
+            },
+            {
+              "content": "It uses RAID 10 mirroring within a single Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "It stores 6 copies of data across 3 Availability Zones.",
+              "correct": true
+            },
+            {
+              "content": "It relies entirely on S3 backups for durability; live data is not replicated.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "086d22de-5d3c-4623-95a2-931ac9a2858b",
+          "prompt": "Which database engines is Amazon Aurora compatible with?",
+          "options": [
+            {
+              "content": "MongoDB and Cassandra",
+              "correct": false
+            },
+            {
+              "content": "MariaDB and DynamoDB",
+              "correct": false
+            },
+            {
+              "content": "MySQL and PostgreSQL",
+              "correct": true
+            },
+            {
+              "content": "Oracle and SQL Server",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "13701435-54e8-4c96-97cb-b6226e5aab2d",
+          "prompt": "Regarding Read Replicas, how does Aurora differ from a standard database architecture?",
+          "options": [
+            {
+              "content": "Aurora replicas can accept write operations.",
+              "correct": false
+            },
+            {
+              "content": "Aurora replicas share the same underlying cluster storage volume as the primary instance.",
+              "correct": true
+            },
+            {
+              "content": "Aurora replicas must have their own separate copy of the storage volume.",
+              "correct": false
+            },
+            {
+              "content": "Aurora does not support read replicas; it only supports Multi-AZ standbys.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "18a2a2e1-eed7-45a7-80a9-ea261aba45a1",
+          "prompt": "What is the maximum number of Read Replicas an Aurora cluster can support?",
+          "options": [
+            {
+              "content": "5",
+              "correct": false
+            },
+            {
+              "content": "15",
+              "correct": true
+            },
+            {
+              "content": "10",
+              "correct": false
+            },
+            {
+              "content": "Unlimited",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fc838741-63c9-4ba2-a02d-65794ac3d222",
+          "prompt": "In an Aurora Serverless configuration, how is capacity measured?",
+          "options": [
+            {
+              "content": "DTUs (Database Transaction Units)",
+              "correct": false
+            },
+            {
+              "content": "vCPUs",
+              "correct": false
+            },
+            {
+              "content": "Aurora Capacity Units (ACUs)",
+              "correct": true
+            },
+            {
+              "content": "Provisioned IOPS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "37e150ac-4232-4277-b419-d9d45ed59273",
+          "prompt": "Which workload is Aurora Serverless best suited for?",
+          "options": [
+            {
+              "content": "Data warehousing analytics requiring petabytes of storage.",
+              "correct": false
+            },
+            {
+              "content": "Steady, predictable enterprise workloads.",
+              "correct": false
+            },
+            {
+              "content": "Legacy applications requiring Oracle compatibility.",
+              "correct": false
+            },
+            {
+              "content": "Workloads with unpredictable, variable, or intermittent application load.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b9acfa38-bbb2-4d8a-b371-a58aab9549b6",
+          "prompt": "How does Aurora Global Database handle data replication across regions?",
+          "options": [
+            {
+              "content": "Manual snapshots copied via S3.",
+              "correct": false
+            },
+            {
+              "content": "Synchronous replication to ensure zero data loss.",
+              "correct": false
+            },
+            {
+              "content": "Asynchronous replication via a low-latency, high-throughput system.",
+              "correct": true
+            },
+            {
+              "content": "VPN tunneling over the public internet.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9e9e310b-20a5-40d1-adce-7e571436dd3e",
+          "prompt": "What protocol does Aurora use to rapidly identify and repair node discrepancies in its distributed system?",
+          "options": [
+            {
+              "content": "Gossip Protocol",
+              "correct": true
+            },
+            {
+              "content": "BGP (Border Gateway Protocol)",
+              "correct": false
+            },
+            {
+              "content": "HTTP/2",
+              "correct": false
+            },
+            {
+              "content": "TCP/IP Handshake",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c286442a-5fc3-4915-bb3b-bbda2092f028",
+          "prompt": "What is the maximum storage capacity for a single Aurora instance (as mentioned in the summary)?",
+          "options": [
+            {
+              "content": "64 Terabytes",
+              "correct": false
+            },
+            {
+              "content": "1 Petabyte",
+              "correct": false
+            },
+            {
+              "content": "16 Terabytes",
+              "correct": false
+            },
+            {
+              "content": "128 Terabytes",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/64648435b17b",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Aurora",
+      "questions": [
+        {
+          "id": "815c074e-c4da-4c13-837f-f0c024451e37",
+          "prompt": "You are migrating a critical financial application to AWS. The application runs on PostgreSQL and requires Cross-Region Disaster Recovery with an RPO (Recovery Point Objective) of less than 1 second and RTO (Recovery Time Objective) of less than 1 minute. Which solution meets these stringent requirements?",
+          "options": [
+            {
+              "content": "DynamoDB Global Tables",
+              "correct": false
+            },
+            {
+              "content": "Aurora with Multi-AZ deployment in a single region",
+              "correct": false
+            },
+            {
+              "content": "Amazon Aurora Global Database",
+              "correct": true
+            },
+            {
+              "content": "RDS for PostgreSQL with Cross-Region Read Replicas",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d97e9fd2-bfbb-4e49-8a31-6e0c0381c629",
+          "prompt": "A developer wants to test a potentially destructive schema change on your 10TB production Aurora database. They need a copy of the data to test on. A standard restore takes hours. How can you provide them a test environment in minutes without doubling your storage costs?",
+          "options": [
+            {
+              "content": "Create a Read Replica and let them run the schema change there.",
+              "correct": false
+            },
+            {
+              "content": "Use 'Aurora Fast Cloning' (Database Cloning).",
+              "correct": true
+            },
+            {
+              "content": "Take a manual snapshot and restore it.",
+              "correct": false
+            },
+            {
+              "content": "Export the data to S3 and import it into a new RDS instance.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "43f21cdd-e25c-49e1-af23-2dfc56c21f0d",
+          "prompt": "You have an Aurora cluster with 1 Primary and 3 Read Replicas. You notice that the Primary instance's CPU is at 100% usage due to a massive number of incoming INSERT statements. You add 2 more Read Replicas to the cluster. What happens to the Primary's CPU load?",
+          "options": [
+            {
+              "content": "The Primary automatically delegates writes to the Replicas.",
+              "correct": false
+            },
+            {
+              "content": "It drops significantly because the load is balanced.",
+              "correct": false
+            },
+            {
+              "content": "The cluster crashes because of too many connections.",
+              "correct": false
+            },
+            {
+              "content": "It stays effectively the same (or might increase slightly due to replication overhead).",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "30e5b520-98d4-4632-a073-e841221d1d86",
+          "prompt": "Your company uses Aurora Serverless v1. Every Monday morning at 9:00 AM, hundreds of users log in simultaneously. Users report that the first few logins always fail or time out, but it works fine after 2 minutes. What is the most likely cause?",
+          "options": [
+            {
+              "content": "The VPC Security Groups are blocking access.",
+              "correct": false
+            },
+            {
+              "content": "The database was paused (scaled to 0) and takes time to 'cold start'.",
+              "correct": true
+            },
+            {
+              "content": "The 6-copy storage replication is slowing down reads.",
+              "correct": false
+            },
+            {
+              "content": "The database is patching itself.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "319419f8-8c8e-49ee-b23a-8864ee4e6503",
+          "prompt": "You are designing an application that requires 5,000 concurrent database connections. A standard PostgreSQL instance runs out of memory (RAM) at 1,000 connections because each connection consumes RAM. Which Aurora feature solves this without needing a massive instance size?",
+          "options": [
+            {
+              "content": "RDS Proxy",
+              "correct": true
+            },
+            {
+              "content": "Aurora Global Database",
+              "correct": false
+            },
+            {
+              "content": "Parallel Query",
+              "correct": false
+            },
+            {
+              "content": "Backtrack",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/45a67d243a8c",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "MemoryDB",
+      "questions": [
+        {
+          "id": "fcfc17ec-d64c-4a52-a216-b13ec7af187e",
+          "prompt": "What is the fundamental architectural difference between AWS MemoryDB for Redis and AWS ElastiCache for Redis?",
+          "options": [
+            {
+              "content": "MemoryDB supports SQL queries, while ElastiCache only supports Key-Value.",
+              "correct": false
+            },
+            {
+              "content": "MemoryDB uses disk-based storage primarily, while ElastiCache is in-memory.",
+              "correct": false
+            },
+            {
+              "content": "MemoryDB allows you to use Redis as a primary database, consolidating caching and storage.",
+              "correct": true
+            },
+            {
+              "content": "MemoryDB is used exclusively as a side-cache, while ElastiCache is a primary database.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7d1f44e9-8323-426d-b201-4785ac44015e",
+          "prompt": "Which mechanism does MemoryDB for Redis use to ensure data durability and consistency across Availability Zones?",
+          "options": [
+            {
+              "content": "Asynchronous replication to S3.",
+              "correct": false
+            },
+            {
+              "content": "Writing data immediately to EBS volumes on every node.",
+              "correct": false
+            },
+            {
+              "content": "Synchronous replication to an RDS instance.",
+              "correct": false
+            },
+            {
+              "content": "A distributed Multi-AZ Transactional Log.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b356c719-4c93-4994-b9b5-adf089df3771",
+          "prompt": "In a MemoryDB shard, what is the maximum number of replica nodes allowed?",
+          "options": [
+            {
+              "content": "Three",
+              "correct": false
+            },
+            {
+              "content": "Five",
+              "correct": true
+            },
+            {
+              "content": "One",
+              "correct": false
+            },
+            {
+              "content": "Unlimited",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "27bf1495-2199-43ea-b32c-48a9492a9b82",
+          "prompt": "If a user wants to scale the Write Throughput of their MemoryDB cluster, which action should they take?",
+          "options": [
+            {
+              "content": "Enable Multi-AZ.",
+              "correct": false
+            },
+            {
+              "content": "Add more Replica nodes.",
+              "correct": false
+            },
+            {
+              "content": "Increase the Transaction Log size.",
+              "correct": false
+            },
+            {
+              "content": "Add additional Shards.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d95faccd-3dc9-457b-8bd5-3bfa4da0eeed",
+          "prompt": "Which component allows an administrator to define specific user permissions for executing Redis commands?",
+          "options": [
+            {
+              "content": "Parameter Groups",
+              "correct": false
+            },
+            {
+              "content": "Subnet Groups",
+              "correct": false
+            },
+            {
+              "content": "Security Groups",
+              "correct": false
+            },
+            {
+              "content": "Access Control Lists (ACLs)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "78b9a2ed-b709-4793-9dc7-5350499de59d",
+          "prompt": "What is the expected latency performance for Write operations in MemoryDB?",
+          "options": [
+            {
+              "content": "Microseconds",
+              "correct": false
+            },
+            {
+              "content": "Low single-digit milliseconds",
+              "correct": true
+            },
+            {
+              "content": "Minutes",
+              "correct": false
+            },
+            {
+              "content": "Seconds",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "99ad226f-0184-4edc-8c4b-83d0ed0713d6",
+          "prompt": "Which node type in a MemoryDB cluster is responsible for handling Write requests?",
+          "options": [
+            {
+              "content": "Any node in the cluster.",
+              "correct": false
+            },
+            {
+              "content": "The Primary node.",
+              "correct": true
+            },
+            {
+              "content": "The Replica node.",
+              "correct": false
+            },
+            {
+              "content": "The Witness node.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "74430f5c-7c21-4009-ad96-85629c80d90d",
+          "prompt": "What happens automatically if the Primary node in a MemoryDB shard fails?",
+          "options": [
+            {
+              "content": "Data is restored from the last S3 snapshot.",
+              "correct": false
+            },
+            {
+              "content": "The cluster goes offline until manual intervention.",
+              "correct": false
+            },
+            {
+              "content": "A Replica node is promoted to become the new Primary.",
+              "correct": true
+            },
+            {
+              "content": "The Transaction Log is deleted.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "86dad55d-5511-44c1-ad31-3b078f1f188c",
+          "prompt": "What is the primary role of a 'Parameter Group'?",
+          "options": [
+            {
+              "content": "To configure engine-specific settings.",
+              "correct": true
+            },
+            {
+              "content": "To define the network subnets for the cluster.",
+              "correct": false
+            },
+            {
+              "content": "To partition the data across shards.",
+              "correct": false
+            },
+            {
+              "content": "To store the encryption keys.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "57c3fbf9-e85b-4fbc-a7d6-d6b04923c56d",
+          "prompt": "Why would an Online Gaming company choose MemoryDB over a traditional disk-based database for a leaderboard?",
+          "options": [
+            {
+              "content": "Because it supports SQL joins for complex analytics.",
+              "correct": false
+            },
+            {
+              "content": "Because it runs on the client's device.",
+              "correct": false
+            },
+            {
+              "content": "Because it is the cheapest storage option for archival data.",
+              "correct": false
+            },
+            {
+              "content": "Because it provides massive scale and high concurrency for real-time updates.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/b61a2e681516",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "MemoryDB",
+      "questions": [
+        {
+          "id": "ea96a09e-6c0b-4b63-8b58-5345aa11af4c",
+          "prompt": "Scenario: You are migrating a Banking Ledger application to AWS. The app requires extremely fast performance for checking balances, but data integrity is non-negotiable. If a transaction is confirmed to the user, it MUST exist on disk. The app currently uses a legacy relational database that is too slow. Why is MemoryDB for Redis a valid candidate for this specific workload, whereas ElastiCache is not?",
+          "options": [
+            {
+              "content": "ElastiCache does not support encryption.",
+              "correct": false
+            },
+            {
+              "content": "MemoryDB uses SQL which is required for banking.",
+              "correct": false
+            },
+            {
+              "content": "MemoryDB is faster than ElastiCache.",
+              "correct": false
+            },
+            {
+              "content": "MemoryDB uses a Multi-AZ Transactional Log that guarantees durability upon write acknowledgment.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9bd21b6b-2a92-4991-ad62-7b977e3fe1cb",
+          "prompt": "Scenario: Your startup has a 'Free Tier' and a 'Premium Tier' for its gaming app. You want to ensure that 'Premium' users always get the fastest database performance, even if 'Free' users are flooding the system. You are using a single MemoryDB Cluster. Which MemoryDB feature allows you to restrict 'Free' users from running expensive commands (like KEYS *) that could block the database?",
+          "options": [
+            {
+              "content": "Access Control Lists (ACLs)",
+              "correct": true
+            },
+            {
+              "content": "Subnet Groups",
+              "correct": false
+            },
+            {
+              "content": "Security Groups",
+              "correct": false
+            },
+            {
+              "content": "IAM Policies",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "87114660-0675-424f-86e7-504d6ddb70bb",
+          "prompt": "Scenario: You have a MemoryDB cluster acting as the primary database for a User Profile service. You need to perform a major version upgrade of the Redis engine (e.g., from 6.2 to 7.0). You cannot afford any downtime for writes. How does MemoryDB handle this upgrade?",
+          "options": [
+            {
+              "content": "It pauses the Transaction Log during the upgrade.",
+              "correct": false
+            },
+            {
+              "content": "It upgrades Replicas first, promotes a Replica to Primary, and then upgrades the old Primary.",
+              "correct": true
+            },
+            {
+              "content": "You must create a new cluster and manually migrate data.",
+              "correct": false
+            },
+            {
+              "content": "It patches the Primary node first, causing a brief write outage.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f70b8756-6bda-4ee9-b0b6-27f7c514cb3d",
+          "prompt": "Scenario: You are designing a disaster recovery plan. You require a copy of your MemoryDB data to be stored in Amazon S3 every 24 hours for compliance. Which feature do you configure?",
+          "options": [
+            {
+              "content": "Configure Automated Snapshots.",
+              "correct": true
+            },
+            {
+              "content": "Write a Lambda script to fetch all keys and upload to S3.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS DataSync.",
+              "correct": false
+            },
+            {
+              "content": "Enable Multi-AZ with Automatic Failover.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a34d9926-a408-42a5-a6d2-eefcf780620f",
+          "prompt": "Scenario: Your application requires strict network security. You want to ensure that your MemoryDB cluster is NOT accessible from the public internet. What is the default and mandatory network configuration for MemoryDB?",
+          "options": [
+            {
+              "content": "It runs in a VPC and is accessible only within that VPC (or via Peering/VPN).",
+              "correct": true
+            },
+            {
+              "content": "It must be launched in a Public Subnet with an Elastic IP.",
+              "correct": false
+            },
+            {
+              "content": "It uses a Global Accelerator to expose a public endpoint.",
+              "correct": false
+            },
+            {
+              "content": "It is accessible publicly if you modify the Security Group to allow 0.0.0.0/0.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/85d2a20fec15",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "DynamoDB Accelerator - DAX",
+      "questions": [
+        {
+          "id": "8125a9f0-151e-48ac-a1be-cb8a54dbfaa0",
+          "prompt": "What is the primary performance benefit of using DynamoDB Accelerator (DAX) regarding response times?",
+          "options": [
+            {
+              "content": "It reduces latency from milliseconds to microseconds.",
+              "correct": true
+            },
+            {
+              "content": "It increases the maximum item size allowed in DynamoDB.",
+              "correct": false
+            },
+            {
+              "content": "It reduces latency from minutes to seconds.",
+              "correct": false
+            },
+            {
+              "content": "It automatically compresses data to reduce storage costs.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1d316a9c-36d8-453d-af8e-c459c115ba77",
+          "prompt": "What is the maximum number of nodes allowed in a single DAX cluster?",
+          "options": [
+            {
+              "content": "20 nodes",
+              "correct": false
+            },
+            {
+              "content": "Unlimited nodes",
+              "correct": false
+            },
+            {
+              "content": "10 nodes",
+              "correct": true
+            },
+            {
+              "content": "5 nodes",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "44f12960-903b-4817-a823-1a83100d486e",
+          "prompt": "To integrate DAX into an existing application running on Amazon EC2, what code change is typically required?",
+          "options": [
+            {
+              "content": "Manually implementing cache invalidation logic in every function.",
+              "correct": false
+            },
+            {
+              "content": "Replacing the standard DynamoDB client with the DAX client.",
+              "correct": true
+            },
+            {
+              "content": "Rewriting the database query logic to use SQL.",
+              "correct": false
+            },
+            {
+              "content": "Modifying the VPC network ACLs to allow public internet access.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "aa132a26-78c8-42ce-96dc-726d3cc9015b",
+          "prompt": "How does DAX ensure data consistency when a write operation occurs?",
+          "options": [
+            {
+              "content": "It uses a write-around strategy where data is only written to DynamoDB.",
+              "correct": false
+            },
+            {
+              "content": "It blocks all reads until the write is confirmed by all read replicas.",
+              "correct": false
+            },
+            {
+              "content": "It writes to the cache first and updates DynamoDB asynchronously later.",
+              "correct": false
+            },
+            {
+              "content": "It writes data concurrently to both the cache and the underlying DynamoDB table.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3bd1169c-f751-45e9-9888-e0629922f933",
+          "prompt": "Which of the following describes the node architecture within a DAX cluster?",
+          "options": [
+            {
+              "content": "One primary node and multiple read replicas.",
+              "correct": true
+            },
+            {
+              "content": "Multiple primary nodes for high availability writes.",
+              "correct": false
+            },
+            {
+              "content": "All nodes are equal peers and can accept both writes and reads.",
+              "correct": false
+            },
+            {
+              "content": "Nodes are stateless and do not store data locally.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3915338c-d8bd-42e3-9cce-9be97e43f4c3",
+          "prompt": "What happens when a DAX client requests an item that is NOT currently in the cache?",
+          "options": [
+            {
+              "content": "DAX forwards the request to DynamoDB, returns the data, and caches it.",
+              "correct": true
+            },
+            {
+              "content": "DAX returns the nearest approximate value available in the cache.",
+              "correct": false
+            },
+            {
+              "content": "The client must manually request the item from DynamoDB.",
+              "correct": false
+            },
+            {
+              "content": "The request fails with a 'Cache Miss' error.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3ff28758-0312-4159-ad35-99ee15c6afff",
+          "prompt": "Regarding deployment flexibility, can a single DAX cluster serve multiple DynamoDB tables?",
+          "options": [
+            {
+              "content": "No, unless the tables are in different AWS regions.",
+              "correct": false
+            },
+            {
+              "content": "Yes, a single DAX cluster can serve multiple DynamoDB tables.",
+              "correct": true
+            },
+            {
+              "content": "Yes, but only if the tables share the same partition key.",
+              "correct": false
+            },
+            {
+              "content": "No, a DAX cluster is strictly locked to a single table.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3003fe58-f7f9-4408-82d4-dc559faa47d2",
+          "prompt": "What is a major operational advantage of DAX regarding infrastructure management?",
+          "options": [
+            {
+              "content": "It requires manual installation of caching software on EC2 instances.",
+              "correct": false
+            },
+            {
+              "content": "It allows full root access to the underlying OS for custom tuning.",
+              "correct": false
+            },
+            {
+              "content": "It automatically converts DynamoDB tables to SQL relational tables.",
+              "correct": false
+            },
+            {
+              "content": "It is fully managed, removing the need to manage hardware or software patching.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ffd41669-71c3-4a07-8718-2f7feb005f8e",
+          "prompt": "Which of the following is a primary cost-saving benefit of using DAX?",
+          "options": [
+            {
+              "content": "It replaces the need for using DynamoDB entirely.",
+              "correct": false
+            },
+            {
+              "content": "It makes DynamoDB storage free of charge.",
+              "correct": false
+            },
+            {
+              "content": "It reduces the read load on DynamoDB, potentially lowering provisioned throughput costs.",
+              "correct": true
+            },
+            {
+              "content": "It eliminates data transfer costs between regions.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e73663dd-c61b-428c-ae4f-fc7d9fedda73",
+          "prompt": "What mechanism does the DAX client use to distribute requests among the cluster nodes?",
+          "options": [
+            {
+              "content": "Manual routing configured in the application code.",
+              "correct": false
+            },
+            {
+              "content": "DNS Round Robin.",
+              "correct": false
+            },
+            {
+              "content": "Intelligent load balancing and routing.",
+              "correct": true
+            },
+            {
+              "content": "Random selection of any available IP address.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/af7903584679",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "DynamoDB Accelerator - DAX",
+      "questions": [
+        {
+          "id": "6c30d5b7-f007-4adb-a2b2-f55724a0d8b0",
+          "prompt": "You are designing a gaming leaderboard application. The 'Top 10 Players' data is requested thousands of times per second by players worldwide. However, the game engine updates the scores directly in DynamoDB every few minutes using a background batch process. Players are complaining that the leaderboard often shows outdated scores for 10-15 minutes. You are using DAX. What is the root cause?",
+          "options": [
+            {
+              "content": "DynamoDB is throttling the write requests, causing a delay in data commitment.",
+              "correct": false
+            },
+            {
+              "content": "The DAX client is configured for 'Strongly Consistent Reads' by default.",
+              "correct": false
+            },
+            {
+              "content": "The background batch process is bypassing DAX, so the cache is not being updated.",
+              "correct": true
+            },
+            {
+              "content": "The DAX cluster does not have enough nodes to handle the read traffic.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f049ea4b-6016-45a3-812f-fbabb37b71f9",
+          "prompt": "Your e-commerce platform is launching a 'Flash Sale' on a single popular item. You expect 1 million read requests per second for this specific Item ID (Partition Key). Your DynamoDB table is heavily provisioned, but you are still seeing 'ProvisionedThroughputExceededException' errors. How can DAX solve this specific problem?",
+          "options": [
+            {
+              "content": "DAX absorbs the read traffic for that 'Hot Key' in-memory, preventing those requests from hitting DynamoDB.",
+              "correct": true
+            },
+            {
+              "content": "DAX automatically shards the item into multiple partition keys.",
+              "correct": false
+            },
+            {
+              "content": "DAX enables Auto Scaling on the DynamoDB table faster than standard AWS Auto Scaling.",
+              "correct": false
+            },
+            {
+              "content": "DAX increases the write capacity of the DynamoDB table automatically.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "210b31fb-471d-4fbd-9007-7008ac636bf8",
+          "prompt": "You have a legacy application running on EC2 that performs heavy analytics. It currently issues complex 'Scan' operations on a DynamoDB table that take 10 seconds to complete. You want to reduce this to sub-millisecond latency. Is DAX the right solution?",
+          "options": [
+            {
+              "content": "Yes, but you must increase the DAX cluster size to 20 nodes.",
+              "correct": false
+            },
+            {
+              "content": "No, complex analytics requiring Scans are better suited for DynamoDB Streams + Redshift/OpenSearch or plain ElastiCache with custom logic.",
+              "correct": true
+            },
+            {
+              "content": "Yes, DAX accelerates all DynamoDB operations, including Scans.",
+              "correct": false
+            },
+            {
+              "content": "No, DAX is optimized for eventual consistency and cannot handle Scans.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f4114743-68e3-461a-969a-7cc783716140",
+          "prompt": "Your startup wants to reduce the monthly bill. Your DynamoDB table has a very high Read Capacity Unit (RCU) provision because of high read traffic during business hours. The traffic is read-heavy (90% reads). Which strategy is most cost-effective?",
+          "options": [
+            {
+              "content": "Increase the write capacity to balance out the read costs.",
+              "correct": false
+            },
+            {
+              "content": "Disable DAX and use On-Demand Capacity for DynamoDB.",
+              "correct": false
+            },
+            {
+              "content": "Enable DAX and lower the provisioned RCUs on the DynamoDB table.",
+              "correct": true
+            },
+            {
+              "content": "Switch to Strong Consistency reads to reduce the data transfer size.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1fd62d21-c77e-45db-9bad-24e82ae2892e",
+          "prompt": "You are deploying a DAX cluster for a mission-critical financial app. You need to ensure the system is highly available and can survive the failure of an Availability Zone (AZ). How should you configure the DAX cluster?",
+          "options": [
+            {
+              "content": "Provision a cluster with at least 3 nodes, and ensure the subnet group covers multiple Availability Zones.",
+              "correct": true
+            },
+            {
+              "content": "Create two separate DAX clusters in the same AZ and use a load balancer.",
+              "correct": false
+            },
+            {
+              "content": "Use DynamoDB Global Tables instead of DAX.",
+              "correct": false
+            },
+            {
+              "content": "Provision a single large node in a region-agnostic zone.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/ef67dea545a2",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Neptune",
+      "questions": [
+        {
+          "id": "ff2cd7bb-ecb8-40b2-8e22-ae821a6df0e3",
+          "prompt": "What is the primary advantage of using a graph database like Amazon Neptune compared to a traditional relational database?",
+          "options": [
+            {
+              "content": "It allows for the intuitive representation and efficient querying of complex, interconnected data relationships.",
+              "correct": true
+            },
+            {
+              "content": "It processes data strictly in key-value pairs to maximize simple read/write speeds.",
+              "correct": false
+            },
+            {
+              "content": "It stores data in rigid tables with fixed schemas to ensure data integrity.",
+              "correct": false
+            },
+            {
+              "content": "It is designed specifically for storing flat files and unstructured objects at the lowest possible cost.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1fcc87c6-0af1-418c-9894-1c54576de6e7",
+          "prompt": "Which of the following best describes the 'fully managed' nature of Amazon Neptune?",
+          "options": [
+            {
+              "content": "It requires the user to install database software on EC2 instances but handles backups automatically.",
+              "correct": false
+            },
+            {
+              "content": "AWS handles infrastructure management, hardware provisioning, patching, and backups, allowing developers to focus on applications.",
+              "correct": true
+            },
+            {
+              "content": "Users are responsible for manual patching and hardware provisioning to ensure custom configurations.",
+              "correct": false
+            },
+            {
+              "content": "It offers a serverless-only experience where no persistent storage is maintained.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "5b5d215f-6919-4702-8afb-111da89e2622",
+          "prompt": "How does Amazon Neptune Global Database facilitate disaster recovery and global reads?",
+          "options": [
+            {
+              "content": "It backs up data to Amazon S3 in a single region and requires manual restoration to other regions.",
+              "correct": false
+            },
+            {
+              "content": "It synchronizes data across all regions simultaneously, allowing writes to occur in any region.",
+              "correct": false
+            },
+            {
+              "content": "It uses peer-to-peer replication where every node in the network acts as both a primary and a secondary.",
+              "correct": false
+            },
+            {
+              "content": "It deploys a primary database in one region and replicates data to up to five secondary read-only clusters in different regions.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "dd1c1274-03d6-482f-bcdf-9ab2ff5b3368",
+          "prompt": "What is the key benefit of using Amazon Neptune Serverless?",
+          "options": [
+            {
+              "content": "It eliminates the need for any storage layer, processing data only in memory.",
+              "correct": false
+            },
+            {
+              "content": "It provides a free tier that never incurs costs regardless of usage volume.",
+              "correct": false
+            },
+            {
+              "content": "It automatically scales compute and memory resources to meet demand without manual capacity management.",
+              "correct": true
+            },
+            {
+              "content": "It allows you to manually select the exact instance type and size for granular control.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fb9acf07-f643-4fc6-b363-6a53175f8cf4",
+          "prompt": "Which technology does Amazon Neptune ML leverage to improve prediction accuracy?",
+          "options": [
+            {
+              "content": "Generative Adversarial Networks (GANs) for creating synthetic graph data.",
+              "correct": false
+            },
+            {
+              "content": "Natural Language Processing (NLP) transformers for text analysis within nodes.",
+              "correct": false
+            },
+            {
+              "content": "Graph Neural Networks (GNNs) specifically designed for processing connected datasets.",
+              "correct": true
+            },
+            {
+              "content": "Traditional linear regression models for simple trend forecasting.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c71b5a8a-1050-407c-ae1a-c04e1567669e",
+          "prompt": "Which query languages and APIs are supported by Amazon Neptune?",
+          "options": [
+            {
+              "content": "MongoDB Query Language (MQL) and Cassandra Query Language (CQL).",
+              "correct": false
+            },
+            {
+              "content": "Apache TinkerPop (Gremlin) and W3C SPARQL.",
+              "correct": true
+            },
+            {
+              "content": "SQL only, to maintain compatibility with legacy systems.",
+              "correct": false
+            },
+            {
+              "content": "Python and Java native code directly without a query language.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b831a61f-a505-444b-8d27-c5e9eaaa30fa",
+          "prompt": "Which AWS service is explicitly mentioned as integrating with Neptune for machine learning workflows?",
+          "options": [
+            {
+              "content": "AWS SageMaker",
+              "correct": true
+            },
+            {
+              "content": "Amazon Polly",
+              "correct": false
+            },
+            {
+              "content": "Amazon Rekognition",
+              "correct": false
+            },
+            {
+              "content": "AWS Lambda",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "55bdd39e-2b9b-4f69-b032-91e14b820361",
+          "prompt": "Which of the following use cases is Amazon Neptune particularly well-suited for?",
+          "options": [
+            {
+              "content": "Constructing identity graphs for a 360-degree customer view.",
+              "correct": true
+            },
+            {
+              "content": "Processing real-time streaming video data.",
+              "correct": false
+            },
+            {
+              "content": "Archiving historical data for regulatory compliance with infrequent access.",
+              "correct": false
+            },
+            {
+              "content": "Storing and retrieving large media files like videos and images.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6612fa22-cecd-499f-bdbd-74a0b3e23c80",
+          "prompt": "In the context of Neptune Serverless, how is cost efficiency achieved?",
+          "options": [
+            {
+              "content": "By allowing users to pay only for the resources used.",
+              "correct": true
+            },
+            {
+              "content": "By utilizing spot instances that may be interrupted.",
+              "correct": false
+            },
+            {
+              "content": "By charging a flat monthly fee regardless of usage.",
+              "correct": false
+            },
+            {
+              "content": "By disabling the database automatically during nights and weekends.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d3fb7366-45a7-44b3-9bcb-61b5f1ce35a5",
+          "prompt": "What are the two specific graph models supported by Amazon Neptune?",
+          "options": [
+            {
+              "content": "Property Graph and W3C RDF.",
+              "correct": true
+            },
+            {
+              "content": "Key-Value Pairs and Wide Column Store.",
+              "correct": false
+            },
+            {
+              "content": "Relational Tables and JSON Documents.",
+              "correct": false
+            },
+            {
+              "content": "Network Model and Hierarchical Model.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/0c7beb457de7",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Neptune",
+      "questions": [
+        {
+          "id": "ac57d562-0533-4129-a158-faf54adc6078",
+          "prompt": "Scenario: You are architecting a high-traffic recommendation engine for an e-commerce site. The traffic is extremely 'spiky'—huge surges during flash sales, followed by hours of low activity. You need to keep costs low but cannot tolerate performance degradation during spikes. Which Neptune configuration is the most appropriate architectural choice?",
+          "options": [
+            {
+              "content": "Provision a large Neptune cluster ensuring it covers the peak load 24/7.",
+              "correct": false
+            },
+            {
+              "content": "Use Neptune Global Database with read replicas in 5 regions.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Lambda to query a static S3 file containing the graph data.",
+              "correct": false
+            },
+            {
+              "content": "Use Neptune Serverless.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c551e66b-8b42-4824-9c43-3db772ee593f",
+          "prompt": "Scenario: Your company runs a Knowledge Graph used by internal research teams worldwide. The primary dataset is hosted in us-east-1 (N. Virginia). Researchers in eu-west-1 (Ireland) are complaining that complex graph traversals are taking too long due to network latency when connecting to the US. You need to improve read performance for the European team with minimal management overhead.",
+          "options": [
+            {
+              "content": "Configure a Neptune Global Database and add a read-only replica in eu-west-1.",
+              "correct": true
+            },
+            {
+              "content": "Use DynamoDB Global Tables instead of Neptune.",
+              "correct": false
+            },
+            {
+              "content": "Create a daily snapshot of the US database and restore it to a new Neptune cluster in Ireland each morning.",
+              "correct": false
+            },
+            {
+              "content": "Increase the instance size of the primary cluster in us-east-1.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "93e507e3-16e0-4229-a275-2a257adffaaa",
+          "prompt": "Scenario: You are building a 'Customer 360' platform. You have data coming in from AWS Lambda (user updates) and historical data stored in S3. You want to execute graph queries to link these identities. However, your team has zero experience managing database servers, OS patching, or backups, and strictly forbids any solution that requires such maintenance. Does Amazon Neptune fit this constraint?",
+          "options": [
+            {
+              "content": "No, Neptune requires you to provision EC2 instances and install the Gremlin server manually.",
+              "correct": false
+            },
+            {
+              "content": "Yes, but only if you use the Neptune ML feature.",
+              "correct": false
+            },
+            {
+              "content": "No, because graph databases always require manual index management and OS tuning.",
+              "correct": false
+            },
+            {
+              "content": "Yes, because Neptune is fully managed, handling hardware provisioning, patching, and backups automatically.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d2d128f4-d7ff-45bc-933a-89649b7ba2f8",
+          "prompt": "Scenario: You are a developer building a new feature that needs to predict which products a user will buy next based on their purchase history graph. You want to use Machine Learning, but you are not a Data Scientist and don't know how to build models from scratch using Python/PyTorch. Which Neptune feature addresses this gap?",
+          "options": [
+            {
+              "content": "Neptune Notebooks",
+              "correct": false
+            },
+            {
+              "content": "Neptune Streams",
+              "correct": false
+            },
+            {
+              "content": "Neptune Global Database",
+              "correct": false
+            },
+            {
+              "content": "Neptune ML",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6e8d24da-08cd-452f-82a6-60ae7aa9ea19",
+          "prompt": "Scenario: You are designing a system that requires executing SPARQL queries against a massive dataset of RDF triples. You are considering migrating from an on-premise Blazegraph database to AWS. Why is Neptune a compatible destination?",
+          "options": [
+            {
+              "content": "Because Neptune supports the W3C RDF model and SPARQL query language natively.",
+              "correct": true
+            },
+            {
+              "content": "Because Neptune is based on a relational SQL engine.",
+              "correct": false
+            },
+            {
+              "content": "Because Neptune only supports Gremlin, but you can write a translation layer.",
+              "correct": false
+            },
+            {
+              "content": "Because Neptune automatically converts all RDF data into Property Graphs.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/a90676708e87",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Redshift Serverless",
+      "questions": [
+        {
+          "id": "09c1a48e-8543-4044-967d-0b84ee1b6de4",
+          "prompt": "What is the primary inefficiency of 'Traditional' Redshift deployments that Redshift Serverless aims to solve?",
+          "options": [
+            {
+              "content": "The lack of support for SQL queries.",
+              "correct": false
+            },
+            {
+              "content": "Paying for continuous, fixed capacity even when the cluster is idle (overprovisioning).",
+              "correct": true
+            },
+            {
+              "content": "The requirement to use Amazon DynamoDB for storage.",
+              "correct": false
+            },
+            {
+              "content": "The inability to store more than 100 GB of data.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fa522520-acfd-4c50-b09b-e15777b59638",
+          "prompt": "What is the unit of measurement used to define compute capacity in Redshift Serverless?",
+          "options": [
+            {
+              "content": "IOPS",
+              "correct": false
+            },
+            {
+              "content": "vCPU",
+              "correct": false
+            },
+            {
+              "content": "RPU (Redshift Processing Unit)",
+              "correct": true
+            },
+            {
+              "content": "GB-Second",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2e520e9e-67c8-4a0b-8552-242208036f7f",
+          "prompt": "How much memory is provided by a single RPU?",
+          "options": [
+            {
+              "content": "4 GB",
+              "correct": false
+            },
+            {
+              "content": "16 GB",
+              "correct": true
+            },
+            {
+              "content": "8 GB",
+              "correct": false
+            },
+            {
+              "content": "128 GB",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "639bbee7-1a65-4c06-b2e4-531181b97207",
+          "prompt": "What is the billing granularity for Redshift Serverless execution?",
+          "options": [
+            {
+              "content": "Per Second",
+              "correct": true
+            },
+            {
+              "content": "Per Hour",
+              "correct": false
+            },
+            {
+              "content": "Per Query",
+              "correct": false
+            },
+            {
+              "content": "Per Minute",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "54048e71-5cb2-4b83-8bf9-397a90b21702",
+          "prompt": "What does the 'Base RPU' setting control?",
+          "options": [
+            {
+              "content": "The number of concurrent users allowed.",
+              "correct": false
+            },
+            {
+              "content": "The amount of storage space allocated to the cluster.",
+              "correct": false
+            },
+            {
+              "content": "The maximum cost you are willing to pay per month.",
+              "correct": false
+            },
+            {
+              "content": "The minimum data warehouse capacity deployed to serve queries.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "efb6b03f-23a5-4914-bff2-0a8f504c76bd",
+          "prompt": "What is the default Base RPU setting when you create a new Serverless workgroup?",
+          "options": [
+            {
+              "content": "32 RPUs",
+              "correct": false
+            },
+            {
+              "content": "128 RPUs",
+              "correct": true
+            },
+            {
+              "content": "8 RPUs",
+              "correct": false
+            },
+            {
+              "content": "512 RPUs",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9498c64d-96f8-4b32-90ea-06647f013554",
+          "prompt": "You have a dataset larger than 128 Terabytes. What is the recommended minimum Base RPU?",
+          "options": [
+            {
+              "content": "32 RPUs",
+              "correct": true
+            },
+            {
+              "content": "16 RPUs",
+              "correct": false
+            },
+            {
+              "content": "8 RPUs",
+              "correct": false
+            },
+            {
+              "content": "64 RPUs",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "35c01fd4-c448-494c-887c-4c4f6a004ce9",
+          "prompt": "What is the purpose of 'Max Capacity' configuration?",
+          "options": [
+            {
+              "content": "It defines the maximum number of tables allowed.",
+              "correct": false
+            },
+            {
+              "content": "It sets usage limits to control costs (daily, weekly, monthly).",
+              "correct": true
+            },
+            {
+              "content": "It sets the speed of the hard drives.",
+              "correct": false
+            },
+            {
+              "content": "It prevents the system from scaling down.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3c513ff6-b1ab-4cbd-8d26-c015f596cb85",
+          "prompt": "Which of the following scenarios is Redshift Serverless BEST suited for compared to Provisioned?",
+          "options": [
+            {
+              "content": "Running a transactional website backend (OLTP).",
+              "correct": false
+            },
+            {
+              "content": "Storing data without ever querying it.",
+              "correct": false
+            },
+            {
+              "content": "Workloads with intermittent, variable, or unpredictable spikes in usage.",
+              "correct": true
+            },
+            {
+              "content": "A steady, predictable workload that runs 24/7 with zero fluctuation.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "efed0ff8-9f29-4d40-912f-83d743727b00",
+          "prompt": "In what increments can you adjust the Base RPU?",
+          "options": [
+            {
+              "content": "It is fixed and cannot be adjusted.",
+              "correct": false
+            },
+            {
+              "content": "Increments of 100 RPUs",
+              "correct": false
+            },
+            {
+              "content": "Increments of 1 RPU",
+              "correct": false
+            },
+            {
+              "content": "Increments of 8 RPUs",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/f4160a27926c",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Redshift Serverless",
+      "questions": [
+        {
+          "id": "036353c3-bb3a-46da-aa5c-eb2b15863028",
+          "prompt": "Scenario: A startup launches a new mobile game. They expect erratic user growth—some days almost zero traffic, other days massive viral spikes. They need a data warehouse for analytics but have a very tight budget and cannot afford to pay for idle time.",
+          "options": [
+            {
+              "content": "Use Redshift Serverless.",
+              "correct": true
+            },
+            {
+              "content": "Provision a Redshift Cluster with Reserved Instances to lock in the lowest hourly rate.",
+              "correct": false
+            },
+            {
+              "content": "Use Redshift Dense Storage nodes.",
+              "correct": false
+            },
+            {
+              "content": "Use Amazon RDS for PostgreSQL.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "aea8e95c-dff3-4a71-8fdb-6671c2455b46",
+          "prompt": "Scenario: You migrated a workload to Redshift Serverless. Users are complaining that complex queries involving massive joins are taking too long to start and finish. You check the metrics and see you are not hitting your Max Capacity limit.",
+          "options": [
+            {
+              "content": "Switch to Amazon Athena.",
+              "correct": false
+            },
+            {
+              "content": "Decrease the Base RPU to force the system to scale faster.",
+              "correct": false
+            },
+            {
+              "content": "Increase the 'Base RPU' configuration.",
+              "correct": true
+            },
+            {
+              "content": "Increase the 'Max Capacity' limit.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "290ca920-e58f-40c1-bab3-2934865b4c94",
+          "prompt": "Scenario: Your company has a strict compliance requirement that the Data Warehouse must NEVER be inaccessible during business hours (9 AM - 5 PM). However, you want to cap costs. You configure a 'Daily Usage Limit' on Redshift Serverless.",
+          "options": [
+            {
+              "content": "Remove the Usage Limit entirely.",
+              "correct": false
+            },
+            {
+              "content": "Set the Usage Limit action to 'Log system table' or 'Emit CloudWatch metric' to alert admins without stopping queries.",
+              "correct": true
+            },
+            {
+              "content": "Use Spot Instances for the Serverless backend.",
+              "correct": false
+            },
+            {
+              "content": "Set the Usage Limit action to 'Turn off' to ensure the budget is never exceeded.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4571d549-35fb-4d65-8e74-06cdf9f75c23",
+          "prompt": "Scenario: You have 500 TB of data. You want to use Redshift Serverless. What is the recommended configuration to ensure metadata and storage operations remain performant?",
+          "options": [
+            {
+              "content": "Base RPU of 512.",
+              "correct": false
+            },
+            {
+              "content": "Base RPU of at least 32.",
+              "correct": true
+            },
+            {
+              "content": "Redshift Serverless cannot handle 500 TB.",
+              "correct": false
+            },
+            {
+              "content": "Base RPU of 8.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/8ccaf4f1859e",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "ElastiCache",
+      "questions": [
+        {
+          "id": "93384406-8f70-4a35-b6f8-cb0b5af8b4a4",
+          "prompt": "What is the primary technical benefit of introducing an in-memory caching layer like AWS ElastiCache between an application server and a persistent database?",
+          "options": [
+            {
+              "content": "It significantly reduces latency and offloads read operations from the database.",
+              "correct": true
+            },
+            {
+              "content": "It automatically replicates all database writes to a secondary region for disaster recovery.",
+              "correct": false
+            },
+            {
+              "content": "It permanently stores user profiles and inventory records to replace the database.",
+              "correct": false
+            },
+            {
+              "content": "It hosts the business logic to process client requests directly.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2ebfe1e0-e6d9-4276-be9d-7d473ed571b5",
+          "prompt": "A Solutions Architect needs a caching engine that supports complex data types, data persistence, and a built-in Pub/Sub messaging system. Which engine should be selected?",
+          "options": [
+            {
+              "content": "DynamoDB Accelerator (DAX)",
+              "correct": false
+            },
+            {
+              "content": "Memcached",
+              "correct": false
+            },
+            {
+              "content": "Redis",
+              "correct": true
+            },
+            {
+              "content": "Amazon RDS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "799359bf-bfd1-48d5-b16b-940d1afbce98",
+          "prompt": "Which ElastiCache component allows an administrator to control the network traffic allowed to reach the cache clusters?",
+          "options": [
+            {
+              "content": "Cache Security Group",
+              "correct": true
+            },
+            {
+              "content": "Cache Parameter Group",
+              "correct": false
+            },
+            {
+              "content": "Subnet Group",
+              "correct": false
+            },
+            {
+              "content": "Cache Node Type",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ddb2b262-8f87-4383-867e-a12431a3423b",
+          "prompt": "In the context of AWS ElastiCache for Memcached, what is the specific benefit of 'Auto Discovery'?",
+          "options": [
+            {
+              "content": "It automatically manages the tracking of cache nodes during scaling events.",
+              "correct": true
+            },
+            {
+              "content": "It automatically encrypts data at rest without user intervention.",
+              "correct": false
+            },
+            {
+              "content": "It automatically creates read replicas in a different region.",
+              "correct": false
+            },
+            {
+              "content": "It automatically converts a Memcached cluster to a Redis cluster.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3a18c41d-ed98-4fb4-a00b-ef9df8b652f6",
+          "prompt": "To ensure optimal performance for a specific caching workload, where should an administrator configure engine-specific settings?",
+          "options": [
+            {
+              "content": "IAM Policy",
+              "correct": false
+            },
+            {
+              "content": "Cache Parameter Group",
+              "correct": true
+            },
+            {
+              "content": "Route Table",
+              "correct": false
+            },
+            {
+              "content": "Subnet Group",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1fee9517-17ef-4735-82e2-8385849542f6",
+          "prompt": "Which use case is best served by integrating AWS ElastiCache to support features like online leaderboards?",
+          "options": [
+            {
+              "content": "Static Website Hosting",
+              "correct": false
+            },
+            {
+              "content": "Long-term Archival",
+              "correct": false
+            },
+            {
+              "content": "Batch Processing",
+              "correct": false
+            },
+            {
+              "content": "Real-Time Applications",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b545179e-aeea-4035-bd36-78da20ea6bc6",
+          "prompt": "What is the primary function of Read Replicas in an AWS ElastiCache for Redis environment?",
+          "options": [
+            {
+              "content": "To compress data to save memory usage.",
+              "correct": false
+            },
+            {
+              "content": "To partition data across multiple nodes for simple sharding.",
+              "correct": false
+            },
+            {
+              "content": "To allow write operations to occur simultaneously on all nodes.",
+              "correct": false
+            },
+            {
+              "content": "To offload heavy read traffic from the primary node and enhance availability.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2e18b3a5-9c0d-4c8b-ba4d-4ba8aeb1cb58",
+          "prompt": "How does the 'Global Datastore' feature enhance an AWS ElastiCache for Redis architecture?",
+          "options": [
+            {
+              "content": "It automatically archives old cache data to Amazon S3 Glacier.",
+              "correct": false
+            },
+            {
+              "content": "It allows a single cache cluster to span multiple VPCs in the same region.",
+              "correct": false
+            },
+            {
+              "content": "It provides a serverless endpoint that scales to zero.",
+              "correct": false
+            },
+            {
+              "content": "It allows write operations in one region to be read from replica clusters in other regions.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9ba20b3e-7dee-41b7-bdae-9730449e63e3",
+          "prompt": "A developer needs to define the hardware characteristics (CPU and Memory) of the instances in their cache cluster. What must they select?",
+          "options": [
+            {
+              "content": "Topic ARN",
+              "correct": false
+            },
+            {
+              "content": "Engine Version",
+              "correct": false
+            },
+            {
+              "content": "Subnet Group",
+              "correct": false
+            },
+            {
+              "content": "Node Type",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "01f277ae-b68d-4c8e-a1ca-6a95b7abeda7",
+          "prompt": "Which of the following scenarios is a typical use case for ElastiCache to improve application performance?",
+          "options": [
+            {
+              "content": "Encoding high-resolution video files.",
+              "correct": false
+            },
+            {
+              "content": "Hosting the operating system for virtual desktops.",
+              "correct": false
+            },
+            {
+              "content": "Managing long-term audit logs for compliance.",
+              "correct": false
+            },
+            {
+              "content": "Storing caching session data for web applications.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/a5aeff9575e8",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "ElastiCache",
+      "questions": [
+        {
+          "id": "759b1f97-bb2d-44a8-9a51-3329edcc012d",
+          "prompt": "Scenario: StreamFast is launching a 'Global Watch Party' feature. Users in New York, London, and Tokyo will chat in real-time while watching movies. The chat latency must be minimal for everyone, regardless of location. The chat history is temporary but must survive a single node failure. Which ElastiCache architecture do you deploy?",
+          "options": [
+            {
+              "content": "ElastiCache for Redis with a single cluster in New York and heavy caching on CloudFront.",
+              "correct": false
+            },
+            {
+              "content": "ElastiCache for Redis with Global Datastore (Global Replication Group).",
+              "correct": true
+            },
+            {
+              "content": "Store chat logs in DynamoDB Global Tables and use ElastiCache only for user login sessions.",
+              "correct": false
+            },
+            {
+              "content": "ElastiCache for Memcached with nodes in all three regions connected via VPC Peering.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "80b83008-26f4-4d19-9a45-e5618d53347f",
+          "prompt": "Scenario: Your backend API, running on AWS Lambda, connects to ElastiCache for Redis to retrieve user profiles. During a marketing flash sale, traffic spikes by 100x. Your Lambda functions start timing out, and logs show that the overhead of opening thousands of new TCP connections to Redis is the bottleneck. What is the most effective code-level change to fix this?",
+          "options": [
+            {
+              "content": "Switch to ElastiCache for Memcached.",
+              "correct": false
+            },
+            {
+              "content": "Initialize the Redis connection client OUTSIDE the Lambda handler function.",
+              "correct": true
+            },
+            {
+              "content": "Initialize the Redis connection client INSIDE the Lambda handler function.",
+              "correct": false
+            },
+            {
+              "content": "Use Amazon RDS Proxy to pool the connections.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b2133582-68aa-4db8-9005-be2e1938b3a8",
+          "prompt": "Scenario: You are designing the 'Recently Viewed' items bar for the website. The requirements are simple: high speed, extremely high throughput (millions of small writes/reads per second), and it is okay if the data is lost during a system crash (it's not critical data). You need the most cost-effective, multi-threaded performance. Which engine is the optimal choice?",
+          "options": [
+            {
+              "content": "ElastiCache for Redis with Cluster Mode Enabled.",
+              "correct": false
+            },
+            {
+              "content": "ElastiCache for Memcached.",
+              "correct": true
+            },
+            {
+              "content": "DynamoDB with DAX.",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard Class.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "65b86142-422b-44fe-9562-f9e7509f905b",
+          "prompt": "Scenario: Your application uses a 'Write-Through' caching strategy. However, the database team has noticed that the cache is filling up with data that is written once but never read again (write-only data), wasting memory. What mechanism should you implement to automatically keep the cache memory efficient?",
+          "options": [
+            {
+              "content": "Enable Redis AOF (Append Only File).",
+              "correct": false
+            },
+            {
+              "content": "Use a larger instance type.",
+              "correct": false
+            },
+            {
+              "content": "Switch to 'Lazy Loading' only.",
+              "correct": false
+            },
+            {
+              "content": "Add a TTL (Time-To-Live) to every key when writing to the cache.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bcb71688-4762-4da8-8450-85743823a22b",
+          "prompt": "Scenario: You are trying to connect your EC2 instance (in Security Group A) to your ElastiCache Cluster (in Security Group B). Both are in the same VPC. The connection is timing out. What is the most likely cause?",
+          "options": [
+            {
+              "content": "The EC2 instance does not have an IAM role for ElastiCache.",
+              "correct": false
+            },
+            {
+              "content": "Security Group B does not have an Inbound Rule allowing traffic from Security Group A on the correct port (6379 for Redis/11211 for Memcached).",
+              "correct": true
+            },
+            {
+              "content": "You need to enable 'Transit Encryption'.",
+              "correct": false
+            },
+            {
+              "content": "You forgot to create a Subnet Group.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/3fdfb6c1bfdb",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "DynamoDB",
+      "questions": [
+        {
+          "id": "5dde3329-1d43-4e1d-9598-470b504a30c9",
+          "prompt": "In DynamoDB terminology, what are the equivalents of a 'Row' and a 'Column' in a traditional relational database?",
+          "options": [
+            {
+              "content": "Row = Document, Column = Field",
+              "correct": false
+            },
+            {
+              "content": "Row = Tuple, Column = Key",
+              "correct": false
+            },
+            {
+              "content": "Row = Record, Column = Property",
+              "correct": false
+            },
+            {
+              "content": "Row = Item, Column = Attribute",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e7401c5e-36f6-424f-96ad-2f07fa8c7876",
+          "prompt": "What is the structure of a 'Composite Primary Key'?",
+          "options": [
+            {
+              "content": "A Partition Key and a Sort Key.",
+              "correct": true
+            },
+            {
+              "content": "Two Partition Keys combined.",
+              "correct": false
+            },
+            {
+              "content": "A Primary Key and a Secondary Key.",
+              "correct": false
+            },
+            {
+              "content": "A Unique ID and a Timestamp.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fbcbd989-cba8-4381-af3a-eec9f51b57fb",
+          "prompt": "In a table with a Composite Primary Key, which attribute determines the physical storage location of the data?",
+          "options": [
+            {
+              "content": "The Sort Key",
+              "correct": false
+            },
+            {
+              "content": "The first attribute defined in the JSON.",
+              "correct": false
+            },
+            {
+              "content": "The Partition Key",
+              "correct": true
+            },
+            {
+              "content": "The Global Secondary Index",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bdade313-7566-42a5-a672-b53f5170bbfa",
+          "prompt": "What is the key difference between a Global Secondary Index (GSI) and a Local Secondary Index (LSI)?",
+          "options": [
+            {
+              "content": "LSI allows a different Partition Key; GSI requires the same Partition Key.",
+              "correct": false
+            },
+            {
+              "content": "LSI must use the same Partition Key as the base table; GSI can use a different Partition Key.",
+              "correct": true
+            },
+            {
+              "content": "You can have 20 LSIs but only 5 GSIs.",
+              "correct": false
+            },
+            {
+              "content": "LSI supports strong consistency; GSI does not.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0bc46254-9891-4b40-abc9-2483e039d055",
+          "prompt": "DynamoDB Streams captures data modification events. How long are these stream records retained?",
+          "options": [
+            {
+              "content": "Indefinitely",
+              "correct": false
+            },
+            {
+              "content": "24 Hours",
+              "correct": true
+            },
+            {
+              "content": "1 Hour",
+              "correct": false
+            },
+            {
+              "content": "7 Days",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "989a768f-4eb7-4a40-a6bd-e60f27549f70",
+          "prompt": "Which AWS service is commonly triggered by DynamoDB Streams to execute code in response to database changes?",
+          "options": [
+            {
+              "content": "Amazon EC2",
+              "correct": false
+            },
+            {
+              "content": "AWS Glue",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3",
+              "correct": false
+            },
+            {
+              "content": "AWS Lambda",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "61519baa-a07f-4b6a-8dca-378f11a14287",
+          "prompt": "What is the primary use case for the 'Standard-Infrequent Access' (Standard-IA) table class?",
+          "options": [
+            {
+              "content": "High-performance, low-latency sessions.",
+              "correct": false
+            },
+            {
+              "content": "Storing data where storage cost is significant, but access is rare (e.g., logs, history).",
+              "correct": true
+            },
+            {
+              "content": "Temporary data that is deleted after 24 hours.",
+              "correct": false
+            },
+            {
+              "content": "Tables that require Strong Consistency.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b70d66ef-2e93-49d8-81de-07d4ccffb694",
+          "prompt": "Which Capacity Mode is ideal for unpredictable workloads with steep traffic spikes?",
+          "options": [
+            {
+              "content": "Provisioned Mode",
+              "correct": false
+            },
+            {
+              "content": "On-Demand Mode",
+              "correct": true
+            },
+            {
+              "content": "Reserved Capacity",
+              "correct": false
+            },
+            {
+              "content": "Serverless Mode",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d9229170-34ee-460a-bb8f-426aedda4894",
+          "prompt": "What feature enables active-active replication across multiple AWS regions for local read/write performance?",
+          "options": [
+            {
+              "content": "Global Secondary Indexes",
+              "correct": false
+            },
+            {
+              "content": "Multi-AZ Deployment",
+              "correct": false
+            },
+            {
+              "content": "DynamoDB Streams",
+              "correct": false
+            },
+            {
+              "content": "Global Tables",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "de1e7cee-a072-4b48-957c-f295bb0b3c77",
+          "prompt": "DynamoDB is described as 'Schemaless'. What does this practically mean?",
+          "options": [
+            {
+              "content": "It does not support data types like String or Number.",
+              "correct": false
+            },
+            {
+              "content": "You do not need to pre-define all attributes (columns) before inserting data.",
+              "correct": true
+            },
+            {
+              "content": "It does not use Primary Keys.",
+              "correct": false
+            },
+            {
+              "content": "It cannot enforce uniqueness.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/411d7640fbd4",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "DynamoDB",
+      "questions": [
+        {
+          "id": "46953f94-48ee-489d-877c-c5859dcdff6b",
+          "prompt": "Scenario: You are building a 'Flash Sale' e-commerce site. Once a month, you drop a limited product, and traffic spikes from 0 to 1 million requests in 5 minutes, then drops back to near zero. You do not want to manage servers or pre-warm capacity.",
+          "options": [
+            {
+              "content": "Use Provisioned Capacity with Auto-Scaling.",
+              "correct": false
+            },
+            {
+              "content": "Use On-Demand Capacity Mode.",
+              "correct": true
+            },
+            {
+              "content": "Use Read Replicas.",
+              "correct": false
+            },
+            {
+              "content": "Use Standard-Infrequent Access (IA) Table Class.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "63a8cca6-1b6c-4761-8eac-b3d194898e34",
+          "prompt": "Scenario: You are storing 10 years of historical IoT sensor data. The data is almost never queried (maybe once a year for compliance), but you must keep it. The storage costs are becoming expensive.",
+          "options": [
+            {
+              "content": "Switch the Table Class to Standard-Infrequent Access (Standard-IA).",
+              "correct": true
+            },
+            {
+              "content": "Switch to On-Demand Capacity Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use DynamoDB Streams to move data to a new table.",
+              "correct": false
+            },
+            {
+              "content": "Create a Global Secondary Index (GSI) to organize the data better.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "319c1184-7175-4f7a-a54b-3e4b15acaa52",
+          "prompt": "Scenario: You have a global gaming application with users in the US, Europe, and Japan. Users in Japan are complaining about high latency (lag) when saving their game progress, because the database is in the US-East region.",
+          "options": [
+            {
+              "content": "Create a Global Secondary Index (GSI) in the Japan region.",
+              "correct": false
+            },
+            {
+              "content": "Convert the table to a Global Table.",
+              "correct": true
+            },
+            {
+              "content": "Increase the Write Capacity Units (WCU) of the US table.",
+              "correct": false
+            },
+            {
+              "content": "Use CloudFront to cache the database writes.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6d849a00-bd40-434e-8dc8-875bc26034de",
+          "prompt": "Scenario: You have a 'UserProfile' table. Whenever a user updates their email address, you need to automatically send a verification email to the new address and update a separate 'Marketing' system.",
+          "options": [
+            {
+              "content": "Schedule a Cron Job on EC2 to scan the table every hour.",
+              "correct": false
+            },
+            {
+              "content": "Use a Local Secondary Index.",
+              "correct": false
+            },
+            {
+              "content": "Write the logic inside a DynamoDB Stored Procedure.",
+              "correct": false
+            },
+            {
+              "content": "Enable DynamoDB Streams and trigger an AWS Lambda function.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f1bea1cd-60e9-4dcc-bd07-ddf7006a1924",
+          "prompt": "Scenario: You are designing a table for a library. You want to store books. You know you will always access books by 'ISBN' (unique ID). However, sometimes you want to find all books by a specific 'Author'. You want the Author search to be fast.",
+          "options": [
+            {
+              "content": "Partition Key: Genre. Sort Key: Author.",
+              "correct": false
+            },
+            {
+              "content": "Partition Key: ISBN. No Sort Key. Create a GSI with Partition Key: Author.",
+              "correct": true
+            },
+            {
+              "content": "Partition Key: Author. Sort Key: ISBN.",
+              "correct": false
+            },
+            {
+              "content": "Partition Key: ISBN. Use Scan operations to find Authors.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/69083a992c50",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "RDS",
+      "questions": [
+        {
+          "id": "21951a1e-8d3b-4335-a87d-7b1ad16429f2",
+          "prompt": "A company requires a database deployment that ensures high availability and automatic failover in the event of a primary instance failure. Which RDS deployment option should be selected?",
+          "options": [
+            {
+              "content": "Blue-Green Deployment",
+              "correct": false
+            },
+            {
+              "content": "Single Availability Zone (AZ) Deployment",
+              "correct": false
+            },
+            {
+              "content": "Read Replica Deployment",
+              "correct": false
+            },
+            {
+              "content": "Multi-AZ Deployment",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d5d362ba-37f5-4a69-877c-702ef0c33387",
+          "prompt": "An e-commerce application is experiencing performance issues due to a high volume of read queries. Which feature allows you to offload these read operations from the primary database?",
+          "options": [
+            {
+              "content": "Provisioned IOPS SSD",
+              "correct": false
+            },
+            {
+              "content": "Database Snapshots",
+              "correct": false
+            },
+            {
+              "content": "Read Replicas",
+              "correct": true
+            },
+            {
+              "content": "Multi-AZ Cluster",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b7c14d00-40dc-4f0f-8ec4-80fb908223c7",
+          "prompt": "Which AWS RDS storage type is best suited for production applications that require low latency and consistent I/O throughput?",
+          "options": [
+            {
+              "content": "Instance Store",
+              "correct": false
+            },
+            {
+              "content": "Magnetic Storage",
+              "correct": false
+            },
+            {
+              "content": "General Purpose SSD",
+              "correct": false
+            },
+            {
+              "content": "Provisioned IOPS SSD",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "12fb001b-36f1-44fc-9f0c-ca370e4ecf28",
+          "prompt": "You need to update your production database schema. You want to test the changes in a staging environment and then switch traffic to the new version with minimal downtime and no data loss. Which strategy supports this?",
+          "options": [
+            {
+              "content": "Multi-AZ Failover",
+              "correct": false
+            },
+            {
+              "content": "Manual Snapshots",
+              "correct": false
+            },
+            {
+              "content": "Database Parameter Groups",
+              "correct": false
+            },
+            {
+              "content": "Blue-Green Deployment",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cc586e11-da01-40f1-be94-09160ee5a3d9",
+          "prompt": "Which RDS configuration resource is used to control the database engine's behavior, such as performance tuning and memory allocation?",
+          "options": [
+            {
+              "content": "Subnet Groups",
+              "correct": false
+            },
+            {
+              "content": "Security Groups",
+              "correct": false
+            },
+            {
+              "content": "Database Option Groups",
+              "correct": false
+            },
+            {
+              "content": "Database Parameter Groups",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "285b495e-3b81-4b15-8ea1-5783f4c279b5",
+          "prompt": "To control which IP addresses or EC2 instances are allowed to connect to your RDS database, which feature should you configure?",
+          "options": [
+            {
+              "content": "Security Groups",
+              "correct": true
+            },
+            {
+              "content": "Database Snapshots",
+              "correct": false
+            },
+            {
+              "content": "Subnet Groups",
+              "correct": false
+            },
+            {
+              "content": "Parameter Groups",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4c5b1360-0ded-481d-b4ae-57fac3216acc",
+          "prompt": "A data analytics company needs to run a database workload that involves processing very large datasets in memory. Which instance type family is recommended?",
+          "options": [
+            {
+              "content": "Memory Optimized",
+              "correct": true
+            },
+            {
+              "content": "Provisioned IOPS",
+              "correct": false
+            },
+            {
+              "content": "Burst Performance",
+              "correct": false
+            },
+            {
+              "content": "General Purpose (M Family)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d8a95dda-baf5-4bfe-9c11-235d739a8975",
+          "prompt": "Users located in Africa are experiencing high latency when accessing an application's database hosted in North America. What is the most effective RDS solution to improve read performance for these users?",
+          "options": [
+            {
+              "content": "Enable Multi-AZ in North America",
+              "correct": false
+            },
+            {
+              "content": "Upgrade to Provisioned IOPS Storage",
+              "correct": false
+            },
+            {
+              "content": "Increase the Instance Size",
+              "correct": false
+            },
+            {
+              "content": "Create a Read Replica in the Africa region",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "41b94a34-f302-4fb4-981e-516061647361",
+          "prompt": "Which of the following database engines is NOT supported by Amazon RDS?",
+          "options": [
+            {
+              "content": "MariaDB",
+              "correct": false
+            },
+            {
+              "content": "MongoDB",
+              "correct": true
+            },
+            {
+              "content": "PostgreSQL",
+              "correct": false
+            },
+            {
+              "content": "Oracle",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6043c89e-aac8-4f03-8f13-688b75f0c3f4",
+          "prompt": "What is a primary benefit of using AWS RDS regarding administrative overhead?",
+          "options": [
+            {
+              "content": "It provides free unlimited storage for all databases.",
+              "correct": false
+            },
+            {
+              "content": "It automates tasks like backups, patching, and hardware provisioning.",
+              "correct": true
+            },
+            {
+              "content": "It automatically writes application code for you.",
+              "correct": false
+            },
+            {
+              "content": "It removes the need for database schema design.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/692840cf20a1",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "RDS",
+      "questions": [
+        {
+          "id": "fb94d757-1144-4f44-bb4d-3714211dadc9",
+          "prompt": "You are designing the backend for a new mobile banking app. The app requires strict ACID compliance for transactions. The security team mandates that the database must not be accessible from the public internet, but your EC2 application servers in a private subnet need to access it. Which network configuration applies?",
+          "options": [
+            {
+              "content": "Launch RDS in a private subnet and configure a Security Group to allow inbound traffic on port 3306 (MySQL) only from the App Server's Security Group.",
+              "correct": true
+            },
+            {
+              "content": "Launch RDS in a private subnet and set the 'Publicly Accessible' attribute to True.",
+              "correct": false
+            },
+            {
+              "content": "Launch RDS in a public subnet and restrict access via Security Groups to the EC2 instances.",
+              "correct": false
+            },
+            {
+              "content": "Use a VPC Peering connection to link the App Server directly to the RDS instance.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b9cf2074-54f1-4612-bb67-1f7585fbff38",
+          "prompt": "Your company runs a legacy Customer CRM on an on-premise Oracle database. They want to migrate to AWS RDS to save on licensing costs. They are willing to refactor the application to use an open-source engine that is PostgreSQL-compatible but offers higher performance and auto-scaling storage. Which engine should you choose?",
+          "options": [
+            {
+              "content": "Amazon Aurora PostgreSQL-Compatible",
+              "correct": true
+            },
+            {
+              "content": "RDS for Oracle",
+              "correct": false
+            },
+            {
+              "content": "DynamoDB",
+              "correct": false
+            },
+            {
+              "content": "RDS for PostgreSQL",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d9837b91-e306-4f61-b493-91227990b5e6",
+          "prompt": "You have a Multi-AZ RDS MySQL database. You accidentally ran a script that deleted a critical table at 10:00 AM. It is now 10:15 AM. You need to recover the data. What is the fastest and most reliable way to do this?",
+          "options": [
+            {
+              "content": "Use the Read Replica to recover the data.",
+              "correct": false
+            },
+            {
+              "content": "Promote the Standby instance to Primary.",
+              "correct": false
+            },
+            {
+              "content": "Restore from the last daily snapshot taken at 12:00 AM.",
+              "correct": false
+            },
+            {
+              "content": "Restore the database using 'Point-in-Time Recovery' to 09:55 AM.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7e7f57a4-e92e-490f-8e67-8a8117bc5e29",
+          "prompt": "You are hosting a seasonal sales event. You expect traffic to increase by 50x for just 2 days. You are currently using RDS for MySQL. You are concerned that manually upgrading the instance size will cause downtime during the event setup. Which approach minimizes administrative effort and downtime?",
+          "options": [
+            {
+              "content": "Use RDS Proxy to buffer the connections.",
+              "correct": false
+            },
+            {
+              "content": "Enable Storage Auto Scaling.",
+              "correct": false
+            },
+            {
+              "content": "Migrate to Amazon Aurora Serverless.",
+              "correct": true
+            },
+            {
+              "content": "Create 10 Read Replicas.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4fe3050f-5e1e-4357-a79b-edac689b7292",
+          "prompt": "A healthcare company must encrypt all database data at rest to comply with HIPAA. They already created an RDS MySQL instance but forgot to enable encryption during creation. What must they do to encrypt the database?",
+          "options": [
+            {
+              "content": "Modify the instance in the AWS Console and check 'Enable Encryption'.",
+              "correct": false
+            },
+            {
+              "content": "Create an encrypted Read Replica and promote it to Primary.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Key Management Service (KMS) to rotate the keys on the live instance.",
+              "correct": false
+            },
+            {
+              "content": "Take a snapshot of the unencrypted instance, copy the snapshot enabling encryption, and restore a new instance from the encrypted snapshot.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/f2620b162019",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "RDS Proxy",
+      "questions": [
+        {
+          "id": "6061eb2b-27f3-4c29-9018-23e58c676ffc",
+          "prompt": "What is the primary mechanism Amazon RDS Proxy uses to manage the high volume of database connections from modern applications?",
+          "options": [
+            {
+              "content": "It increases the maximum connection limit on the database instance itself.",
+              "correct": false
+            },
+            {
+              "content": "It converts all database writes into read-replicas to reduce load.",
+              "correct": false
+            },
+            {
+              "content": "It deploys an agent on every application instance to cache queries locally.",
+              "correct": false
+            },
+            {
+              "content": "It maintains a pool of persistent connections that are reused by application requests.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8d6b3b02-249f-49eb-ac89-fcb490d8f158",
+          "prompt": "Without an intermediary like RDS Proxy, what negative impact does opening a direct connection for every application instance have on a database?",
+          "options": [
+            {
+              "content": "It increases the storage cost of the database significantly.",
+              "correct": false
+            },
+            {
+              "content": "It prevents the database from performing backups.",
+              "correct": false
+            },
+            {
+              "content": "It leads to excessive CPU and memory usage due to connection overhead.",
+              "correct": true
+            },
+            {
+              "content": "It causes data inconsistency due to race conditions.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "76f853a6-edce-4e46-954d-87036666c9c9",
+          "prompt": "How does Amazon RDS Proxy handle a situation where the number of application requests exceeds the available database connections?",
+          "options": [
+            {
+              "content": "It automatically provisions a larger database instance.",
+              "correct": false
+            },
+            {
+              "content": "It queues or throttles the requests until a connection becomes available.",
+              "correct": true
+            },
+            {
+              "content": "It immediately terminates the oldest active connections to make room.",
+              "correct": false
+            },
+            {
+              "content": "It redirects the excess traffic to a static S3 bucket.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fb9dcee8-dc37-4c80-a885-ff65d429ec82",
+          "prompt": "Regarding database failovers, what specific benefit does Amazon RDS Proxy provide?",
+          "options": [
+            {
+              "content": "It sends an email alert to the administrator to manually switch connections.",
+              "correct": false
+            },
+            {
+              "content": "It prevents failovers from happening by fixing the primary instance.",
+              "correct": false
+            },
+            {
+              "content": "It replicates the data to a third region for immediate access.",
+              "correct": false
+            },
+            {
+              "content": "It automatically reconnects to the new primary instance, reducing failover downtime.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e38af3ca-1349-4ad7-a293-5a0a23bd2539",
+          "prompt": "By up to what percentage can Amazon RDS Proxy reduce failover downtime for Aurora and RDS databases?",
+          "options": [
+            {
+              "content": "66%",
+              "correct": true
+            },
+            {
+              "content": "33%",
+              "correct": false
+            },
+            {
+              "content": "99%",
+              "correct": false
+            },
+            {
+              "content": "50%",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ea20018e-851c-488d-854d-be6841300520",
+          "prompt": "Which AWS services does RDS Proxy integrate with to eliminate the need for hardcoding database credentials in application code?",
+          "options": [
+            {
+              "content": "AWS IAM and AWS Secrets Manager",
+              "correct": true
+            },
+            {
+              "content": "Amazon CloudWatch and AWS CloudTrail",
+              "correct": false
+            },
+            {
+              "content": "AWS Shield and AWS WAF",
+              "correct": false
+            },
+            {
+              "content": "AWS Lambda and Amazon S3",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b3c768b0-ee40-4b2d-99c1-c01a74f03362",
+          "prompt": "What is the maintenance model for Amazon RDS Proxy?",
+          "options": [
+            {
+              "content": "It is a serverless, fully managed solution that requires no manual patching or deployment.",
+              "correct": true
+            },
+            {
+              "content": "It requires provisioning EC2 instances and installing proxy software.",
+              "correct": false
+            },
+            {
+              "content": "It is managed by the database engine and requires database downtime to update.",
+              "correct": false
+            },
+            {
+              "content": "It requires the user to manually patch the proxy software monthly.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "52934a90-0d85-4d66-88c2-1acc8f6e904f",
+          "prompt": "How does Amazon RDS Proxy ensure high availability for its own infrastructure?",
+          "options": [
+            {
+              "content": "It requires the user to deploy a secondary proxy manually.",
+              "correct": false
+            },
+            {
+              "content": "It relies on a single high-performance server.",
+              "correct": false
+            },
+            {
+              "content": "It backs up its configuration to a tape drive.",
+              "correct": false
+            },
+            {
+              "content": "It automatically scales across multiple availability zones.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "21a3afc9-a38b-48bc-bab5-84e1923125e2",
+          "prompt": "Which scenario creates the 'connection overhead' that RDS Proxy is designed to mitigate?",
+          "options": [
+            {
+              "content": "Running a single monolithic application with one persistent connection.",
+              "correct": false
+            },
+            {
+              "content": "A high number of application instances opening and closing connections frequently.",
+              "correct": true
+            },
+            {
+              "content": "Storing large binary files (BLOBs) directly in the database.",
+              "correct": false
+            },
+            {
+              "content": "Large-scale batch processing jobs that run once a day.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bb47e01b-94a5-4f0f-a5fb-441b2a25068e",
+          "prompt": "Besides performance, what key security advantage does RDS Proxy offer?",
+          "options": [
+            {
+              "content": "It enforces IAM authentication, removing the need to manage database credentials in code.",
+              "correct": true
+            },
+            {
+              "content": "It acts as a firewall blocking all traffic from outside the VPC.",
+              "correct": false
+            },
+            {
+              "content": "It encrypts the database storage at rest.",
+              "correct": false
+            },
+            {
+              "content": "It scans SQL queries for syntax errors before sending them to the DB.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/d6c08097eb12",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "RDS Proxy",
+      "questions": [
+        {
+          "id": "11815844-a712-407f-9885-7029a77ca0f2",
+          "prompt": "You are designing a serverless e-commerce application using AWS Lambda and Amazon Aurora MySQL. During flash sales, traffic spikes from zero to 10,000 concurrent users in seconds. Your database monitoring shows CPU utilization hitting 100% due to 'high connection churn,' even though the actual query throughput is low. What is the most cost-effective and architecturally sound solution?",
+          "options": [
+            {
+              "content": "Increase the Aurora instance size (Vertical Scaling) to handle more connections.",
+              "correct": false
+            },
+            {
+              "content": "Implement Amazon RDS Proxy between the Lambda functions and the Aurora database.",
+              "correct": true
+            },
+            {
+              "content": "Use an SQS queue to buffer all user requests and process them asynchronously.",
+              "correct": false
+            },
+            {
+              "content": "Configure the Lambda functions to use a larger connection pool in their code.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1370a533-bb70-4155-9c69-0774927946bf",
+          "prompt": "A legacy application uses a hardcoded database password in its configuration files. You migrate this app to AWS and introduce RDS Proxy. Your CISO requires that the application never handles plaintext passwords again. How do you configure the architecture to meet this requirement?",
+          "options": [
+            {
+              "content": "Use AWS KMS to encrypt the application code.",
+              "correct": false
+            },
+            {
+              "content": "Configure the application to connect to RDS Proxy using IAM Authentication, and set up RDS Proxy to retrieve DB credentials from AWS Secrets Manager.",
+              "correct": true
+            },
+            {
+              "content": "Store the password in S3 with encryption and have RDS Proxy read it.",
+              "correct": false
+            },
+            {
+              "content": "Enable SSL/TLS on the RDS Proxy connection.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "228a1caa-4795-4237-84a8-ac75846c3d44",
+          "prompt": "You have deployed RDS Proxy for an application that heavily relies on changing the SET LOCAL time zone for every user session. You notice that despite using RDS Proxy, your database connection count is still very high, almost matching the number of application users. What is likely happening?",
+          "options": [
+            {
+              "content": "You forgot to enable 'Connection Pooling' in the RDS Proxy console.",
+              "correct": false
+            },
+            {
+              "content": "The RDS Proxy is under-provisioned and cannot handle the traffic.",
+              "correct": false
+            },
+            {
+              "content": "RDS Proxy does not support session variables at all.",
+              "correct": false
+            },
+            {
+              "content": "The application is experiencing 'Connection Pinning' because of the session-state changes.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "077c797e-3024-4567-aee7-bf7ec9abcd46",
+          "prompt": "Your team manages a critical Aurora PostgreSQL database. You need to perform a minor version upgrade which triggers a failover. You want to ensure the application experiences zero to minimal errors during this maintenance window. Why is RDS Proxy the recommended tool here?",
+          "options": [
+            {
+              "content": "It pauses the upgrade until traffic is zero.",
+              "correct": false
+            },
+            {
+              "content": "It holds the application connections open while switching the backend connection to the new primary, masking the failover.",
+              "correct": true
+            },
+            {
+              "content": "It spins up a second database to take writes during the upgrade.",
+              "correct": false
+            },
+            {
+              "content": "It caches the write queries and replays them after the upgrade.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "51ecda70-0ed8-4f75-8861-d455a886a699",
+          "prompt": "You are migrating a workload to AWS. The application runs on EC2 instances in an Auto Scaling Group. The database is RDS MySQL. You have configured RDS Proxy. To ensure the highest availability, how should you deploy the RDS Proxy?",
+          "options": [
+            {
+              "content": "Deploy the Proxy in a separate VPC and use Peering.",
+              "correct": false
+            },
+            {
+              "content": "You do not need to configure this; RDS Proxy is highly available and multi-AZ by default.",
+              "correct": true
+            },
+            {
+              "content": "Deploy one Proxy in the same Availability Zone as the primary database.",
+              "correct": false
+            },
+            {
+              "content": "Create a Network Load Balancer in front of two separate RDS Proxy instances.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/2d0400116d69",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "DocumentDB",
+      "questions": [
+        {
+          "id": "eb2f79d7-3024-41a7-bd4c-1b08e52d39f8",
+          "prompt": "What is the primary value proposition of AWS DocumentDB for an organization currently running self-managed MongoDB?",
+          "options": [
+            {
+              "content": "It automatically converts MongoDB NoSQL data into a relational SQL format.",
+              "correct": false
+            },
+            {
+              "content": "It provides a fully managed service that mimics MongoDB functionality, removing the burden of manual infrastructure scaling.",
+              "correct": true
+            },
+            {
+              "content": "It allows you to run MongoDB directly on your local machine.",
+              "correct": false
+            },
+            {
+              "content": "It is a free version of MongoDB Enterprise.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9d924f15-496d-4a1d-aa9d-c21dbcf2318c",
+          "prompt": "How does the 'Cluster Volume' in DocumentDB ensure data durability?",
+          "options": [
+            {
+              "content": "It replicates data six ways across three Availability Zones.",
+              "correct": true
+            },
+            {
+              "content": "It relies on the client application to write data to multiple nodes manually.",
+              "correct": false
+            },
+            {
+              "content": "It saves data to a single highly durable SSD in one Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "It replicates data to a secondary AWS Region asynchronously.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9090885e-e248-413d-ba98-9d2e30385d2c",
+          "prompt": "In a DocumentDB cluster, how many Primary instances can exist simultaneously?",
+          "options": [
+            {
+              "content": "One per Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "Exactly one.",
+              "correct": true
+            },
+            {
+              "content": "Up to 15.",
+              "correct": false
+            },
+            {
+              "content": "Zero (it is serverless).",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d10ad319-668d-4463-b7f4-251b8decadab",
+          "prompt": "What is the maximum storage limit for a DocumentDB Cluster Volume?",
+          "options": [
+            {
+              "content": "64 TB",
+              "correct": false
+            },
+            {
+              "content": "Unlimited",
+              "correct": false
+            },
+            {
+              "content": "128 TB",
+              "correct": true
+            },
+            {
+              "content": "16 TB",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a0dea7a6-e04e-4eff-bcec-7a308726ecda",
+          "prompt": "A developer wants to ensure that a read query is ALWAYS directed to a Replica instance, never the Primary. Which Read Preference mode should they use?",
+          "options": [
+            {
+              "content": "nearest",
+              "correct": false
+            },
+            {
+              "content": "secondary",
+              "correct": true
+            },
+            {
+              "content": "secondaryPreferred",
+              "correct": false
+            },
+            {
+              "content": "primaryPreferred",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "31fe5757-6896-440e-b37c-2a3eb34b0121",
+          "prompt": "What enables DocumentDB to perform efficient crash recovery compared to traditional databases?",
+          "options": [
+            {
+              "content": "The page cache is managed separately from the database process.",
+              "correct": true
+            },
+            {
+              "content": "It uses a blockchain ledger for transactions.",
+              "correct": false
+            },
+            {
+              "content": "It avoids writing data to disk entirely.",
+              "correct": false
+            },
+            {
+              "content": "It uses synchronous replication to a Global Cluster.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0e17fe4b-5991-41d2-a64e-7bb1cb4f92c2",
+          "prompt": "Regarding scaling, which statement accurately describes the relationship between storage and compute in DocumentDB?",
+          "options": [
+            {
+              "content": "You can adjust compute capacity (Instances) independently from storage (Cluster Volume).",
+              "correct": true
+            },
+            {
+              "content": "Compute instances are serverless and cannot be provisioned.",
+              "correct": false
+            },
+            {
+              "content": "Storage is fixed at creation time and cannot change.",
+              "correct": false
+            },
+            {
+              "content": "They are coupled; you must add more instances to get more storage.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "be9b0a6f-a2aa-49a1-b262-1ce32d6e172f",
+          "prompt": "What is the specific function of a Global Cluster in DocumentDB?",
+          "options": [
+            {
+              "content": "To allow write operations in all regions simultaneously (Multi-Master).",
+              "correct": false
+            },
+            {
+              "content": "To replicate data to up to 5 different AWS regions with sub-second latency.",
+              "correct": true
+            },
+            {
+              "content": "To translate JSON documents into XML.",
+              "correct": false
+            },
+            {
+              "content": "To backup data to Amazon S3 Glacier.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3ecfaa37-271a-4777-b8f0-5695a3b6b775",
+          "prompt": "If a developer uses the nearest Read Preference, how does DocumentDB route the request?",
+          "options": [
+            {
+              "content": "It routes to the closest region in a Global Cluster.",
+              "correct": false
+            },
+            {
+              "content": "It routes to the instance physically closest to the user's GPS coordinates.",
+              "correct": false
+            },
+            {
+              "content": "It routes to the instance with the lowest network latency, regardless of whether it is Primary or Replica.",
+              "correct": true
+            },
+            {
+              "content": "It routes to the instance with the lowest CPU usage.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a41b9c7a-ad21-4619-bfd6-e06f1feee070",
+          "prompt": "Which of the following is NOT a typical use case for DocumentDB?",
+          "options": [
+            {
+              "content": "Content Management Systems (CMS)",
+              "correct": false
+            },
+            {
+              "content": "Complex transactional banking systems requiring strict SQL joins.",
+              "correct": true
+            },
+            {
+              "content": "User Profile Management",
+              "correct": false
+            },
+            {
+              "content": "High-scale web applications handling millions of requests.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/ec1696788960",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "DocumentDB",
+      "questions": [
+        {
+          "id": "233b0a73-3e0e-469c-9ca8-568941e49f81",
+          "prompt": "Scenario: You are migrating a self-managed MongoDB fleet running on EC2 to Amazon DocumentDB. Your application currently uses a connection string that hard-codes three specific IP addresses of your MongoDB servers. After migrating to DocumentDB, what architectural change should you make to the application's connection logic to ensure it handles failover correctly?",
+          "options": [
+            {
+              "content": "Connect to the Cluster Volume directly.",
+              "correct": false
+            },
+            {
+              "content": "Use an Elastic Load Balancer (ELB) in front of the database.",
+              "correct": false
+            },
+            {
+              "content": "Use the 'Cluster Endpoint' for all write operations and the 'Reader Endpoint' for all read operations.",
+              "correct": true
+            },
+            {
+              "content": "Hard-code the IP addresses of the new DocumentDB instances.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "63f9a586-56c0-401e-ac1e-23cf3371a430",
+          "prompt": "Scenario: A news aggregation app uses DocumentDB. The 'Breaking News' feature is extremely popular, causing a massive spike in Read traffic (100x normal load). The Write traffic remains low. The CPU on the Primary instance is at 90%. What is the most cost-effective way to fix this immediate bottleneck?",
+          "options": [
+            {
+              "content": "Sharding the database into multiple clusters.",
+              "correct": false
+            },
+            {
+              "content": "Scale up the Primary instance to a larger size (e.g., r5.xlarge to r5.24xlarge).",
+              "correct": false
+            },
+            {
+              "content": "Increase the IOPS on the Cluster Volume.",
+              "correct": false
+            },
+            {
+              "content": "Add more Read Replicas and configure the application to use the 'secondaryPreferred' or 'reader endpoint'.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "78498839-d508-4261-a6de-662dcd6acbd2",
+          "prompt": "Scenario: You have a compliance requirement to keep a backup of your DocumentDB data for 7 years. However, the 'Automated Backup' retention period in DocumentDB is limited (max 35 days). How do you meet the 7-year requirement automatically?",
+          "options": [
+            {
+              "content": "Enable 'Global Clusters'.",
+              "correct": false
+            },
+            {
+              "content": "Extend the DocumentDB automated backup retention to 2555 days.",
+              "correct": false
+            },
+            {
+              "content": "Write a script to export data to JSON and upload to S3 Standard.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup to schedule monthly snapshots and transition them to a 'Cold Storage' vault.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "53ba1dea-9633-4267-b77a-c1d7aa2fab2c",
+          "prompt": "Scenario: Your Global DocumentDB architecture has a Primary Cluster in us-east-1 and a Secondary Cluster in eu-west-1. A disaster strikes us-east-1, knocking it offline. What must you do to allow your European application servers to start writing to the database?",
+          "options": [
+            {
+              "content": "Manually 'Promote' the Secondary Cluster in eu-west-1 to be the new standalone Primary Cluster.",
+              "correct": true
+            },
+            {
+              "content": "Update the DNS to point to the Read Replica.",
+              "correct": false
+            },
+            {
+              "content": "Restore from the last backup in eu-west-1.",
+              "correct": false
+            },
+            {
+              "content": "Nothing; failover is automatic for global writes.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "89201393-e6bb-41bc-8bef-1c52c32dd0e8",
+          "prompt": "Scenario: You are security-conscious. You want to ensure that data in transit between your application and your DocumentDB cluster is encrypted. What is the default behavior of Amazon DocumentDB regarding TLS/SSL?",
+          "options": [
+            {
+              "content": "TLS is disabled by default for compatibility.",
+              "correct": false
+            },
+            {
+              "content": "It uses a VPN connection automatically.",
+              "correct": false
+            },
+            {
+              "content": "TLS is enabled by default, and you must download a public key (CA certificate) to connect.",
+              "correct": true
+            },
+            {
+              "content": "It relies on Security Groups for encryption.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/0f38b965ae84",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Redshift",
+      "questions": [
+        {
+          "id": "484251d9-056f-4637-bcc8-3d8e8d9bef00",
+          "prompt": "What is the primary architectural difference between a traditional relational database (OLTP) and a data warehouse like AWS Redshift?",
+          "options": [
+            {
+              "content": "Data warehouses are designed for complex analytical queries and reporting, whereas traditional databases focus on transactional operations like inserts and updates.",
+              "correct": true
+            },
+            {
+              "content": "Traditional databases are optimized for analytical queries, while data warehouses focus on transactional operations.",
+              "correct": false
+            },
+            {
+              "content": "Traditional databases use columnar storage by default, while data warehouses use row-based storage.",
+              "correct": false
+            },
+            {
+              "content": "Data warehouses do not support SQL, requiring proprietary query languages, unlike traditional databases.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "85bb1278-3e35-4cc6-89aa-c38dc7fbd378",
+          "prompt": "In an AWS Redshift cluster, which component is responsible for parsing SQL queries, creating execution plans, and managing client communication?",
+          "options": [
+            {
+              "content": "Compute Node",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3",
+              "correct": false
+            },
+            {
+              "content": "Leader Node",
+              "correct": true
+            },
+            {
+              "content": "Redshift Managed Storage (RMS)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8041a35b-e9da-4252-8bc9-322f95e0645f",
+          "prompt": "How does Columnar Storage contribute to the performance of analytical workloads in Redshift?",
+          "options": [
+            {
+              "content": "It reduces the amount of data loaded from disk by reading only the specific columns defined in the query.",
+              "correct": true
+            },
+            {
+              "content": "It distributes the query processing logic to the client application to save cluster resources.",
+              "correct": false
+            },
+            {
+              "content": "It stores data in rows, ensuring that all data for a single record is physically adjacent on disk.",
+              "correct": false
+            },
+            {
+              "content": "It eliminates the need for data compression, reducing CPU overhead during writes.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "eb3ce0ff-cbec-40d9-b15a-1644458b46ac",
+          "prompt": "What is the specific role of Massively Parallel Processing (MPP) in Redshift's architecture?",
+          "options": [
+            {
+              "content": "It replicates data to Amazon RDS instances for high availability.",
+              "correct": false
+            },
+            {
+              "content": "It distributes the execution of a query across multiple compute nodes to process large data sets faster.",
+              "correct": true
+            },
+            {
+              "content": "It automatically scales the storage capacity of the cluster without adding nodes.",
+              "correct": false
+            },
+            {
+              "content": "It allows multiple leader nodes to process a single query simultaneously.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "74131099-f56a-4058-be76-b8e88feaed0b",
+          "prompt": "Redshift Managed Storage (RMS) allows for which specific architectural advantage?",
+          "options": [
+            {
+              "content": "It forces compute and storage to scale together, ensuring consistent performance.",
+              "correct": false
+            },
+            {
+              "content": "It replaces the need for Amazon S3 for backups.",
+              "correct": false
+            },
+            {
+              "content": "It decouples compute and storage, allowing you to scale storage capacity independently of compute resources.",
+              "correct": true
+            },
+            {
+              "content": "It allows the Leader Node to execute compute-heavy tasks.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "91977cfc-36f4-42b0-9d56-81fa91d49d64",
+          "prompt": "Which command is recommended for efficiently ingesting large datasets into Redshift from Amazon S3?",
+          "options": [
+            {
+              "content": "PUT",
+              "correct": false
+            },
+            {
+              "content": "INSERT INTO",
+              "correct": false
+            },
+            {
+              "content": "COPY",
+              "correct": true
+            },
+            {
+              "content": "RESTORE",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c70b2220-4eda-427c-ba44-a167c86169f7",
+          "prompt": "On which database engine is AWS Redshift originally based?",
+          "options": [
+            {
+              "content": "PostgreSQL",
+              "correct": true
+            },
+            {
+              "content": "Oracle Database",
+              "correct": false
+            },
+            {
+              "content": "Microsoft SQL Server",
+              "correct": false
+            },
+            {
+              "content": "MySQL",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "db9ada42-95b3-4499-8757-765dff76331b",
+          "prompt": "How does Redshift handle data compression to optimize storage and performance?",
+          "options": [
+            {
+              "content": "Users must manually compress files using GZIP before loading them.",
+              "correct": false
+            },
+            {
+              "content": "It uses Automatic Data Compression to minimize storage and reduce I/O.",
+              "correct": true
+            },
+            {
+              "content": "It does not compress data to ensure faster retrieval speeds.",
+              "correct": false
+            },
+            {
+              "content": "It relies entirely on the file system of the operating system for compression.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0678e57b-4283-4728-80ce-4e0708be5fb5",
+          "prompt": "To ensure High Availability and durability, where does Redshift automatically store its backup snapshots?",
+          "options": [
+            {
+              "content": "On the Leader Node's local storage",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3",
+              "correct": true
+            },
+            {
+              "content": "Amazon Glacier Deep Archive",
+              "correct": false
+            },
+            {
+              "content": "Amazon RDS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bb454b74-930a-4adf-bdf6-6591605e69fa",
+          "prompt": "What is the function of Materialized Views in Redshift?",
+          "options": [
+            {
+              "content": "They provide a real-time stream of data changes.",
+              "correct": false
+            },
+            {
+              "content": "They store precomputed aggregated data for faster retrieval during complex queries.",
+              "correct": true
+            },
+            {
+              "content": "They serve as a backup of the entire cluster.",
+              "correct": false
+            },
+            {
+              "content": "They allow for writing data to multiple tables simultaneously.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/7311a55a21c8",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Redshift",
+      "questions": [
+        {
+          "id": "3b91c993-39a2-47c5-85e6-01b56123c369",
+          "prompt": "Scenario: You are designing a data warehouse for a retail giant. They receive 50 GB of sales logs every night in CSV format dropped into an S3 bucket. The data team currently writes a Python script that reads the CSV row-by-row and runs 'INSERT' statements into Redshift. They are complaining that the load takes 6 hours and fails frequently.",
+          "options": [
+            {
+              "content": "Increase the size of the Leader Node to handle more INSERT statements per second.",
+              "correct": false
+            },
+            {
+              "content": "Rewrite the process to use the 'COPY' command to load the CSVs directly from S3 in parallel.",
+              "correct": true
+            },
+            {
+              "content": "Switch to a Multi-AZ deployment to double the write throughput.",
+              "correct": false
+            },
+            {
+              "content": "Compress the CSV files into GZIP format to speed up the Python script's network transfer.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "43076988-3f5c-44b0-bab7-e589f3bf6072",
+          "prompt": "Scenario: Your CFO is complaining about the cost of your Redshift cluster. You currently have a cluster with massive storage capacity because you are keeping 7 years of compliance data (800 TB). However, your analysts only ever query the last 3 months of data (5 TB) for their daily reports. The compliance data is queried maybe once a year for audits.",
+          "options": [
+            {
+              "content": "Resize the cluster to use Redshift Managed Storage (RMS) nodes (RA3 instances).",
+              "correct": true
+            },
+            {
+              "content": "Migrate the 800 TB of data to Amazon Glacier Deep Archive and delete it from Redshift.",
+              "correct": false
+            },
+            {
+              "content": "Create a second Redshift cluster just for the historical data and keep it turned off.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'Automatic Data Compression' on the existing cluster.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7c6a6f8e-dbc7-4d90-9f79-7427ac3507ec",
+          "prompt": "Scenario: You manage a dashboard used by 200 regional managers. Every Monday morning at 9:00 AM, they all log in simultaneously to check weekly sales. The Redshift cluster CPU spikes to 100%, and queries start queuing, taking minutes to return. By 10:00 AM, the load drops to near zero.",
+          "options": [
+            {
+              "content": "Change the distribution key of the sales table.",
+              "correct": false
+            },
+            {
+              "content": "Use Elastic Scalability (Concurrency Scaling) to automatically add transient clusters during the peak.",
+              "correct": true
+            },
+            {
+              "content": "Permanently add 10 more nodes to the cluster to handle the Monday morning peak.",
+              "correct": false
+            },
+            {
+              "content": "Move the dashboard to read from a Read Replica in Amazon RDS.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "728d250f-6f49-4395-aec2-5dba4303e261",
+          "prompt": "Scenario: A Junior Engineer accidentally deleted the 'Transactions' table in the Production Redshift cluster. The business needs this data back immediately. How do you recover?",
+          "options": [
+            {
+              "content": "Query the data from the Compute Node's local SSD cache.",
+              "correct": false
+            },
+            {
+              "content": "Restore the deleted table from the latest automated snapshot stored in S3.",
+              "correct": true
+            },
+            {
+              "content": "Use the 'Undo' command in the Leader Node.",
+              "correct": false
+            },
+            {
+              "content": "The data is lost permanently because Redshift does not support backups.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ee5cc17c-8f5b-4d2a-a987-357285d23e85",
+          "prompt": "Scenario: You have a query that joins a 'Customers' table (small, 10k rows) with a 'Sales' table (huge, 10B rows). The query is running slowly. You suspect that the large Sales table is being shuffled around the network too much during the join.",
+          "options": [
+            {
+              "content": "Distribute the 'Customers' table on All nodes (DISTSTYLE ALL).",
+              "correct": true
+            },
+            {
+              "content": "Distribute the 'Sales' table on All nodes (DISTSTYLE ALL).",
+              "correct": false
+            },
+            {
+              "content": "Increase the number of nodes to force faster network speeds.",
+              "correct": false
+            },
+            {
+              "content": "Move both tables to the Leader Node.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/ebceb3f55f9d",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "OpenSearch",
+      "questions": [
+        {
+          "id": "5123f48d-a987-4efb-82f3-d8a47a321c7d",
+          "prompt": "What is the primary reason AWS created OpenSearch as a fork of Elasticsearch?",
+          "options": [
+            {
+              "content": "To enforce a strict relational schema on all data.",
+              "correct": false
+            },
+            {
+              "content": "To improve the performance of Elasticsearch beyond what was technically possible.",
+              "correct": false
+            },
+            {
+              "content": "To remove the support for JSON data types.",
+              "correct": false
+            },
+            {
+              "content": "To maintain a truly open-source version after Elasticsearch transitioned to a proprietary license.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1e8377d1-da5d-48bd-b5c4-7ff3ec1f7b8d",
+          "prompt": "Which deployment option removes the operational burden of provisioning and tuning clusters by being on-demand and auto-scaling?",
+          "options": [
+            {
+              "content": "OpenSearch Direct Connect",
+              "correct": false
+            },
+            {
+              "content": "OpenSearch on EC2",
+              "correct": false
+            },
+            {
+              "content": "OpenSearch Serverless",
+              "correct": true
+            },
+            {
+              "content": "OpenSearch Managed Cluster",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8cb939b4-46d4-424e-afac-b3590ecce124",
+          "prompt": "What is the role of 'OpenSearch Ingestion'?",
+          "options": [
+            {
+              "content": "It serves as a serverless data collector that transforms and delivers logs/metrics, replacing tools like Logstash.",
+              "correct": true
+            },
+            {
+              "content": "It acts as a relational database engine for structured data.",
+              "correct": false
+            },
+            {
+              "content": "It manages the encryption keys for the cluster.",
+              "correct": false
+            },
+            {
+              "content": "It is a visualization tool for creating dashboards.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1b875a1f-a6ae-4eda-9c5d-62ebbff30d65",
+          "prompt": "How does OpenSearch handle data types compared to traditional relational databases?",
+          "options": [
+            {
+              "content": "It converts all data into binary blobs that cannot be queried.",
+              "correct": false
+            },
+            {
+              "content": "It requires rigid schemas and struggles with semi-structured data.",
+              "correct": false
+            },
+            {
+              "content": "It efficiently manages diverse, semi-structured data like JSON, logs, and text in real time.",
+              "correct": true
+            },
+            {
+              "content": "It can only store time-series data and cannot handle text.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fdceeccb-e231-43df-b513-8a4cf38cc7a9",
+          "prompt": "For users comfortable with SQL, how does OpenSearch facilitate the transition?",
+          "options": [
+            {
+              "content": "It automatically migrates all SQL tables to OpenSearch indexes.",
+              "correct": false
+            },
+            {
+              "content": "It connects directly to RDS instances to run queries.",
+              "correct": false
+            },
+            {
+              "content": "It forces users to learn a proprietary query language called PQL.",
+              "correct": false
+            },
+            {
+              "content": "It provides a familiar SQL query syntax for aggregations and filtering.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f39f4861-5b9e-44da-bd95-9c23b401c5e7",
+          "prompt": "Which of the following is NOT a common use case for OpenSearch mentioned in the text?",
+          "options": [
+            {
+              "content": "Transactional banking ledger (ACID compliance)",
+              "correct": true
+            },
+            {
+              "content": "Security (Threat detection)",
+              "correct": false
+            },
+            {
+              "content": "Observability (Logs, metrics, traces)",
+              "correct": false
+            },
+            {
+              "content": "Search functionality for websites",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "5117732e-feaa-450e-a203-017bc42fcff5",
+          "prompt": "Which AWS service is integrated with OpenSearch to create interactive dashboards for visualizing data?",
+          "options": [
+            {
+              "content": "AWS Glue",
+              "correct": false
+            },
+            {
+              "content": "Amazon SNS",
+              "correct": false
+            },
+            {
+              "content": "Amazon QuickSight",
+              "correct": true
+            },
+            {
+              "content": "Amazon SQS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "424a4f74-eeaf-4bdc-a617-70191c39f358",
+          "prompt": "What feature helps support anomaly detection and alerting within OpenSearch?",
+          "options": [
+            {
+              "content": "Manual log review tools",
+              "correct": false
+            },
+            {
+              "content": "External cron jobs",
+              "correct": false
+            },
+            {
+              "content": "Static thresholds only",
+              "correct": false
+            },
+            {
+              "content": "Machine Learning integration",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8a7fca5b-ed13-4e46-995b-342fb18c8437",
+          "prompt": "Which service can automatically transfer table data to an OpenSearch cluster?",
+          "options": [
+            {
+              "content": "Amazon Route 53",
+              "correct": false
+            },
+            {
+              "content": "Amazon VPC",
+              "correct": false
+            },
+            {
+              "content": "Amazon DynamoDB",
+              "correct": true
+            },
+            {
+              "content": "AWS CloudFormation",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6a280108-3318-48ae-908d-5ad4bce92c86",
+          "prompt": "What happens to the operational metrics of OpenSearch service domains?",
+          "options": [
+            {
+              "content": "They are automatically sent to Amazon CloudWatch.",
+              "correct": true
+            },
+            {
+              "content": "They must be manually pulled via API every minute.",
+              "correct": false
+            },
+            {
+              "content": "They are stored in a local text file on the user's computer.",
+              "correct": false
+            },
+            {
+              "content": "They are deleted immediately after collection.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/95855acc803e",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "OpenSearch",
+      "questions": [
+        {
+          "id": "cd0448a9-81f9-4871-b337-e9fde1ddebb4",
+          "prompt": "You are the architect for a ride-sharing app. You need to enable a 'Geospatial Search' feature so users can find drivers within a 5km radius in real-time. The driver locations update every 5 seconds. Which approach is most scalable and performant?",
+          "options": [
+            {
+              "content": "Store driver locations in DynamoDB and use 'Scan' operations with coordinate math in the application layer.",
+              "correct": false
+            },
+            {
+              "content": "Store locations in S3 and use Amazon Athena to query them.",
+              "correct": false
+            },
+            {
+              "content": "Use Amazon ElastiCache (Redis) and retrieve all driver keys to calculate distance on the client side.",
+              "correct": false
+            },
+            {
+              "content": "Ingest driver location streams into OpenSearch and use its native Geospatial Query capabilities.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b430087e-e3ba-4986-b37c-8a99dc7224de",
+          "prompt": "Your security team needs a centralized dashboard to visualize login failures across your Linux servers (EC2), Windows servers (On-Prem), and Firewalls. They want to see a world map of where attacks are coming from. Which integration architecture is best?",
+          "options": [
+            {
+              "content": "Install Fluentbit/Logstash on servers -> OpenSearch Ingestion -> OpenSearch Service -> OpenSearch Dashboards.",
+              "correct": true
+            },
+            {
+              "content": "Write logs to DynamoDB tables -> Trigger Lambda -> Email Security Team.",
+              "correct": false
+            },
+            {
+              "content": "Use CloudWatch Alarms to trigger an SNS topic.",
+              "correct": false
+            },
+            {
+              "content": "Install Kinesis Agent on all servers -> Kinesis Firehose -> S3 -> QuickSight.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cb4aa869-1b31-4664-837e-6bcb7b4d0375",
+          "prompt": "A retail company wants to use OpenSearch to analyze sales data. They have a massive amount of historical sales data (10TB) stored in CSV format in Amazon S3. They want to search this data occasionally but do NOT want to provision a permanent, expensive OpenSearch cluster running 24/7.",
+          "options": [
+            {
+              "content": "Use a Reserved Instance OpenSearch cluster.",
+              "correct": false
+            },
+            {
+              "content": "Load the data into DynamoDB.",
+              "correct": false
+            },
+            {
+              "content": "Use Amazon Redshift provisioned cluster.",
+              "correct": false
+            },
+            {
+              "content": "Use OpenSearch Serverless.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d27daf77-afeb-4f0a-90a0-809a47f1756e",
+          "prompt": "You are migrating a self-managed Elasticsearch cluster running on EC2 to AWS OpenSearch Service. The application relies heavily on 'Kibana' for visualizations. What happens to Kibana during this migration?",
+          "options": [
+            {
+              "content": "Kibana is not supported; you can only use the API.",
+              "correct": false
+            },
+            {
+              "content": "You can transition to 'OpenSearch Dashboards', which is included with the service and is the Open Source fork of Kibana.",
+              "correct": true
+            },
+            {
+              "content": "You must rewrite all visualizations in Amazon QuickSight.",
+              "correct": false
+            },
+            {
+              "content": "You must install Kibana on a separate EC2 instance to connect to OpenSearch Service.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ec7b8650-8cad-41d5-b028-a62841f8fed9",
+          "prompt": "Your application uses DynamoDB as its primary source of truth. You need to enable complex fuzzy search on this data. You set up a DynamoDB Stream to trigger a Lambda function that writes updates to OpenSearch. Users are reporting that sometimes search results appear 2-3 seconds after they create an item. Is this expected behavior?",
+          "options": [
+            {
+              "content": "No, this indicates a failure in the Lambda function.",
+              "correct": false
+            },
+            {
+              "content": "Yes, but you can fix it by increasing the DynamoDB Read Capacity.",
+              "correct": false
+            },
+            {
+              "content": "No, OpenSearch should be strongly consistent with DynamoDB automatically.",
+              "correct": false
+            },
+            {
+              "content": "Yes, this is 'Eventual Consistency' inherent in the decoupled architecture.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  }
+]

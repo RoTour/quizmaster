@@ -1,0 +1,3955 @@
+[
+  {
+    "url": "https://gemini.google.com/share/62fb7a54dd34",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "EBS",
+      "questions": [
+        {
+          "id": "a84304ea-06ad-4bf3-a496-970620f3785f",
+          "prompt": "A Solutions Architect is designing a system that requires a storage layer capable of acting as a boot drive for an operating system. Which storage architecture is fundamentally capable of this?",
+          "options": [
+            {
+              "content": "Object Storage",
+              "correct": false
+            },
+            {
+              "content": "Block Storage",
+              "correct": true
+            },
+            {
+              "content": "File Storage",
+              "correct": false
+            },
+            {
+              "content": "Key-Value Store",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "19e47740-0030-42de-a800-ef53a52978e1",
+          "prompt": "You have launched an EC2 instance in Availability Zone us-east-1a. You attempt to attach an existing EBS volume located in us-east-1b to this instance, but the operation fails. What is the cause?",
+          "options": [
+            {
+              "content": "The volume does not have the multi-attach feature enabled.",
+              "correct": false
+            },
+            {
+              "content": "The volume is not formatted with a compatible file system.",
+              "correct": false
+            },
+            {
+              "content": "EBS volumes and EC2 instances must reside in the same Availability Zone.",
+              "correct": true
+            },
+            {
+              "content": "The volume type is incompatible with the instance type.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ca07e767-9fbf-4461-8cbb-854e835b5fde",
+          "prompt": "A critical application requires an EBS volume to be resilient against physical drive failure. How does a standard EBS volume handle the failure of a single physical hardware component backing it?",
+          "options": [
+            {
+              "content": "The volume becomes read-only until the hardware is replaced.",
+              "correct": false
+            },
+            {
+              "content": "The data remains available because EBS volumes are replicated within their Availability Zone.",
+              "correct": true
+            },
+            {
+              "content": "The volume fails and data must be restored from a snapshot.",
+              "correct": false
+            },
+            {
+              "content": "The volume automatically switches to a replica in a different Region.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "64e61822-5436-4292-a89e-fb941b80d400",
+          "prompt": "You need to migrate an EBS volume from one Availability Zone to another to support an application migration. Which workflow achieves this?",
+          "options": [
+            {
+              "content": "Enable Multi-AZ replication on the volume settings.",
+              "correct": false
+            },
+            {
+              "content": "Use the 'Move Volume' console action to specify the new AZ.",
+              "correct": false
+            },
+            {
+              "content": "Create a snapshot, then create a new volume from that snapshot in the target AZ.",
+              "correct": true
+            },
+            {
+              "content": "Detach the volume and reattach it directly to an instance in the new AZ.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2310d71c-0f19-46af-9206-c9c7e075176f",
+          "prompt": "An architect is selecting a volume type for a MySQL database workload that requires consistent, low-latency performance and high durability. Which EBS volume category is most appropriate?",
+          "options": [
+            {
+              "content": "Provisioned IOPS SSD (io1/io2)",
+              "correct": true
+            },
+            {
+              "content": "General Purpose SSD (gp2)",
+              "correct": false
+            },
+            {
+              "content": "Throughput Optimized HDD (st1)",
+              "correct": false
+            },
+            {
+              "content": "Cold HDD (sc1)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c0a13ab0-b23c-4a08-be51-554425c873be",
+          "prompt": "What is the primary operational difference between General Purpose SSD gp2 and gp3 volume types?",
+          "options": [
+            {
+              "content": "gp2 supports Multi-Attach while gp3 does not.",
+              "correct": false
+            },
+            {
+              "content": "gp3 uses magnetic storage while gp2 uses SSD.",
+              "correct": false
+            },
+            {
+              "content": "gp3 allows IOPS and throughput to be provisioned independently of storage capacity.",
+              "correct": true
+            },
+            {
+              "content": "gp3 is only available in a single Availability Zone per Region.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9a5f0226-82b3-45a2-93f2-22f883905a2a",
+          "prompt": "A clustered application requires a single EBS volume to be connected to multiple EC2 instances simultaneously to share data. What requirement must be met to avoid data corruption?",
+          "options": [
+            {
+              "content": "The application must manage simultaneous writes effectively.",
+              "correct": true
+            },
+            {
+              "content": "The volume must be mounted as Read-Only on all instances.",
+              "correct": false
+            },
+            {
+              "content": "You must use an HDD volume type.",
+              "correct": false
+            },
+            {
+              "content": "The instances must be in different Availability Zones.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f88f8175-3ad7-4735-9b94-6e9b1735ef17",
+          "prompt": "You have a log processing workload that writes large datasets sequentially and requires high throughput but not high IOPS. Which volume type offers the best cost-efficiency?",
+          "options": [
+            {
+              "content": "Cold HDD (sc1)",
+              "correct": false
+            },
+            {
+              "content": "General Purpose SSD (gp3)",
+              "correct": false
+            },
+            {
+              "content": "Provisioned IOPS SSD (io2)",
+              "correct": false
+            },
+            {
+              "content": "Throughput Optimized HDD (st1)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bd509f5b-468b-43f1-81b3-a21da9e92380",
+          "prompt": "When configuring an EBS volume, how is the cost primarily determined?",
+          "options": [
+            {
+              "content": "By the provisioned storage capacity (GB) and volume type.",
+              "correct": true
+            },
+            {
+              "content": "By the number of read/write requests only.",
+              "correct": false
+            },
+            {
+              "content": "By the amount of data actually stored on the volume.",
+              "correct": false
+            },
+            {
+              "content": "By the CPU utilization of the attached EC2 instance.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f681663b-1c4f-4265-94d3-f5d66d1c6e3c",
+          "prompt": "To migrate an EBS volume to a different AWS Region for disaster recovery, what is the correct sequence of steps?",
+          "options": [
+            {
+              "content": "Use AWS DataSync to sync the raw block device over the internet.",
+              "correct": false
+            },
+            {
+              "content": "Detach volume > Select 'Change Region' > Attach in new Region.",
+              "correct": false
+            },
+            {
+              "content": "Create Snapshot > Copy Snapshot to destination Region > Create Volume from copied Snapshot.",
+              "correct": true
+            },
+            {
+              "content": "Create Snapshot > Create Volume in source Region > Move Volume to destination Region.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/5c5ebf426855",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "EBS",
+      "questions": [
+        {
+          "id": "b5d704c6-1b1b-471f-9d8e-0c9f7d2493fa",
+          "prompt": "Scenario: 'SecureCorp' has discovered a critical compliance violation. Their primary production database (running on an EC2 instance) is using an unencrypted EBS volume. You need to encrypt this volume with the least amount of operational overhead. You cannot simply 'switch on' encryption for an existing volume. What is the correct architectural workflow to fix this?",
+          "options": [
+            {
+              "content": "Create a new encrypted volume, attach it to the instance, and use an OS-level command (like dd or rsync) to copy data manually.",
+              "correct": false
+            },
+            {
+              "content": "Create a Snapshot of the unencrypted volume -> Copy the Snapshot (select 'Encrypt' option) -> Create a new Volume from the encrypted Snapshot -> Swap volumes on the instance.",
+              "correct": true
+            },
+            {
+              "content": "Use the AWS CLI to run the modify-volume command with the --encrypted flag set to true.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'Default Encryption' for the region, then reboot the instance.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8710a136-bb83-489c-af25-70e790bdad41",
+          "prompt": "Scenario: A legacy financial application requires exactly 25,000 IOPS to function correctly during peak load. The current architecture uses a single gp3 volume, but the application is crashing due to I/O throttling. You check the gp3 settings and see it is provisioned correctly, but performance is capped. What is the limitation and the solution?",
+          "options": [
+            {
+              "content": "Limitation: gp3 maxes out at 16,000 IOPS per volume. Solution: Migrate to io2 or io2 Block Express.",
+              "correct": true
+            },
+            {
+              "content": "Limitation: gp3 throughput is too low. Solution: Increase the throughput to 1,000 MiB/s.",
+              "correct": false
+            },
+            {
+              "content": "Limitation: gp3 burst credits are exhausted. Solution: Switch to gp2.",
+              "correct": false
+            },
+            {
+              "content": "Limitation: The instance type is too small. Solution: Upgrade the EC2 instance size.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2810f53c-e5f8-420f-b862-745aa71e2faa",
+          "prompt": "Scenario: You launch a new high-performance database instance using an AMI from the AWS Marketplace. You stop the instance to resize it, and when you start it back up, all the data is gone. You realize the AMI was configured to use 'Instance Store' volumes rather than EBS. Why did this happen?",
+          "options": [
+            {
+              "content": "You forgot to enable 'Termination Protection' on the instance.",
+              "correct": false
+            },
+            {
+              "content": "Instance Store volumes are ephemeral and physically attached to the host. Data does not persist across a Stop/Start cycle.",
+              "correct": true
+            },
+            {
+              "content": "You didn't take a snapshot before stopping the instance.",
+              "correct": false
+            },
+            {
+              "content": "The volume was encrypted with a key you no longer have access to.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e6e23e2e-a52f-479c-8739-0195138e50ba",
+          "prompt": "Scenario: A media company wants to migrate 10 TB of video archives to the sc1 (Cold HDD) volume type to save money. However, they need to support a burst of read activity every morning that exceeds the baseline performance of a single sc1 volume. They cannot afford SSDs. As an Architect, how can you increase the Read/Write performance (IOPS and Throughput) while keeping the low cost of HDD sc1 volumes?",
+          "options": [
+            {
+              "content": "Configure two sc1 volumes and stripe them together in a RAID 0 configuration.",
+              "correct": true
+            },
+            {
+              "content": "Use gp3 instead, as it is cheaper than sc1.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'Multi-Attach' on the sc1 volume.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Multipart Upload to speed up the transfer.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "457f9cc8-f731-4043-a635-40f1301ff7fa",
+          "prompt": "Scenario: You have an EC2 instance in us-east-1a with a critical EBS volume. A massive hurricane is predicted to hit the region. You want to ensure this data is available in the us-west-1 (California) region as a disaster recovery backup. Which sequence of actions creates the backup in the remote region?",
+          "options": [
+            {
+              "content": "Create an AMI -> Launch new instance in us-west-1 using that AMI.",
+              "correct": false
+            },
+            {
+              "content": "Create Snapshot (us-east-1) -> Copy Snapshot to Region (us-west-1).",
+              "correct": true
+            },
+            {
+              "content": "Detach Volume -> Select 'Move to Region' -> Select us-west-1.",
+              "correct": false
+            },
+            {
+              "content": "Enable Cross-Region Replication (CRR) on the EBS volume settings.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/5d4b2fdf8e21",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3",
+      "questions": [
+        {
+          "id": "ad65ef1c-517b-428c-ad76-499125fed88c",
+          "prompt": "Which of the following best describes the type of storage provided by Amazon S3?",
+          "options": [
+            {
+              "content": "File storage",
+              "correct": false
+            },
+            {
+              "content": "Relational storage",
+              "correct": false
+            },
+            {
+              "content": "Block storage",
+              "correct": false
+            },
+            {
+              "content": "Object storage",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cd1ad05e-1bab-4881-84cb-da839a12d6f3",
+          "prompt": "What is the requirement for naming an S3 bucket?",
+          "options": [
+            {
+              "content": "Names must be unique per VPC.",
+              "correct": false
+            },
+            {
+              "content": "Names must be unique per AWS Region.",
+              "correct": false
+            },
+            {
+              "content": "Names must be unique only within your own AWS account.",
+              "correct": false
+            },
+            {
+              "content": "Names must be globally unique across all AWS accounts.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e40a3222-5bd6-4d6b-8a2b-58dcf08d1d63",
+          "prompt": "How does Amazon S3 handle directory structures?",
+          "options": [
+            {
+              "content": "It uses a strict hierarchical tree structure similar to Linux file systems.",
+              "correct": false
+            },
+            {
+              "content": "It uses inode tables to map directories to storage blocks.",
+              "correct": false
+            },
+            {
+              "content": "It requires creating physical sub-buckets to organize files.",
+              "correct": false
+            },
+            {
+              "content": "It uses a flat namespace where folders are just a visual convenience based on key prefixes.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2d30b43a-2f52-4e58-a6b9-89886aac54cd",
+          "prompt": "What is the maximum size allowed for a single object uploaded to S3?",
+          "options": [
+            {
+              "content": "5 Terabytes (TB)",
+              "correct": true
+            },
+            {
+              "content": "5 Gigabytes (GB)",
+              "correct": false
+            },
+            {
+              "content": "Unlimited",
+              "correct": false
+            },
+            {
+              "content": "1 Terabyte (TB)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "24d0f01d-cd34-4b47-afa7-56a6472e4c4f",
+          "prompt": "By default, how many S3 buckets are allowed per AWS account?",
+          "options": [
+            {
+              "content": "10",
+              "correct": false
+            },
+            {
+              "content": "1,000",
+              "correct": false
+            },
+            {
+              "content": "Unlimited",
+              "correct": false
+            },
+            {
+              "content": "100",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fc03ae7e-90b2-4491-8941-d1f503b6a39a",
+          "prompt": "How does S3 achieve high data durability and availability?",
+          "options": [
+            {
+              "content": "By replicating data across multiple servers and Availability Zones.",
+              "correct": true
+            },
+            {
+              "content": "By storing data on a single high-performance server.",
+              "correct": false
+            },
+            {
+              "content": "By using tape backups stored offline.",
+              "correct": false
+            },
+            {
+              "content": "By requiring users to manually copy files to different regions.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e3609c8a-d158-4de3-a66f-6f589a44bbdc",
+          "prompt": "In a web application architecture, what is a primary benefit of using S3 alongside a web server?",
+          "options": [
+            {
+              "content": "To offload media assets, reducing load on the web server.",
+              "correct": true
+            },
+            {
+              "content": "To run the application's backend code (PHP, Python).",
+              "correct": false
+            },
+            {
+              "content": "To act as the primary database for transaction processing.",
+              "correct": false
+            },
+            {
+              "content": "To manage the DNS routing for the application.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "13c5075c-a0ee-4a85-b4ef-09e484010faa",
+          "prompt": "Which set of components correctly defines an S3 object?",
+          "options": [
+            {
+              "content": "Key, value, and metadata.",
+              "correct": true
+            },
+            {
+              "content": "Filename, directory path, and inode.",
+              "correct": false
+            },
+            {
+              "content": "Table, row, and column.",
+              "correct": false
+            },
+            {
+              "content": "Block ID, sector, and track.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3de8c4c5-43f4-45cc-a74d-4e2b8be17d4a",
+          "prompt": "Which AWS service is integrated with S3 to control access via policies and roles?",
+          "options": [
+            {
+              "content": "Amazon EC2",
+              "correct": false
+            },
+            {
+              "content": "AWS Lambda",
+              "correct": false
+            },
+            {
+              "content": "Amazon RDS",
+              "correct": false
+            },
+            {
+              "content": "Identity and Access Management (IAM)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c29e04df-5e5d-49d9-a00e-61592eaa4064",
+          "prompt": "If you need file-based storage (traditional directory structure) rather than object storage, which service does the text recommend?",
+          "options": [
+            {
+              "content": "Amazon Glacier",
+              "correct": false
+            },
+            {
+              "content": "Amazon EBS",
+              "correct": false
+            },
+            {
+              "content": "Amazon DynamoDB",
+              "correct": false
+            },
+            {
+              "content": "Amazon EFS",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/d6773d66d832",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3",
+      "questions": [
+        {
+          "id": "d385d352-b2b1-4bc7-9a2e-85eb5ee9fb33",
+          "prompt": "Your developer suggests storing user uploads (photos/videos) on the same EC2 instance that runs the Node.js backend to keep things simple. Why do you, as the Architect, reject this proposal in favor of S3?",
+          "options": [
+            {
+              "content": "EC2 cannot store image files, only text code.",
+              "correct": false
+            },
+            {
+              "content": "S3 is block storage, which is faster for databases than EC2 storage.",
+              "correct": false
+            },
+            {
+              "content": "S3 supports a directory hierarchy, which EC2 file systems do not.",
+              "correct": false
+            },
+            {
+              "content": "Storing on EC2 creates a single point of failure and limits scalability; if the instance terminates, user data is lost.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d0ecfdb2-f452-4b82-b2df-6a2b841f2861",
+          "prompt": "You decide to use S3. You attempt to create a bucket named 'petgram-media'. The console throws an error saying the bucket name is invalid or taken. You check your account, and you have 0 buckets. What is the most likely cause?",
+          "options": [
+            {
+              "content": "You cannot use hyphens in bucket names.",
+              "correct": false
+            },
+            {
+              "content": "Bucket names must include the region name (e.g., 'us-east-1').",
+              "correct": false
+            },
+            {
+              "content": "You have reached the 100 bucket limit.",
+              "correct": false
+            },
+            {
+              "content": "Bucket names must be globally unique; someone else in another AWS account has already taken 'petgram-media'.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fa4c003a-95d2-4c54-93cf-f480c35b0b72",
+          "prompt": "To organize the data, your lead developer wants to create a folder structure: Users/UserID/Albums/AlbumName/Photo.jpg. How does S3 handle this request?",
+          "options": [
+            {
+              "content": "S3 creates physical folders for Users, UserID, etc., just like a hard drive.",
+              "correct": false
+            },
+            {
+              "content": "S3 rejects the request because it only allows flat file storage.",
+              "correct": false
+            },
+            {
+              "content": "S3 forces you to create a separate bucket for every UserID.",
+              "correct": false
+            },
+            {
+              "content": "S3 stores the file as a single object with the key 'Users/UserID/Albums/AlbumName/Photo.jpg'.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e7cfa737-0085-4ff7-901f-67f98b5fa6a0",
+          "prompt": "A user accidentally uploads a 6 Terabyte raw video file of their cat sleeping. The upload fails. Why?",
+          "options": [
+            {
+              "content": "S3 buckets have a maximum capacity of 5 TB total.",
+              "correct": false
+            },
+            {
+              "content": "You didn't enable Multi-Part Upload.",
+              "correct": false
+            },
+            {
+              "content": "The single object size limit in S3 is 5 TB.",
+              "correct": true
+            },
+            {
+              "content": "The user's internet connection was too slow.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "80a5c406-6295-46b5-a88a-cc9684cd6fc9",
+          "prompt": "Management is worried about data loss. They ask: 'If the specific server holding our data in the AWS data center fails, do we lose the cat photos?' What is your answer?",
+          "options": [
+            {
+              "content": "No, S3 automatically replicates objects across multiple Availability Zones within the region.",
+              "correct": true
+            },
+            {
+              "content": "Yes, S3 is only for temporary storage.",
+              "correct": false
+            },
+            {
+              "content": "No, because S3 uses RAID 0 on its disks.",
+              "correct": false
+            },
+            {
+              "content": "Yes, unless we manually copy the data to a second bucket.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/712c1bae795c",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "FSx for Windows NetApp Lustre OpenZFS",
+      "questions": [
+        {
+          "id": "3a3db2bd-10d0-499a-9e24-577ac35e878b",
+          "prompt": "Which Amazon FSx solution is specifically optimized for High-Performance Computing (HPC), Machine Learning, and scientific computing workloads?",
+          "options": [
+            {
+              "content": "Amazon FSx for OpenZFS",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Windows File Server",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for NetApp ONTAP",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Lustre",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "394f787d-7f3d-49f8-a5df-c174c7503aa1",
+          "prompt": "Unlike Amazon EFS, which supports only Linux environments, what is a key operating system advantage of Amazon FSx?",
+          "options": [
+            {
+              "content": "It can be mounted on Android and iOS mobile devices directly.",
+              "correct": false
+            },
+            {
+              "content": "It supports Windows environments and other operating systems.",
+              "correct": true
+            },
+            {
+              "content": "It is the only service that supports Linux.",
+              "correct": false
+            },
+            {
+              "content": "It runs directly on the EC2 instance motherboard.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0dde1737-5238-4af9-9156-c8f98d338440",
+          "prompt": "Which Amazon FSx type provides native integration with Microsoft Active Directory and uses the SMB protocol?",
+          "options": [
+            {
+              "content": "Amazon FSx for NetApp ONTAP",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Windows File Server",
+              "correct": true
+            },
+            {
+              "content": "Amazon FSx for Lustre",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for OpenZFS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2b088311-2128-4da9-980a-6042fe37f0d3",
+          "prompt": "Regarding deployment availability, what is a specific limitation of Amazon FSx for Lustre compared to the other FSx types?",
+          "options": [
+            {
+              "content": "It cannot be deployed in a VPC.",
+              "correct": false
+            },
+            {
+              "content": "It is available only in Multi-AZ deployments.",
+              "correct": false
+            },
+            {
+              "content": "It is available only in Single AZ deployments.",
+              "correct": true
+            },
+            {
+              "content": "It requires a dedicated physical host.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "5502eb2a-d128-45b9-a763-34239ac0f530",
+          "prompt": "Which file sharing protocols does Amazon FSx for NetApp ONTAP support according to the text?",
+          "options": [
+            {
+              "content": "SMB and FTP",
+              "correct": false
+            },
+            {
+              "content": "NFS only",
+              "correct": false
+            },
+            {
+              "content": "Lustre and NFS",
+              "correct": false
+            },
+            {
+              "content": "NFS, SMB, and iSCSI",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "584b193f-4618-4c8f-aeda-f0aad6dcd9ff",
+          "prompt": "Amazon FSx for Lustre integrates deeply with which AWS service to allow efficient scaling with workload demands?",
+          "options": [
+            {
+              "content": "AWS Lambda",
+              "correct": false
+            },
+            {
+              "content": "Amazon DynamoDB",
+              "correct": false
+            },
+            {
+              "content": "Amazon RDS",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0e840a9c-a5f8-40c0-8eed-cdd4a063ddb5",
+          "prompt": "Which FSx variant is built on open-source technology and uses the NFS protocol to support Linux, Windows, and macOS?",
+          "options": [
+            {
+              "content": "Amazon FSx for OpenZFS",
+              "correct": true
+            },
+            {
+              "content": "Amazon FSx for Windows File Server",
+              "correct": false
+            },
+            {
+              "content": "Amazon EFS",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Lustre",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6b52c082-474c-4ab1-ae8f-47ee09fce488",
+          "prompt": "What specific management task does Amazon FSx automate for you?",
+          "options": [
+            {
+              "content": "Application code debugging",
+              "correct": false
+            },
+            {
+              "content": "VPC Network design",
+              "correct": false
+            },
+            {
+              "content": "User password resets",
+              "correct": false
+            },
+            {
+              "content": "Hardware maintenance and backups",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d9184ef2-48a3-45fe-b940-8f94774786d2",
+          "prompt": "Which features are specifically highlighted as benefits of Amazon FSx for Windows File Server?",
+          "options": [
+            {
+              "content": "Machine learning and scientific computing",
+              "correct": false
+            },
+            {
+              "content": "Cross-platform support via NFS",
+              "correct": false
+            },
+            {
+              "content": "Integration with AWS Batch",
+              "correct": false
+            },
+            {
+              "content": "Data deduplication and quota management",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "45c26fce-b450-4938-a224-3efa2a4c43a7",
+          "prompt": "Which FSx option allows for data access via NFS, SMB, and iSCSI concurrently?",
+          "options": [
+            {
+              "content": "Amazon FSx for NetApp ONTAP",
+              "correct": true
+            },
+            {
+              "content": "Amazon FSx for Windows File Server",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Lustre",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for OpenZFS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/a37225411092",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "FSx for Windows NetApp Lustre OpenZFS",
+      "questions": [
+        {
+          "id": "2bc63112-38d1-46a8-b6b5-7e83346680ac",
+          "prompt": "Scenario Part 1: Service Selection. The law firm needs to migrate 50 TB of Windows-based file shares while keeping all their existing Windows Access Control Lists (ACLs) intact. Which service is the best fit?",
+          "options": [
+            {
+              "content": "Amazon FSx for Lustre",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3",
+              "correct": false
+            },
+            {
+              "content": "Amazon EFS",
+              "correct": false
+            },
+            {
+              "content": "Amazon FSx for Windows File Server",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "677fdf33-c329-4047-9bc6-927a0b2d4ee9",
+          "prompt": "Scenario Part 2: High Availability. The firm requires that the file system remains available even if an entire Availability Zone (data center) goes offline. Which deployment type must you select?",
+          "options": [
+            {
+              "content": "Single-AZ 2 Deployment",
+              "correct": false
+            },
+            {
+              "content": "Provisioned IOPS",
+              "correct": false
+            },
+            {
+              "content": "Standard-IA (Infrequent Access)",
+              "correct": false
+            },
+            {
+              "content": "Multi-AZ Deployment",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fe5783d3-9ca6-4bfe-9c58-278468112e46",
+          "prompt": "Scenario Part 3: Integration. Employees want to use their existing usernames and passwords to access the new AWS file shares. How do you achieve this?",
+          "options": [
+            {
+              "content": "Integrate FSx with their self-managed Active Directory.",
+              "correct": true
+            },
+            {
+              "content": "Use an S3 Bucket Policy.",
+              "correct": false
+            },
+            {
+              "content": "Create new IAM Users for every employee.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'Anonymous Access' on the file shares.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/011acdfd8eca",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "EFS",
+      "questions": [
+        {
+          "id": "34c1f460-277c-4502-bd7a-bb9584c4492c",
+          "prompt": "Which network file sharing protocol does Amazon EFS support to enable connectivity with applications?",
+          "options": [
+            {
+              "content": "Network File System (NFS)",
+              "correct": true
+            },
+            {
+              "content": "Server Message Block (SMB)",
+              "correct": false
+            },
+            {
+              "content": "Internet Small Computer Systems Interface (iSCSI)",
+              "correct": false
+            },
+            {
+              "content": "File Transfer Protocol (FTP)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4f6cf101-5cb0-44a9-9fa8-1e8b99655a56",
+          "prompt": "Which of the following operating systems is supported for Amazon EFS client instances according to the text?",
+          "options": [
+            {
+              "content": "Any OS that supports TCP/IP",
+              "correct": false
+            },
+            {
+              "content": "Windows-based EC2 instances only",
+              "correct": false
+            },
+            {
+              "content": "Both Windows and Linux based instances",
+              "correct": false
+            },
+            {
+              "content": "Linux-based EC2 instances only",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6d6cd6f9-b151-4e57-8199-1f4ff86f13ec",
+          "prompt": "What is a primary advantage of EFS regarding how EC2 instances access the data?",
+          "options": [
+            {
+              "content": "It allows instances to boot directly from the EFS volume.",
+              "correct": false
+            },
+            {
+              "content": "It can be mounted on multiple EC2 instances simultaneously.",
+              "correct": true
+            },
+            {
+              "content": "It connects directly to the instance motherboard for faster speed.",
+              "correct": false
+            },
+            {
+              "content": "It is restricted to a single instance at a time to prevent corruption.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "aa471d83-97ef-4fd3-8659-90ad29fa4565",
+          "prompt": "To connect an EC2 instance to an EFS file system within a VPC, what must be created in the subnets?",
+          "options": [
+            {
+              "content": "Internet Gateways",
+              "correct": false
+            },
+            {
+              "content": "VPC Peering Connections",
+              "correct": false
+            },
+            {
+              "content": "NAT Gateways",
+              "correct": false
+            },
+            {
+              "content": "Mount Targets",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "4eb2c955-21bd-46be-97ae-ff6aca306f03",
+          "prompt": "Which EFS Performance Mode is recommended for latency-sensitive environments like web applications?",
+          "options": [
+            {
+              "content": "Provisioned Throughput Mode",
+              "correct": false
+            },
+            {
+              "content": "General Purpose Performance Mode",
+              "correct": true
+            },
+            {
+              "content": "Max I/O Performance Mode",
+              "correct": false
+            },
+            {
+              "content": "Bursting Throughput Mode",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f371bb12-a3d0-48fa-aa0f-b187b16da826",
+          "prompt": "What is the primary trade-off when using Max I/O Performance Mode?",
+          "options": [
+            {
+              "content": "It strictly limits the file system size.",
+              "correct": false
+            },
+            {
+              "content": "It requires the use of Provisioned Throughput.",
+              "correct": false
+            },
+            {
+              "content": "It may exhibit higher latencies for certain operations.",
+              "correct": true
+            },
+            {
+              "content": "It lowers the aggregate throughput capacity.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "83d445af-7b72-4b15-a023-770c0a5a868a",
+          "prompt": "Which throughput mode automatically adjusts throughput performance based on workload requirements?",
+          "options": [
+            {
+              "content": "Standard Throughput Mode",
+              "correct": false
+            },
+            {
+              "content": "Elastic Throughput Mode",
+              "correct": true
+            },
+            {
+              "content": "Bursting Throughput Mode",
+              "correct": false
+            },
+            {
+              "content": "Provisioned Throughput Mode",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7e35945f-2dd2-44be-97e9-093ef50a1100",
+          "prompt": "How does EFS One Zone storage class differ from EFS Standard?",
+          "options": [
+            {
+              "content": "It offers higher durability than Standard.",
+              "correct": false
+            },
+            {
+              "content": "It is used specifically for boot volumes.",
+              "correct": false
+            },
+            {
+              "content": "It is the only class that supports Max I/O mode.",
+              "correct": false
+            },
+            {
+              "content": "It stores data in a single availability zone to reduce costs.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "af36038e-044c-42bf-8439-08809c87cece",
+          "prompt": "What is a critical limitation of EFS regarding operating systems?",
+          "options": [
+            {
+              "content": "It cannot store files larger than 1GB.",
+              "correct": false
+            },
+            {
+              "content": "It only works with Public Subnets.",
+              "correct": false
+            },
+            {
+              "content": "It requires the instance to be stopped to mount the volume.",
+              "correct": false
+            },
+            {
+              "content": "It cannot be used as boot storage.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "09f8f136-6465-4fcc-b883-a34c7d65326e",
+          "prompt": "Which utility package must be installed on the Linux instance to manage EFS mounts easily?",
+          "options": [
+            {
+              "content": "aws-cli",
+              "correct": false
+            },
+            {
+              "content": "nfs-common",
+              "correct": false
+            },
+            {
+              "content": "efs-mounter-pro",
+              "correct": false
+            },
+            {
+              "content": "amazon-efs-utils",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/63f23138933f",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "EFS",
+      "questions": [
+        {
+          "id": "47b9d29a-66cf-4511-8a7f-ece5dec45f5f",
+          "prompt": "Scenario Part 1: Diagnosis. PixelShare recently moved from a single EC2 instance to an Auto Scaling Group with two instances behind an Application Load Balancer. They store user uploads locally on the instance disk. Users report that uploaded profile pictures disappear when they refresh the page (404 Error), but sometimes reappear on a second refresh. What is the root architectural cause of this behavior?",
+          "options": [
+            {
+              "content": "Data stored locally on one instance is not automatically synchronized to the other instance.",
+              "correct": true
+            },
+            {
+              "content": "The local storage is ephemeral and data is lost when the instance restarts.",
+              "correct": false
+            },
+            {
+              "content": "The Security Group is blocking the HTTP traffic for the images.",
+              "correct": false
+            },
+            {
+              "content": "The Application Load Balancer is failing health checks and terminating instances randomly.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3de6e96b-4e05-49a2-b2fe-13f50fb90d1d",
+          "prompt": "Scenario Part 2: Design. You decide to implement Amazon EFS to resolve the 'vanishing upload' issue. Which implementation step allows both EC2 instances to serve the exact same set of images seamlessly?",
+          "options": [
+            {
+              "content": "Configure the instances to sync their /var/www/html/uploads folders to S3 every minute.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'Sticky Sessions' on the Application Load Balancer.",
+              "correct": false
+            },
+            {
+              "content": "Create an EBS Snapshot of the first instance and use it to launch the second instance.",
+              "correct": false
+            },
+            {
+              "content": "Mount the same EFS file system to the upload directory (e.g., /var/www/html/uploads) on both instances.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b1333cd6-e5de-4938-b6b9-12637798f72b",
+          "prompt": "Scenario Part 3: Security. To make this work securely, you have created a Security Group for your Web Servers ('Web-SG') and a new Security Group for your EFS Mount Targets ('EFS-SG'). What INBOUND rule must you add to the 'EFS-SG' to allow the web servers to connect?",
+          "options": [
+            {
+              "content": "Protocol: NFS (2049) | Source: Web-SG",
+              "correct": true
+            },
+            {
+              "content": "Protocol: SSH (22) | Source: Web-SG",
+              "correct": false
+            },
+            {
+              "content": "Protocol: HTTP (80) | Source: 0.0.0.0/0",
+              "correct": false
+            },
+            {
+              "content": "Protocol: SMB (445) | Source: Web-SG",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/3859e3eb87d2",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Storage Gateways",
+      "questions": [
+        {
+          "id": "bd99220d-7f51-4f00-b13a-0039eca05db5",
+          "prompt": "Your on-premises application server uses iSCSI to connect to storage devices. You want to migrate its storage to AWS while keeping the application server on-premise. Which Storage Gateway type is compatible with this protocol?",
+          "options": [
+            {
+              "content": "File Gateway",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway",
+              "correct": true
+            },
+            {
+              "content": "S3 Gateway",
+              "correct": false
+            },
+            {
+              "content": "Glacier Gateway",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "16644111-07e0-403b-8201-7811fa2cccc4",
+          "prompt": "In 'Volume Gateway - Stored Mode', where is the PRIMARY copy of the data located?",
+          "options": [
+            {
+              "content": "In Amazon Glacier.",
+              "correct": false
+            },
+            {
+              "content": "On the Storage Gateway appliance's local physical disks.",
+              "correct": true
+            },
+            {
+              "content": "In an Amazon S3 bucket.",
+              "correct": false
+            },
+            {
+              "content": "In Amazon EBS volumes in the cloud.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e3224405-112b-468a-8b66-d0ea8f44dec8",
+          "prompt": "Which Storage Gateway configuration allows you to extend your on-premises storage with 'virtually unlimited' capacity by keeping only frequently accessed data locally?",
+          "options": [
+            {
+              "content": "Tape Gateway",
+              "correct": false
+            },
+            {
+              "content": "NFS Gateway",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Cached Mode",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6b82e6c0-eb0f-4f04-a98a-94e560f063c4",
+          "prompt": "When using File Gateway, how is a file (e.g., 'report.pdf') stored in the backend AWS service?",
+          "options": [
+            {
+              "content": "As an object in an S3 bucket, with the key matching the file path.",
+              "correct": true
+            },
+            {
+              "content": "As a block inside an EBS Snapshot.",
+              "correct": false
+            },
+            {
+              "content": "As a compressed archive in Glacier.",
+              "correct": false
+            },
+            {
+              "content": "As a virtual tape in a VTL.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cf303c12-28fb-4a5d-85d5-4caa1d180d94",
+          "prompt": "Which protocols does the File Gateway support for connecting to on-premises servers?",
+          "options": [
+            {
+              "content": "iSCSI and Fibre Channel",
+              "correct": false
+            },
+            {
+              "content": "NFS and SMB",
+              "correct": true
+            },
+            {
+              "content": "FTP and SFTP",
+              "correct": false
+            },
+            {
+              "content": "HTTP and HTTPS",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "001dcc06-8579-41a7-9e3a-c8f67358f039",
+          "prompt": "Tape Gateway allows you to replace physical tape infrastructure. Where is the data eventually archived for long-term retention?",
+          "options": [
+            {
+              "content": "Amazon EBS Snapshots",
+              "correct": false
+            },
+            {
+              "content": "Amazon S3 Standard only",
+              "correct": false
+            },
+            {
+              "content": "On the local appliance disks",
+              "correct": false
+            },
+            {
+              "content": "Amazon Glacier (Virtual Tape Shelf)",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ea3f444a-f1d5-41e8-a26c-95a4c22c6613",
+          "prompt": "In 'Volume Gateway - Stored Mode', how is data protected in the cloud?",
+          "options": [
+            {
+              "content": "It is not protected in the cloud; Stored Mode is local only.",
+              "correct": false
+            },
+            {
+              "content": "It is converted into individual S3 Objects.",
+              "correct": false
+            },
+            {
+              "content": "It is asynchronously replicated to AWS S3 as EBS Snapshots.",
+              "correct": true
+            },
+            {
+              "content": "It is continuously streamed to Kinesis Firehose.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7d1d8745-a30d-4ba3-91d3-0defad0cab42",
+          "prompt": "What is the primary architectural benefit of Volume Gateway - Cached Mode regarding on-premises infrastructure?",
+          "options": [
+            {
+              "content": "It converts all your block data into readable PDF and JPG files.",
+              "correct": false
+            },
+            {
+              "content": "It allows you to decommission your on-premises internet connection.",
+              "correct": false
+            },
+            {
+              "content": "It improves the speed of data transfer to the internet.",
+              "correct": false
+            },
+            {
+              "content": "It eliminates the need for large, expensive on-premises storage arrays (SAN/NAS).",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1d1762c6-a532-43da-9e75-6561ddc3621d",
+          "prompt": "Tape Gateway emulates a 'VTL'. What does VTL stand for?",
+          "options": [
+            {
+              "content": "Volume Tape Layer",
+              "correct": false
+            },
+            {
+              "content": "Virtual Tape Library",
+              "correct": true
+            },
+            {
+              "content": "Virtual Transfer Link",
+              "correct": false
+            },
+            {
+              "content": "Verified Tape Location",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f9c7c08c-9711-4483-acfe-c9124a72a395",
+          "prompt": "What happens if you write a file to a File Gateway that is larger than the local cache?",
+          "options": [
+            {
+              "content": "The file is written to S3 directly, bypassing the cache entirely.",
+              "correct": true
+            },
+            {
+              "content": "The write fails immediately.",
+              "correct": false
+            },
+            {
+              "content": "The gateway pauses until space is cleared.",
+              "correct": false
+            },
+            {
+              "content": "The file is truncated to fit the cache.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/efe559ccc670",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Storage Gateways",
+      "questions": [
+        {
+          "id": "151ecc25-4b40-43c5-b82c-ead2ceb42ecd",
+          "prompt": "A media company has 500 TB of video archives stored on an on-premises NAS. They want to move this data to Amazon S3 for cheaper storage and to allow their cloud-based transcoding applications to process the files. However, their local editors still need low-latency read access to the most recently uploaded videos via a standard SMB share.",
+          "options": [
+            {
+              "content": "Use File Gateway.",
+              "correct": true
+            },
+            {
+              "content": "Use Amazon S3 Transfer Acceleration.",
+              "correct": false
+            },
+            {
+              "content": "Use Tape Gateway.",
+              "correct": false
+            },
+            {
+              "content": "Use Volume Gateway - Stored Mode.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "66eab525-e008-48e1-88ef-78b02e7339a3",
+          "prompt": "A law firm is closing its physical data center. They have a requirement to keep their historical backup tapes for 7 years. They currently use a physical Tape Library with 'Backup Exec' software. They want to migrate to AWS with minimal disruption to their current backup workflows.",
+          "options": [
+            {
+              "content": "Use Volume Gateway - Cached Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use File Gateway to store the backup files in S3 Glacier.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Snowball Edge to move the data.",
+              "correct": false
+            },
+            {
+              "content": "Use Tape Gateway.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0d95433d-0b04-4c51-a508-4e470c31f335",
+          "prompt": "You have an on-premises database that is 5 TB in size. You have exactly 6 TB of local disk space available. You want to use Storage Gateway to back up this database to AWS, but you are worried about network latency affecting the database performance. Which mode ensures the database reads are always served from local disk speed?",
+          "options": [
+            {
+              "content": "File Gateway.",
+              "correct": false
+            },
+            {
+              "content": "Direct Connect.",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode.",
+              "correct": true
+            },
+            {
+              "content": "Volume Gateway - Cached Mode.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "3cf7aed4-a1bd-417b-af3e-265434959a7d",
+          "prompt": "You are using File Gateway to upload data to an S3 bucket. A developer modifies one of the objects directly in the S3 bucket using the AWS Console. However, the users on-premise cannot see the updated file in their SMB share. Why?",
+          "options": [
+            {
+              "content": "SMB protocols do not support file modification.",
+              "correct": false
+            },
+            {
+              "content": "File Gateway is write-only; it cannot read data back from S3.",
+              "correct": false
+            },
+            {
+              "content": "The object was uploaded to the wrong storage class.",
+              "correct": false
+            },
+            {
+              "content": "The File Gateway cache is out of sync and needs to be refreshed.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "18f71e5d-9d2d-45fd-8564-a645a11326b9",
+          "prompt": "A branch office has limited internet bandwidth. They need to access a large shared dataset of design files (100 TB) stored in S3. They only access about 5% of these files daily. Which solution minimizes the internet bandwidth usage?",
+          "options": [
+            {
+              "content": "Volume Gateway - Cached Mode (or File Gateway).",
+              "correct": true
+            },
+            {
+              "content": "S3 Replication.",
+              "correct": false
+            },
+            {
+              "content": "Volume Gateway - Stored Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use an Edge Location.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/44f5cbc66f14",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Versioning",
+      "questions": [
+        {
+          "id": "8ba065ae-0fe4-4645-a660-e2e897245c9f",
+          "prompt": "A bucket has versioning enabled. A user accidentally deletes an object by clicking 'Delete' in the console without specifying a version ID. What is the result of this action?",
+          "options": [
+            {
+              "content": "All versions of the object are moved to S3 Glacier for cost optimization.",
+              "correct": false
+            },
+            {
+              "content": "The delete request fails because MFA was not provided.",
+              "correct": false
+            },
+            {
+              "content": "S3 inserts a delete marker, and the object disappears from the standard bucket list.",
+              "correct": true
+            },
+            {
+              "content": "The current version is permanently erased, and the previous version becomes current.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f411b33a-e36d-4668-bf75-11c508c26ecc",
+          "prompt": "Once a bucket has had versioning enabled, which of the following is true regarding its future state?",
+          "options": [
+            {
+              "content": "It must be deleted and recreated to return to an unversioned state.",
+              "correct": false
+            },
+            {
+              "content": "Versioning can be disabled at any time to remove all existing version IDs.",
+              "correct": false
+            },
+            {
+              "content": "It can be suspended, but versioning can never be fully disabled again.",
+              "correct": true
+            },
+            {
+              "content": "It will automatically transition to 'Suspended' after 90 days of inactivity.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "732050b0-1ccc-4074-94c7-0937af283aa7",
+          "prompt": "An architect suspends versioning on a bucket that previously had it enabled. What happens to new objects uploaded to the bucket after this change?",
+          "options": [
+            {
+              "content": "Old versions are automatically deleted to save space.",
+              "correct": false
+            },
+            {
+              "content": "The upload is blocked until versioning is re-enabled.",
+              "correct": false
+            },
+            {
+              "content": "They continue to receive unique, incremental version IDs.",
+              "correct": false
+            },
+            {
+              "content": "They are assigned a 'null' version ID.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e84130a7-c98c-49bb-87c8-0230dc122097",
+          "prompt": "A company has a 10 GB file in an S3 bucket. They upload a new 10 GB version of the same file five times with versioning enabled. How much storage are they billed for?",
+          "options": [
+            {
+              "content": "20 GB (Current and previous version only)",
+              "correct": false
+            },
+            {
+              "content": "10 GB",
+              "correct": false
+            },
+            {
+              "content": "60 GB",
+              "correct": true
+            },
+            {
+              "content": "0 GB (Versioning is a free feature)",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1d9affc6-d442-495b-8e93-196977dd70a1",
+          "prompt": "Which layer of security requires the use of the AWS CLI to be enabled and prevents the accidental deletion of specific object versions?",
+          "options": [
+            {
+              "content": "Bucket Policies",
+              "correct": false
+            },
+            {
+              "content": "MFA Delete",
+              "correct": true
+            },
+            {
+              "content": "Default Encryption (SSE-S3)",
+              "correct": false
+            },
+            {
+              "content": "S3 Block Public Access",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f1168ca9-cdd1-4d22-9f6c-a4dacad2aa0e",
+          "prompt": "A developer wants to restore an object that was 'deleted' (a delete marker was applied). What is the simplest way to make the previous version of the file visible again?",
+          "options": [
+            {
+              "content": "Upload the file again with the same name.",
+              "correct": false
+            },
+            {
+              "content": "Request a manual restore from AWS Support.",
+              "correct": false
+            },
+            {
+              "content": "Delete the delete marker.",
+              "correct": true
+            },
+            {
+              "content": "Disable versioning and then re-enable it.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cf95f126-58c6-4d56-b086-4638fcae2313",
+          "prompt": "In a bucket where versioning is suspended, a user uploads an object with a key that already exists. What happens to the 'current' version of that object?",
+          "options": [
+            {
+              "content": "A new unique version ID is generated to protect the previous one.",
+              "correct": false
+            },
+            {
+              "content": "The current version (ID: null) is permanently overwritten.",
+              "correct": true
+            },
+            {
+              "content": "S3 adds a delete marker to the old file automatically.",
+              "correct": false
+            },
+            {
+              "content": "The upload is rejected to prevent data loss.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8d8042b3-2443-4738-b920-e5c3e246a3ce",
+          "prompt": "What is the primary benefit of using versioning in a production environment for an application that frequently updates configuration files?",
+          "options": [
+            {
+              "content": "It allows for easy rollback to a previous configuration if an update causes errors.",
+              "correct": true
+            },
+            {
+              "content": "It prevents any user from deleting files.",
+              "correct": false
+            },
+            {
+              "content": "It automatically compresses files to save on storage costs.",
+              "correct": false
+            },
+            {
+              "content": "It improves the latency of file downloads.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a334422d-4169-48b7-920d-623b7e7beb08",
+          "prompt": "Which of the following operations specifically requires Multi-Factor Authentication when MFA Delete is enabled?",
+          "options": [
+            {
+              "content": "Changing the storage class of an object to S3 Standard-IA.",
+              "correct": false
+            },
+            {
+              "content": "Uploading a new version of an existing object.",
+              "correct": false
+            },
+            {
+              "content": "Permanently deleting a specific version of an object.",
+              "correct": true
+            },
+            {
+              "content": "Listing the versions of an object in a bucket.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a973ced0-44c8-40aa-9375-a874d6d22468",
+          "prompt": "If a bucket is in the 'Unversioned' state and a user uploads 'photo.jpg' and then later uploads a different file also named 'photo.jpg', what is the state of the first file?",
+          "options": [
+            {
+              "content": "It is assigned a version ID of '1'.",
+              "correct": false
+            },
+            {
+              "content": "It is automatically moved to the Recycle Bin.",
+              "correct": false
+            },
+            {
+              "content": "It is hidden behind a delete marker.",
+              "correct": false
+            },
+            {
+              "content": "It is permanently overwritten and unrecoverable.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/7adee6fae698",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Storage Classes",
+      "questions": [
+        {
+          "id": "758327c5-6d9e-4265-a2c5-8eb20b400e94",
+          "prompt": "An architect is looking for the most cost-effective storage for data that is rarely accessed and can tolerate a retrieval time of 48 hours. Which storage class should be selected?",
+          "options": [
+            {
+              "content": "S3 Glacier Deep Archive",
+              "correct": true
+            },
+            {
+              "content": "S3 Glacier Flexible",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard-IA",
+              "correct": false
+            },
+            {
+              "content": "S3 One Zone-IA",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "edbb904b-8936-4cfa-a07b-edc674165764",
+          "prompt": "What is the minimum object size for which AWS will charge a user in the S3 Standard-IA storage class?",
+          "options": [
+            {
+              "content": "128 KB",
+              "correct": true
+            },
+            {
+              "content": "0 KB",
+              "correct": false
+            },
+            {
+              "content": "64 KB",
+              "correct": false
+            },
+            {
+              "content": "40 KB",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2f9d6c0e-87d0-4a46-b066-5559545f8a7d",
+          "prompt": "A company has secondary backup data that can be easily recreated if lost. They want to minimize costs for infrequent access and do not require multi-AZ resilience. Which class fits best?",
+          "options": [
+            {
+              "content": "S3 Standard-IA",
+              "correct": false
+            },
+            {
+              "content": "S3 Glacier Instant",
+              "correct": false
+            },
+            {
+              "content": "S3 One Zone-IA",
+              "correct": true
+            },
+            {
+              "content": "S3 Standard",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "de424580-9ab8-4b34-b2f9-33512845fb33",
+          "prompt": "When using S3 Glacier Flexible, which retrieval option typically takes between 3 and 5 hours?",
+          "options": [
+            {
+              "content": "Expedited",
+              "correct": false
+            },
+            {
+              "content": "Instant",
+              "correct": false
+            },
+            {
+              "content": "Bulk",
+              "correct": false
+            },
+            {
+              "content": "Standard",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "bff3040b-15c1-4e52-a428-29fe6318734d",
+          "prompt": "An object is uploaded to S3 Standard-IA and deleted after 10 days. For how many days will the user be charged for that object?",
+          "options": [
+            {
+              "content": "10 days",
+              "correct": false
+            },
+            {
+              "content": "30 days",
+              "correct": true
+            },
+            {
+              "content": "180 days",
+              "correct": false
+            },
+            {
+              "content": "90 days",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a4089c37-a845-41c0-b828-bc7d8b462430",
+          "prompt": "Which storage class is most appropriate for data with unpredictable or changing access patterns?",
+          "options": [
+            {
+              "content": "S3 Intelligent-Tiering",
+              "correct": true
+            },
+            {
+              "content": "S3 Standard",
+              "correct": false
+            },
+            {
+              "content": "S3 Glacier Instant",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard-IA",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "64013e72-0e12-4582-b658-11dc7538935c",
+          "prompt": "What happens to data stored in S3 Glacier Flexible during the retrieval process?",
+          "options": [
+            {
+              "content": "It is made available directly from the Glacier tapes/disks.",
+              "correct": false
+            },
+            {
+              "content": "It is temporarily stored in S3 Standard-IA.",
+              "correct": true
+            },
+            {
+              "content": "It is moved permanently to S3 Standard.",
+              "correct": false
+            },
+            {
+              "content": "It is moved to S3 Intelligent-Tiering.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d681038d-0e85-4544-ac04-0c8344ab2f8c",
+          "prompt": "In the S3 Standard storage class, how many Availability Zone (AZ) failures can the system tolerate without losing data?",
+          "options": [
+            {
+              "content": "Three",
+              "correct": false
+            },
+            {
+              "content": "One",
+              "correct": false
+            },
+            {
+              "content": "Zero",
+              "correct": false
+            },
+            {
+              "content": "Two",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "d05d0d43-60e9-4c34-bc2d-5769613aa201",
+          "prompt": "Which of the following is TRUE regarding data ingress (uploading) for the S3 Standard storage class?",
+          "options": [
+            {
+              "content": "Uploading data is free.",
+              "correct": true
+            },
+            {
+              "content": "It costs the same as data egress.",
+              "correct": false
+            },
+            {
+              "content": "It is only free for the first 5GB.",
+              "correct": false
+            },
+            {
+              "content": "It is billed per gigabyte uploaded.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0c4d6ee5-9b38-4352-a56e-96622eef79b7",
+          "prompt": "S3 Glacier Instant differs from S3 Glacier Flexible primarily because:",
+          "options": [
+            {
+              "content": "It has a shorter minimum storage duration.",
+              "correct": false
+            },
+            {
+              "content": "It does not charge a retrieval fee.",
+              "correct": false
+            },
+            {
+              "content": "It is stored in only one Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "It provides millisecond retrieval times.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/a8a41d3e7170",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3 Storage Classes",
+      "questions": [
+        {
+          "id": "05619b15-e246-4795-a3c6-5a33fb7a77c6",
+          "prompt": "A financial services company must store transaction logs for 7 years to meet regulatory requirements. The logs are never accessed unless a formal audit is triggered, which has a 48-hour SLA for data provision. Which strategy minimizes cost while meeting compliance?",
+          "options": [
+            {
+              "content": "Store in S3 Glacier Flexible Retrieval with Expedited retrieval.",
+              "correct": false
+            },
+            {
+              "content": "Store in S3 Standard-IA.",
+              "correct": false
+            },
+            {
+              "content": "Store in S3 Glacier Deep Archive with Bulk retrieval.",
+              "correct": true
+            },
+            {
+              "content": "Use S3 Intelligent-Tiering with Archive Access enabled.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "84150f70-a417-431f-b70e-b999e1055156",
+          "prompt": "An image processing application generates thumbnail versions of high-resolution photos. These thumbnails can be easily recreated from the source images if lost. How should these thumbnails be stored to minimize costs?",
+          "options": [
+            {
+              "content": "S3 Standard",
+              "correct": false
+            },
+            {
+              "content": "S3 Glacier Instant Retrieval",
+              "correct": false
+            },
+            {
+              "content": "S3 One Zone-IA",
+              "correct": true
+            },
+            {
+              "content": "S3 Intelligent-Tiering",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2c236532-4a9c-4e78-8e34-e7c343eed0e7",
+          "prompt": "A data lake receives 1 TB of telemetry data daily. Access patterns are unknown for the first 30 days, but data is rarely accessed after 90 days. What is the most automated way to manage this without manual intervention?",
+          "options": [
+            {
+              "content": "Use a Lifecycle Policy to move data to S3 Standard-IA after 30 days.",
+              "correct": false
+            },
+            {
+              "content": "Deploy S3 Intelligent-Tiering for all incoming objects.",
+              "correct": true
+            },
+            {
+              "content": "Store everything in S3 Standard to ensure maximum performance.",
+              "correct": false
+            },
+            {
+              "content": "Manually run a script to move data based on CloudWatch metrics.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c4d64fe4-29e9-43e8-a2f4-043c269d4278",
+          "prompt": "You are transitioning 1,000,000 objects (each 50 KB) from S3 Standard to S3 Glacier Flexible Retrieval. Why might your first monthly bill be higher than expected despite the lower storage rate?",
+          "options": [
+            {
+              "content": "There is a minimum 128 KB billing charge for objects in S3 Standard-IA copy during retrieval.",
+              "correct": false
+            },
+            {
+              "content": "Glacier Flexible Retrieval has a 128 KB minimum object size.",
+              "correct": false
+            },
+            {
+              "content": "Objects moved to Glacier are automatically replicated to another region.",
+              "correct": false
+            },
+            {
+              "content": "You are charged a 'Transition Request' fee for moving each object to Glacier.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "850f9ed8-5403-49c7-88eb-087025b51e59",
+          "prompt": "A legal firm stores case files that must be available for millisecond retrieval for 90 days. After that, they are accessed once every 6 months but still require millisecond access when requested. Which transition is best?",
+          "options": [
+            {
+              "content": "Keep in S3 Standard forever.",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard -> S3 Glacier Flexible Retrieval after 90 days.",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard -> S3 Standard-IA after 30 days.",
+              "correct": false
+            },
+            {
+              "content": "S3 Standard -> S3 Glacier Instant Retrieval after 90 days.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2cbdb9d9-c39e-404c-bbb2-c8f62bd6c03c",
+          "prompt": "Your application requires high-throughput access to large datasets in a single AWS Region. High availability is required, but you want to save 20% compared to Standard-IA. Why is One Zone-IA likely the wrong choice despite the cost saving?",
+          "options": [
+            {
+              "content": "It cannot provide High Availability due to single AZ storage.",
+              "correct": true
+            },
+            {
+              "content": "The retrieval fees are 20% higher than Standard-IA.",
+              "correct": false
+            },
+            {
+              "content": "It does not support Lifecycle policies.",
+              "correct": false
+            },
+            {
+              "content": "It does not support high-throughput access.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "991107fb-b690-4432-b467-12082abb7905",
+          "prompt": "Which retrieval method for S3 Glacier Flexible Retrieval should be used for a 10 TB dataset restore where cost must be minimized and time is not a factor?",
+          "options": [
+            {
+              "content": "Expedited Retrieval",
+              "correct": false
+            },
+            {
+              "content": "Standard Retrieval",
+              "correct": false
+            },
+            {
+              "content": "Bulk Retrieval",
+              "correct": true
+            },
+            {
+              "content": "Instant Retrieval",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2d3578be-6f9d-4718-9e73-fd352c29dd3a",
+          "prompt": "An architect is using S3 Intelligent-Tiering. An object has not been accessed for 35 days and has moved to the Infrequent Access tier. If a user suddenly downloads the object today, what happens?",
+          "options": [
+            {
+              "content": "The object moves to the Archive Instant Access tier.",
+              "correct": false
+            },
+            {
+              "content": "The access is blocked until the architect manually moves the object.",
+              "correct": false
+            },
+            {
+              "content": "The object is immediately moved back to the Frequent Access tier.",
+              "correct": true
+            },
+            {
+              "content": "The user is charged a retrieval fee, and the object stays in Infrequent Access.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "69c12434-9442-46ec-a879-52a881239844",
+          "prompt": "Why would an architect choose S3 Standard-IA over S3 Glacier Instant Retrieval for data that is accessed once a month?",
+          "options": [
+            {
+              "content": "Standard-IA is cheaper per GB for storage.",
+              "correct": false
+            },
+            {
+              "content": "Glacier Instant Retrieval does not support millisecond access.",
+              "correct": false
+            },
+            {
+              "content": "Standard-IA has a lower minimum object size.",
+              "correct": false
+            },
+            {
+              "content": "Standard-IA has a shorter minimum storage duration (30 vs 90 days).",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a6345d56-c3a6-45ca-a914-d4d09950f3a0",
+          "prompt": "A media company wants to move petabytes of data from an on-premises tape library to AWS. They want the lowest possible cost and don't mind waiting days for a restore. Which header should they use in their PUT request?",
+          "options": [
+            {
+              "content": "x-amz-glacier-speed: BULK",
+              "correct": false
+            },
+            {
+              "content": "x-amz-storage-class: GLACIER_DEEP_ARCHIVE",
+              "correct": true
+            },
+            {
+              "content": "x-amz-archive-mode: ENABLED",
+              "correct": false
+            },
+            {
+              "content": "x-amz-storage-class: STANDARD",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/6c0b2c5bbb34",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Bucket Policies ACL",
+      "questions": [
+        {
+          "id": "cbfc8b05-2bff-4d62-9d58-b986481112ee",
+          "prompt": "A user in your AWS account has an IAM policy that allows 's3:PutObject' for a specific bucket. However, the S3 Bucket Policy for that same bucket has a statement with an 'Effect: Deny' for that user for all actions. What happens when the user tries to upload a file?",
+          "options": [
+            {
+              "content": "The request is denied because an explicit Deny always overrides an Allow.",
+              "correct": true
+            },
+            {
+              "content": "The request is denied because S3 buckets are locked down by default to everyone except the Root user.",
+              "correct": false
+            },
+            {
+              "content": "The request is allowed because IAM policies take precedence over Bucket Policies within the same account.",
+              "correct": false
+            },
+            {
+              "content": "The request is allowed because the IAM policy is attached directly to the user.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b57c8186-d212-4f80-bd8c-8accdeb3bdf5",
+          "prompt": "Which JSON component of a bucket policy specifies the actual AWS entity (user, role, or account) to which the permissions are being granted or denied?",
+          "options": [
+            {
+              "content": "Resource",
+              "correct": false
+            },
+            {
+              "content": "Principal",
+              "correct": true
+            },
+            {
+              "content": "Condition",
+              "correct": false
+            },
+            {
+              "content": "Action",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "b1976582-cb04-48ad-849c-1ceb0d986f00",
+          "prompt": "What is the primary reason AWS recommends using Bucket Policies over legacy Access Control Lists (ACLs)?",
+          "options": [
+            {
+              "content": "ACLs only work with the AWS CLI, while Bucket Policies work in the console.",
+              "correct": false
+            },
+            {
+              "content": "ACLs lack the granular control and the 'Deny' capabilities of JSON policies.",
+              "correct": true
+            },
+            {
+              "content": "ACLs are much more expensive to use than Bucket Policies.",
+              "correct": false
+            },
+            {
+              "content": "Bucket Policies are the only way to grant access to the root user.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6aa3a3fb-c821-452a-958a-94720d3ca2ad",
+          "prompt": "An architect wants to allow a specific user to only see objects inside a folder named 'confidential' within a bucket. Which part of the ARN in the 'Resource' section must be configured?",
+          "options": [
+            {
+              "content": "arn:aws:s3:::bucket-name",
+              "correct": false
+            },
+            {
+              "content": "arn:aws:s3:::confidential/*",
+              "correct": false
+            },
+            {
+              "content": "arn:aws:s3:::bucket-name/confidential/*",
+              "correct": true
+            },
+            {
+              "content": "arn:aws:iam:::bucket-name/confidential/",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ba0e119c-34c4-44e5-86d5-4138d6b7abf7",
+          "prompt": "Even if a bucket policy is set to 'Allow' for 'Principal': '*', why might a user from the internet still receive a '403 Forbidden' error when trying to access an object?",
+          "options": [
+            {
+              "content": "The bucket creator has not logged in for 30 days.",
+              "correct": false
+            },
+            {
+              "content": "Internet users must always use IAM roles to access S3.",
+              "correct": false
+            },
+            {
+              "content": "The user did not provide an MFA token.",
+              "correct": false
+            },
+            {
+              "content": "The 'Block Public Access' setting is enabled at the account or bucket level.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8a90f2d7-b971-41cb-9da4-3775422215bf",
+          "prompt": "What happens if a bucket policy has two statements: one allowing 'UserA' access to the bucket, and another allowing 'Principal': '*' access, but no explicit Deny exists?",
+          "options": [
+            {
+              "content": "Everyone, including UserA and the public, has access.",
+              "correct": true
+            },
+            {
+              "content": "Only UserA has access because specific rules override general ones.",
+              "correct": false
+            },
+            {
+              "content": "The policy is invalid because you cannot have two different principals in one policy.",
+              "correct": false
+            },
+            {
+              "content": "Access is denied to everyone because the statements conflict.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fb470b5d-e90e-43cb-88a6-739d933e11a2",
+          "prompt": "Which component would you use in a JSON policy to ensure that a bucket is only accessible from a specific office network (e.g., 203.0.113.0/24)?",
+          "options": [
+            {
+              "content": "Version",
+              "correct": false
+            },
+            {
+              "content": "Action",
+              "correct": false
+            },
+            {
+              "content": "Condition",
+              "correct": true
+            },
+            {
+              "content": "Sid",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a55ae434-cbe4-47a9-bcc6-661ef00ec449",
+          "prompt": "How do IAM Policies and S3 Bucket Policies interact when a user from Account A tries to access a bucket in Account B (Cross-Account Access)?",
+          "options": [
+            {
+              "content": "Access must be granted in BOTH the IAM policy (Account A) and the Bucket Policy (Account B).",
+              "correct": true
+            },
+            {
+              "content": "IAM policies cannot grant cross-account access; only ACLs can.",
+              "correct": false
+            },
+            {
+              "content": "The Bucket Policy must be set to 'Principal': '*' to allow other accounts.",
+              "correct": false
+            },
+            {
+              "content": "Access only needs to be granted in the Bucket Policy of the target account.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2238dd66-4c71-4ab4-9e54-98c0c5ed2d15",
+          "prompt": "A bucket policy contains the action 's3:GetObject'. Which specific task does this allow a principal to perform?",
+          "options": [
+            {
+              "content": "Download or read the content of a file.",
+              "correct": true
+            },
+            {
+              "content": "Upload a new file to the bucket.",
+              "correct": false
+            },
+            {
+              "content": "See the names of all files in the bucket.",
+              "correct": false
+            },
+            {
+              "content": "Delete old versions of a file.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "180afdfd-3d24-4b86-969b-4cdc63b75794",
+          "prompt": "When writing a JSON policy, what does the Version '2012-10-17' represent?",
+          "options": [
+            {
+              "content": "The expiration date of the policy.",
+              "correct": false
+            },
+            {
+              "content": "The version of the S3 service itself.",
+              "correct": false
+            },
+            {
+              "content": "The version of the policy language and its available features.",
+              "correct": true
+            },
+            {
+              "content": "The date the specific bucket was created.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/aa5ee96e3e7d",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3 Bucket Policies ACL",
+      "questions": [
+        {
+          "id": "74806407-5e89-4d5a-b61a-e045bd4c7d70",
+          "prompt": "Scenario: A startup has a 'public-assets' bucket. They want to allow anyone on the internet to read the files, but they want to ensure that only their specific CI/CD server (IP: 1.2.3.4) can upload new files. How should you configure this?",
+          "options": [
+            {
+              "content": "Use S3 Object Lock in Governance mode to protect the uploads.",
+              "correct": false
+            },
+            {
+              "content": "Enable S3 ACLs and grant 'Public Read' to the bucket. Use an IAM user for the CI/CD server.",
+              "correct": false
+            },
+            {
+              "content": "Set 'Block Public Access' to OFF. Create a Bucket Policy with two statements: One allowing 's3:GetObject' for Principal '', and one allowing 's3:PutObject' for Principal '' with a Condition for IpAddress 1.2.3.4.",
+              "correct": true
+            },
+            {
+              "content": "Set 'Block Public Access' to ON. Use an IAM Role for the CI/CD server and a Bucket Policy for the public.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "ecc74268-1c6e-4f5f-8c47-5b1952c84ef8",
+          "prompt": "Scenario: A government agency must store sensitive records that must never be deleted for 10 years, even in the event of a compromised Root account. They have a physical backup, but the cloud copy is the primary legal record. Which configuration is required?",
+          "options": [
+            {
+              "content": "Enable S3 Versioning and MFA Delete.",
+              "correct": false
+            },
+            {
+              "content": "Enable S3 Versioning and S3 Object Lock in Compliance Mode with a 10-year retention period.",
+              "correct": true
+            },
+            {
+              "content": "Enable S3 Object Lock in Governance Mode.",
+              "correct": false
+            },
+            {
+              "content": "Use a Bucket Policy with an 'Explicit Deny' for the Root user principal.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "5d184fd1-74b9-48fa-ad14-de882b2bd594",
+          "prompt": "Scenario: You are working in a multi-account environment. You need to allow an IAM Role in Account B to list the contents of a bucket in Account A. You have added 's3:ListBucket' to the Role's IAM policy in Account B. What is the correct 'Resource' ARN to use in the Bucket Policy of Account A to allow this listing?",
+          "options": [
+            {
+              "content": "arn:aws:s3:::my-bucket-name/*",
+              "correct": false
+            },
+            {
+              "content": "arn:aws:s3:::*",
+              "correct": false
+            },
+            {
+              "content": "arn:aws:s3:::my-bucket-name",
+              "correct": true
+            },
+            {
+              "content": "arn:aws:iam:::my-bucket-name",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/ac56c26a065c",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Pre-signed URLs",
+      "questions": [
+        {
+          "id": "3d0fd7ba-b94b-4909-8c70-30784daf1873",
+          "prompt": "When a public user accesses an S3 object via a pre-signed URL, whose permissions are being evaluated by AWS to authorize the request?",
+          "options": [
+            {
+              "content": "The public user's anonymous permissions",
+              "correct": false
+            },
+            {
+              "content": "The IAM entity that generated the URL",
+              "correct": true
+            },
+            {
+              "content": "The S3 Bucket Owner by default",
+              "correct": false
+            },
+            {
+              "content": "The AWS Account Root user",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "395e8e0e-d03a-49fd-b85f-d2ebeaa01ac6",
+          "prompt": "What is a primary architectural benefit of using pre-signed URLs for user profile picture uploads instead of a traditional API proxy?",
+          "options": [
+            {
+              "content": "It reduces the processing and bandwidth load on the application server",
+              "correct": true
+            },
+            {
+              "content": "It eliminates the need for any backend server",
+              "correct": false
+            },
+            {
+              "content": "It bypasses S3 bucket size limitations",
+              "correct": false
+            },
+            {
+              "content": "It encrypts the data automatically at the client side",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fec58263-bc8b-4698-b4ba-d5720de43dc5",
+          "prompt": "An IAM user creates a pre-signed URL for an object but forgets that they don't actually have 's3:GetObject' permission for that specific file. What happens when someone tries to use the URL?",
+          "options": [
+            {
+              "content": "The URL works only if the bucket is set to public",
+              "correct": false
+            },
+            {
+              "content": "S3 prompts the public user to enter their own credentials",
+              "correct": false
+            },
+            {
+              "content": "The request fails with an Access Denied error",
+              "correct": true
+            },
+            {
+              "content": "The request succeeds because the URL provides temporary 'super-user' access",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "2494283a-bb3e-4d01-a411-140be4d21722",
+          "prompt": "When using standard IAM user credentials to sign a URL, what is the maximum duration the URL can remain valid?",
+          "options": [
+            {
+              "content": "7 days",
+              "correct": true
+            },
+            {
+              "content": "30 days",
+              "correct": false
+            },
+            {
+              "content": "24 hours",
+              "correct": false
+            },
+            {
+              "content": "It never expires unless manually revoked",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "e86d8bab-47ce-4da9-9ec0-f2e792698cc5",
+          "prompt": "Which of the following is a security risk associated with sharing a pre-signed URL?",
+          "options": [
+            {
+              "content": "The URL allows the recipient to delete the entire S3 bucket",
+              "correct": false
+            },
+            {
+              "content": "The URL grants permanent access to the bucket",
+              "correct": false
+            },
+            {
+              "content": "The URL exposes the IAM user's plaintext password",
+              "correct": false
+            },
+            {
+              "content": "Anyone who obtains the URL can access the object until it expires",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0c9235de-a249-4ee0-8e65-2113e2e6d9d1",
+          "prompt": "In a video streaming scenario (like Netflix), why would a server generate a unique pre-signed URL for each user instead of one for everyone?",
+          "options": [
+            {
+              "content": "To reduce the cost of data transfer from S3",
+              "correct": false
+            },
+            {
+              "content": "Because S3 only allows one person to download a file at a time",
+              "correct": false
+            },
+            {
+              "content": "To ensure only the authorized, paying user can access that specific content",
+              "correct": true
+            },
+            {
+              "content": "To prevent the user from seeing the bucket name",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "afb74460-a201-4cc1-9e9a-98e6cec539cc",
+          "prompt": "True or False: To generate a pre-signed URL, the application must make a network call to the AWS S3 service every time. True Not quite While an API call is used conceptually, the signature is often calculated locally by the SDK without a round-trip to S3 during generation. False Right answer The pre-signing process is a mathematical calculation performed locally by the AWS SDK; S3 only validates it when the URL is actually used. Show hint Think about whether 'generating' the link requires an internet connection if you already have the access keys. Back Next Report content Opens in a new window Try Gemini Canvas",
+          "options": [
+            {
+              "content": "True",
+              "correct": false
+            },
+            {
+              "content": "False",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "9a0478a5-3fee-4563-8688-e511ed6bb280",
+          "prompt": "What happens if the IAM user who generated a pre-signed URL is deleted before the URL expires?",
+          "options": [
+            {
+              "content": "AWS transfers the URL ownership to the Root user",
+              "correct": false
+            },
+            {
+              "content": "The URL immediately becomes invalid",
+              "correct": true
+            },
+            {
+              "content": "The bucket becomes public to allow the URL to finish working",
+              "correct": false
+            },
+            {
+              "content": "The URL remains valid until the original expiration time",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6c3748c7-739e-4a3b-b33c-b4c535564e88",
+          "prompt": "A developer wants to allow users to upload files to S3. Which HTTP method must the pre-signed URL be configured to support?",
+          "options": [
+            {
+              "content": "HEAD",
+              "correct": false
+            },
+            {
+              "content": "POST or PUT",
+              "correct": true
+            },
+            {
+              "content": "DELETE",
+              "correct": false
+            },
+            {
+              "content": "GET",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fc4a6f95-b75d-4ab1-977a-88686257a424",
+          "prompt": "Which of the following scenarios is NOT a good use case for S3 Pre-signed URLs?",
+          "options": [
+            {
+              "content": "Allowing a client to upload a large diagnostic log file directly to your bucket",
+              "correct": false
+            },
+            {
+              "content": "Allowing a user to download their monthly bank statement PDF",
+              "correct": false
+            },
+            {
+              "content": "Providing a one-time link for a software installer download",
+              "correct": false
+            },
+            {
+              "content": "Making a website's CSS and Javascript files publicly accessible forever",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/cd791e5699bd",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3 Pre-signed URLs",
+      "questions": [
+        {
+          "id": "78e99f37-ef81-45c4-953c-c8af7f6fa9eb",
+          "prompt": "Standard S3 Pre-signed PUT URLs do not allow you to restrict the size of the uploaded file. To enforce a 1GB limit for SecureShot, which alternative S3 feature should you use?",
+          "options": [
+            {
+              "content": "S3 Object Lock with a governance mode retention period",
+              "correct": false
+            },
+            {
+              "content": "S3 Pre-signed POST with a HTML Form Policy",
+              "correct": true
+            },
+            {
+              "content": "S3 Multi-part Upload API with a restricted IAM policy",
+              "correct": false
+            },
+            {
+              "content": "An AWS Lambda function triggered by S3:PutItem to delete oversized files",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "18b52365-9cd5-4b1b-80ae-dce2669848a2",
+          "prompt": "For the requirement that client download links must work for 48 hours, what is the most secure way to handle the credentials if your application runs on EC2 instances using IAM Roles?",
+          "options": [
+            {
+              "content": "Generate the URL with the EC2 Role and hope the user downloads it within 12 hours",
+              "correct": false
+            },
+            {
+              "content": "Use the EC2 Role to fetch a long-lived IAM User's credentials from AWS Secrets Manager",
+              "correct": true
+            },
+            {
+              "content": "Increase the EC2 Instance Profile session duration to 48 hours",
+              "correct": false
+            },
+            {
+              "content": "Hardcode an IAM User's Access Keys into the application source code",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6ef62a85-6626-44c8-8700-aad00cdfa04f",
+          "prompt": "Clients complain about slow downloads of 500MB files from us-east-1. To solve this globally, you decide to use Amazon CloudFront. When using CloudFront, how should you secure the private files?",
+          "options": [
+            {
+              "content": "Keep using S3 Pre-signed URLs and just point them to the CloudFront domain",
+              "correct": false
+            },
+            {
+              "content": "Make the S3 bucket public and restrict access via a complex folder name",
+              "correct": false
+            },
+            {
+              "content": "Switch from S3 Pre-signed URLs to CloudFront Signed URLs or Cookies",
+              "correct": true
+            },
+            {
+              "content": "Use S3 Transfer Acceleration only, without CloudFront",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a6cc328c-2715-4b40-96ee-f8a0bafc4300",
+          "prompt": "To ensure only photographers can upload and not random public users, where should the 'Pre-signing' logic happen in the SecureShot architecture?",
+          "options": [
+            {
+              "content": "On a secure backend server (EC2/Lambda) after authenticating the photographer",
+              "correct": true
+            },
+            {
+              "content": "In a CloudFront Function at the edge",
+              "correct": false
+            },
+            {
+              "content": "Inside the photographer's web browser using JavaScript",
+              "correct": false
+            },
+            {
+              "content": "Within the S3 Bucket Policy itself",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "62adc04d-cac1-4ddd-8062-e23ce96d9962",
+          "prompt": "You use CloudFront to serve the photos. To ensure clients cannot bypass CloudFront and download files directly from S3, what configuration is required?",
+          "options": [
+            {
+              "content": "Use an IAM User policy to deny all S3 GetObject requests",
+              "correct": false
+            },
+            {
+              "content": "Use Origin Access Control (OAC) to restrict S3 access only to the CloudFront distribution",
+              "correct": true
+            },
+            {
+              "content": "Enable S3 Versioning on the bucket",
+              "correct": false
+            },
+            {
+              "content": "Set the S3 Bucket to 'Public Read' but hide the URL",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "716b3455-a382-40c5-9f80-1a81e5bb4338",
+          "prompt": "A photographer needs to upload a 500MB RAW file. Using a Pre-signed POST policy, how can you ensure they don't accidentally upload a .exe malware file instead of a .raw file?",
+          "options": [
+            {
+              "content": "Use an S3 Lifecycle Rule to delete .exe files",
+              "correct": false
+            },
+            {
+              "content": "The POST policy condition can specify a 'starts-with' check on the 'Content-Type' header",
+              "correct": true
+            },
+            {
+              "content": "S3 automatically scans every file for viruses during the upload",
+              "correct": false
+            },
+            {
+              "content": "You must download the file to your server first to check the extension",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1f6facf2-b542-4072-bd8e-332df99add93",
+          "prompt": "Your 48-hour client links are working perfectly. However, the legal team wants to be able to 'cancel' a specific link immediately if a contract is terminated. How do you handle this with Pre-signed URLs?",
+          "options": [
+            {
+              "content": "Change the S3 Bucket's region",
+              "correct": false
+            },
+            {
+              "content": "Pre-signed URLs cannot be easily revoked; you should have used a very short expiration or a middle-layer database check",
+              "correct": true
+            },
+            {
+              "content": "Delete the S3 object itself",
+              "correct": false
+            },
+            {
+              "content": "Revoke the IAM User credentials used to sign the URL",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "6be04d39-7522-444b-a1ba-c45647362b24",
+          "prompt": "If you want to use CloudFront Signed URLs for your clients, what is the main architectural difference in the 'signing' process compared to S3 Pre-signed URLs?",
+          "options": [
+            {
+              "content": "There is no difference; the code is exactly the same",
+              "correct": false
+            },
+            {
+              "content": "CloudFront URLs don't require any signature, just a token",
+              "correct": false
+            },
+            {
+              "content": "CloudFront signatures are generated automatically by S3",
+              "correct": false
+            },
+            {
+              "content": "CloudFront uses an RSA Key Pair (Private/Public) instead of IAM Access Keys",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "add57378-ecfd-4cac-89e6-04aff24b4938",
+          "prompt": "A photographer's upload fails with a '403 Forbidden' error even though the URL is valid. You notice the photographer is trying to upload from a different domain (e.g., photographer-site.com) than your application domain. What is likely missing?",
+          "options": [
+            {
+              "content": "A NAT Gateway in the photographer's VPC",
+              "correct": false
+            },
+            {
+              "content": "S3 Transfer Acceleration",
+              "correct": false
+            },
+            {
+              "content": "A Bucket Policy allowing public access",
+              "correct": false
+            },
+            {
+              "content": "CORS (Cross-Origin Resource Sharing) configuration on the S3 Bucket",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "be35c5ff-f775-4473-a2d5-87bbcf40a123",
+          "prompt": "SecureShot is booming! You now have 1 million clients. If you generate 1 million unique S3 Pre-signed URLs per hour, what is the primary bottleneck you might face?",
+          "options": [
+            {
+              "content": "S3 API Rate Limits for 'Generating' the URL",
+              "correct": false
+            },
+            {
+              "content": "The 7-day maximum limit on the URLs",
+              "correct": false
+            },
+            {
+              "content": "STS Throttling if you are assuming a role for every single URL generation",
+              "correct": true
+            },
+            {
+              "content": "S3 Bucket Storage Capacity",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/db0218f75d62",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "S3 Access Points",
+      "questions": [
+        {
+          "id": "92630f8d-2d73-4433-b5a3-57ed4e603ddb",
+          "prompt": "An S3 bucket contains data for three distinct departments: Finance, Sales, and Legal. Managing permissions for all three in a single Bucket Policy has become complex and error-prone. What is the primary architectural benefit of introducing S3 Access Points in this scenario?",
+          "options": [
+            {
+              "content": "It increases the storage limit of the S3 bucket allowing more data from each department.",
+              "correct": false
+            },
+            {
+              "content": "It replicates the data into three separate buckets to ensure total isolation.",
+              "correct": false
+            },
+            {
+              "content": "It automatically encrypts data differently for each department.",
+              "correct": false
+            },
+            {
+              "content": "It allows you to decompose one large bucket policy into separate, distinct policies for each department.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "86acff2c-d237-4c28-8d44-2c36d3c70567",
+          "prompt": "A developer needs to write an application that accesses a specific set of data in an S3 bucket. You have created an Access Point named 'dev-app-access' for this purpose. How should the application reference the bucket to utilize this Access Point?",
+          "options": [
+            {
+              "content": "The application must use the original Bucket Name combined with the Access Point ID.",
+              "correct": false
+            },
+            {
+              "content": "The application uses the standard Bucket URL but includes a header specifying the Access Point.",
+              "correct": false
+            },
+            {
+              "content": "The application must authenticate using the Access Point's IAM user credentials.",
+              "correct": false
+            },
+            {
+              "content": "The application must use the Access Point ARN (Amazon Resource Name) or alias instead of the Bucket name.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "8cbae94c-4a98-4d0b-8e0e-1cbce4500d37",
+          "prompt": "You need to ensure that an S3 bucket can only be accessed by EC2 instances running within a specific Virtual Private Cloud (VPC). How can S3 Access Points assist in enforcing this requirement?",
+          "options": [
+            {
+              "content": "By modifying the S3 Bucket Policy to block all public internet traffic.",
+              "correct": false
+            },
+            {
+              "content": "By installing an agent on the EC2 instances that routes traffic to the Access Point.",
+              "correct": false
+            },
+            {
+              "content": "By moving the S3 bucket inside the VPC subnet.",
+              "correct": false
+            },
+            {
+              "content": "By configuring the Access Point to restrict access to a specific VPC, ensuring requests only come from that network.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a733c758-7bac-40dc-b9d9-258944dd208c",
+          "prompt": "When setting up S3 Access Points to simplify management, you want to avoid updating the main S3 Bucket Policy every time you add or change a permission for a specific group. What configuration strategy allows for this?",
+          "options": [
+            {
+              "content": "Setting the Access Point to 'Administrator' mode which overrides the Bucket Policy.",
+              "correct": false
+            },
+            {
+              "content": "Using IAM Roles instead of Bucket Policies.",
+              "correct": false
+            },
+            {
+              "content": "Configuring the Bucket Policy to delegate access control to the Access Points.",
+              "correct": true
+            },
+            {
+              "content": "Deleting the Bucket Policy entirely so only Access Point policies are checked.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "920e43b3-4887-436c-bbf3-8bd8bed14f6b",
+          "prompt": "In an architecture where multiple teams access a single S3 bucket, what is the primary risk of relying solely on a single Bucket Policy that S3 Access Points help mitigate?",
+          "options": [
+            {
+              "content": "The risk of hitting the maximum bandwidth limit for the bucket.",
+              "correct": false
+            },
+            {
+              "content": "The risk of accidental misconfiguration affecting all users when editing a complex, monolithic policy.",
+              "correct": true
+            },
+            {
+              "content": "The risk of data corruption due to simultaneous writes.",
+              "correct": false
+            },
+            {
+              "content": "The risk of the bucket URL changing unexpectedly.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c66c9e85-4719-4e76-85af-fa3781ccc640",
+          "prompt": "Which of the following best describes the structural relationship between an S3 Bucket and its Access Points?",
+          "options": [
+            {
+              "content": "A Bucket can have multiple Access Points, each with its own unique ARN and policy.",
+              "correct": true
+            },
+            {
+              "content": "One Access Point can be attached to multiple S3 buckets.",
+              "correct": false
+            },
+            {
+              "content": "Access Points are sub-folders within the S3 bucket structure.",
+              "correct": false
+            },
+            {
+              "content": "Access Points are only available for buckets created within a VPC.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7181d11f-7938-4742-bb6c-e3d59534f00e",
+          "prompt": "You have an 'Analytics' Access Point and a 'Marketing' Access Point for the same bucket. You want to grant the Marketing team read access only to the '/images' folder. Where should you define this specific permission?",
+          "options": [
+            {
+              "content": "In the Service Control Policy (SCP) of the AWS Organization.",
+              "correct": false
+            },
+            {
+              "content": "In the IAM User policy of the Analytics team.",
+              "correct": false
+            },
+            {
+              "content": "In the specific policy attached to the 'Marketing' Access Point.",
+              "correct": true
+            },
+            {
+              "content": "It must be defined in the main Bucket Policy, as Access Points cannot restrict folder paths.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "feff2ed5-d448-47cf-bcbf-0befdbe40343",
+          "prompt": "What happens if you try to access data through an Access Point, but the Access Point Policy allows it while the underlying Bucket Policy explicitly denies it?",
+          "options": [
+            {
+              "content": "The request is routed to a secondary bucket.",
+              "correct": false
+            },
+            {
+              "content": "The request is queued for administrator approval.",
+              "correct": false
+            },
+            {
+              "content": "The request is allowed because Access Point policies override Bucket Policies.",
+              "correct": false
+            },
+            {
+              "content": "The request is denied.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f6084b46-bb17-483f-be75-2bcb62ecb417",
+          "prompt": "Why might an architect describe an S3 Access Point as a 'dedicated tunnel'?",
+          "options": [
+            {
+              "content": "Because it provides a direct fiber optic connection to the AWS datacenter.",
+              "correct": false
+            },
+            {
+              "content": "Because it encrypts traffic using a proprietary VPN protocol.",
+              "correct": false
+            },
+            {
+              "content": "Because it tunnels through the public internet avoiding all firewalls.",
+              "correct": false
+            },
+            {
+              "content": "Because it provides a specific entry path with its own rules, separate from other entry paths.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c5b2e8d5-e2b2-48b7-915b-be2f6dd27a39",
+          "prompt": "Regarding the implementation of Access Points, what is a valid 'Delegation' setup?",
+          "options": [
+            {
+              "content": "The Bucket Policy contains a statement allowing the Access Point to evaluate permissions.",
+              "correct": true
+            },
+            {
+              "content": "The Bucket Policy grants full access to the account's root user only.",
+              "correct": false
+            },
+            {
+              "content": "The IAM User is given permission to edit the Bucket Policy directly.",
+              "correct": false
+            },
+            {
+              "content": "The Access Point is configured to ignore the Bucket Policy.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/3ac44a973524",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "S3 Access Points",
+      "questions": [
+        {
+          "id": "fd884ee1-fbd7-4a2e-8e28-56ba3492404b",
+          "prompt": "You are managing a massive 'Data Lake' S3 bucket that receives data from 60 different external partners. You are currently managing permissions via a single Bucket Policy. You have just received an error stating: 'Policy size exceeds the maximum limit.' How should you re-architect this solution using Access Points?",
+          "options": [
+            {
+              "content": "Create an S3 Access Point for each partner and move their specific permissions into the Access Point policies.",
+              "correct": true
+            },
+            {
+              "content": "Create 60 separate S3 buckets, one for each partner, and use Cross-Region Replication to merge them.",
+              "correct": false
+            },
+            {
+              "content": "Request a limit increase for the Bucket Policy size from AWS Support.",
+              "correct": false
+            },
+            {
+              "content": "Compress the policy text by removing whitespace to fit under the limit.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "86014c82-4c89-41c5-aeff-d36839296a92",
+          "prompt": "A financial application running on EC2 instances inside a private VPC needs to write logs to a central S3 bucket. Compliance requires that this bucket must accept traffic ONLY from this specific VPC, and absolutely no traffic from the public internet or other VPCs. Which architecture achieves this most securely?",
+          "options": [
+            {
+              "content": "Use an IAM Role on the EC2 instances that allows 's3:PutObject'.",
+              "correct": false
+            },
+            {
+              "content": "Enable Server-Side Encryption (SSE-KMS) on the bucket.",
+              "correct": false
+            },
+            {
+              "content": "Configure Security Groups on the EC2 instances to allow outbound traffic to S3.",
+              "correct": false
+            },
+            {
+              "content": "Create an Access Point restricted to the VPC ID, and configure the Bucket Policy to delegate control to this Access Point.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "7fdf9dec-3968-4fe7-b24a-729bdc75273d",
+          "prompt": "You have a legacy image processing application that is hard-coded to upload files to a bucket named 'prod-images'. You want to restrict this application so it can only upload to a specific folder '/raw', but you cannot change the application's source code to handle complex new logic. How can you implement this restriction?",
+          "options": [
+            {
+              "content": "Create a Lambda function to move files to the correct folder after upload.",
+              "correct": false
+            },
+            {
+              "content": "It is not possible without changing the application code.",
+              "correct": false
+            },
+            {
+              "content": "Update the DNS records of your network to point 'prod-images' to a different bucket.",
+              "correct": false
+            },
+            {
+              "content": "Create an Access Point with a policy allowing 'PutObject' only on '/raw', and configure the application to use the Access Point Alias as the bucket name.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "1206940a-dd47-475f-b3a8-e7919cd7b22e",
+          "prompt": "You are the architect for a shared dataset used by 'Data Science' (Read/Write) and 'Auditing' (Read Only). The 'Auditing' team frequently hires short-term contractors, requiring frequent updates to their permissions. You want to minimize the risk of accidentally breaking the 'Data Science' team's access during these updates.",
+          "options": [
+            {
+              "content": "Create one Access Point for 'Data Science' and a separate Access Point for 'Auditing'.",
+              "correct": true
+            },
+            {
+              "content": "Give the Auditing team manager the root credentials so they can manage their own policy.",
+              "correct": false
+            },
+            {
+              "content": "Create two separate buckets and sync the data between them.",
+              "correct": false
+            },
+            {
+              "content": "Use S3 Object Tagging to identify which objects auditors can read.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "08abff82-521e-4e82-a894-ee3905a8f395",
+          "prompt": "You have configured an Access Point for a sensitive bucket. You want to ensure that NO traffic can access this bucket directly, bypassing the Access Point (e.g., someone trying to use the original Bucket URL). What is the most robust way to enforce this?",
+          "options": [
+            {
+              "content": "Delete the Bucket Policy.",
+              "correct": false
+            },
+            {
+              "content": "Add a statement to the Bucket Policy that explicitly Denies all requests that do not include the condition s3:DataAccessPointArn.",
+              "correct": true
+            },
+            {
+              "content": "Hide the Bucket Name so users cannot find it.",
+              "correct": false
+            },
+            {
+              "content": "Configure the Access Point to encrypt the bucket.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/0faf7676b157",
+    "quiz": {
+      "type": "THEORY",
+      "topic": "Backup and Disaster Recovery DRS",
+      "questions": [
+        {
+          "id": "38b10892-c21d-4b4d-a814-3213728af3d2",
+          "prompt": "Which statement best describes the distinction between a 'Backup' and 'Disaster Recovery'?",
+          "options": [
+            {
+              "content": "Backup guarantees zero data loss, whereas Disaster Recovery allows for some data loss.",
+              "correct": false
+            },
+            {
+              "content": "Disaster Recovery is only for natural disasters, while Backup is for hardware failure.",
+              "correct": false
+            },
+            {
+              "content": "Backup is the process of creating data copies, while Disaster Recovery is the broader strategy for restoring full system operations.",
+              "correct": true
+            },
+            {
+              "content": "Backup refers to on-premise storage, while Disaster Recovery refers to cloud storage.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "edb9d466-051a-4f3f-b799-1fe53c295554",
+          "prompt": "You are utilizing Amazon EBS Snapshots for data protection. What is a key characteristic of how these snapshots utilize storage?",
+          "options": [
+            {
+              "content": "They are incremental, meaning they only store data blocks that have changed since the last snapshot.",
+              "correct": true
+            },
+            {
+              "content": "They are always full copies, duplicating the entire disk volume every time.",
+              "correct": false
+            },
+            {
+              "content": "They automatically delete the original volume once the snapshot is complete.",
+              "correct": false
+            },
+            {
+              "content": "They are stored on the EC2 instance's local disk.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "cadb2e2b-e041-4a8c-9559-dc1377b5cdbf",
+          "prompt": "In the context of AWS Backup, what is the specific function of a 'Backup Plan'?",
+          "options": [
+            {
+              "content": "It defines the schedule, frequency, and retention policy for your backups.",
+              "correct": true
+            },
+            {
+              "content": "It is a document you must print and file for legal compliance.",
+              "correct": false
+            },
+            {
+              "content": "It is the encrypted container where the data is physically stored.",
+              "correct": false
+            },
+            {
+              "content": "It is the software agent installed on EC2 instances.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "228f0e44-c06a-433c-baab-8415198713e4",
+          "prompt": "When using Elastic Disaster Recovery (DRS), what role does the 'Staging Area' play?",
+          "options": [
+            {
+              "content": "It is a storage bucket used solely for EBS Snapshots.",
+              "correct": false
+            },
+            {
+              "content": "It is a lightweight subnet used to receive and archive replicated data before failover occurs.",
+              "correct": true
+            },
+            {
+              "content": "It is the on-premise server where the replication agent is installed.",
+              "correct": false
+            },
+            {
+              "content": "It runs full-sized production instances 24/7 to ensure instant failover.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c0246c7d-d3bc-431b-b43e-d3d9fd2dcb22",
+          "prompt": "Which component of AWS Backup allows you to logically organize backups (e.g., 'Finance', 'HR') and control access using policies?",
+          "options": [
+            {
+              "content": "Backup Vault",
+              "correct": true
+            },
+            {
+              "content": "Lifecycle Policy",
+              "correct": false
+            },
+            {
+              "content": "Backup Plan",
+              "correct": false
+            },
+            {
+              "content": "Recovery Point",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "fbcedc94-cb68-4138-beca-4b3e419babed",
+          "prompt": "What is the primary financial advantage of using AWS Elastic Disaster Recovery (DRS) compared to a traditional on-premise disaster recovery site?",
+          "options": [
+            {
+              "content": "It removes the cost of data transfer.",
+              "correct": false
+            },
+            {
+              "content": "It eliminates the need to pay for idle physical infrastructure and compute resources until a disaster occurs.",
+              "correct": true
+            },
+            {
+              "content": "It makes backup storage completely free.",
+              "correct": false
+            },
+            {
+              "content": "It automatically discounts your EC2 production pricing.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "0821770f-c748-41e6-8dc9-41d0ee53318e",
+          "prompt": "You need to ensure that your backups in AWS Backup are resilient against a region-wide failure (e.g., US-East-1 goes down). Which feature should you enable?",
+          "options": [
+            {
+              "content": "VPC Peering",
+              "correct": false
+            },
+            {
+              "content": "Cross-Region Copy",
+              "correct": true
+            },
+            {
+              "content": "Snapshot Locking",
+              "correct": false
+            },
+            {
+              "content": "Multi-AZ Deployment",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "c13ec582-4a5f-4a47-a6f5-67eb364db74f",
+          "prompt": "How does Elastic Disaster Recovery (DRS) keep the data on AWS synchronized with your on-premise source servers?",
+          "options": [
+            {
+              "content": "By using the AWS Replication Agent to continuously replicate block-level data.",
+              "correct": true
+            },
+            {
+              "content": "By manually uploading zip files to S3.",
+              "correct": false
+            },
+            {
+              "content": "By connecting via RDP/SSH and copying files.",
+              "correct": false
+            },
+            {
+              "content": "By taking nightly snapshots of the source server.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f5f038b3-0e28-4816-a51e-0e67ceb1c50e",
+          "prompt": "In the context of AWS Backup, what is a 'Recovery Point'?",
+          "options": [
+            {
+              "content": "The maximum amount of data loss allowed.",
+              "correct": false
+            },
+            {
+              "content": "A specific snapshot or saved state of a resource at a particular time.",
+              "correct": true
+            },
+            {
+              "content": "The geographical location where the server will restart.",
+              "correct": false
+            },
+            {
+              "content": "The duration of time it takes to restore the system.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "747a187a-57fa-4a06-a558-601d1a58157d",
+          "prompt": "When configuring Elastic Disaster Recovery, what is the purpose of the 'Launch Template' (or Launch Settings)?",
+          "options": [
+            {
+              "content": "To store the replicated data.",
+              "correct": false
+            },
+            {
+              "content": "To calculate the estimated cost of the disaster.",
+              "correct": false
+            },
+            {
+              "content": "To install the replication agent on the source server.",
+              "correct": false
+            },
+            {
+              "content": "To define the configuration (instance type, security group) of the recovery instance.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gemini.google.com/share/2e0ce78906f3",
+    "quiz": {
+      "type": "ARCHITECT",
+      "topic": "Backup and Disaster Recovery DRS",
+      "questions": [
+        {
+          "id": "ca6faa0f-fe4c-4769-b63d-76a6ffa7e8ca",
+          "prompt": "A healthcare company requires that all backups of patient data be stored for 7 years to meet regulatory compliance. Furthermore, these backups must be immutable—meaning not even the root user of the AWS account can delete or alter them during this period to protect against ransomware. How do you implement this?",
+          "options": [
+            {
+              "content": "Encrypt the backups using a KMS key and delete the key material.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup and configure a Vault Lock in 'Governance Mode'.",
+              "correct": false
+            },
+            {
+              "content": "Enable S3 Versioning on the bucket where backups are stored.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup and configure a Vault Lock in 'Compliance Mode'.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "06a42ebf-b4f3-4810-82f2-ab9d09da8ccb",
+          "prompt": "You are architecting for a high-frequency trading platform. If the primary region fails, the business mandates that the system must be up and running in a secondary region within 15 minutes (RTO), with no more than 5 seconds of data loss (RPO). Which solution fits this requirement?",
+          "options": [
+            {
+              "content": "AWS Backup with Cross-Region Copy scheduled every hour.",
+              "correct": false
+            },
+            {
+              "content": "S3 Cross-Region Replication (CRR) for the application binaries.",
+              "correct": false
+            },
+            {
+              "content": "EBS Snapshots manually copied to the secondary region via a Lambda function.",
+              "correct": false
+            },
+            {
+              "content": "AWS Elastic Disaster Recovery (DRS) replicating to the secondary region.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "933c0db2-ab3d-4ea7-a100-924e89e7abdb",
+          "prompt": "A startup wants to protect their development environment EC2 instances. They want to be able to restore them if a developer breaks something, but they want to keep costs as low as possible. They do not need cross-region protection or fast failover. What is the most cost-effective approach?",
+          "options": [
+            {
+              "content": "Run a duplicate set of EC2 instances in a second Availability Zone.",
+              "correct": false
+            },
+            {
+              "content": "Use S3 Intelligent-Tiering to store the EC2 instances.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Elastic Disaster Recovery (DRS) with a Pilot Light strategy.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup to schedule daily snapshots with a 7-day retention.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "a1c64786-6295-4548-ad95-b644c66ffe80",
+          "prompt": "You are using AWS Backup to protect an application running on EC2 with attached EBS volumes. You notice that when you restore the application, the database is sometimes corrupted because data was being written exactly when the backup occurred. How can you fix this?",
+          "options": [
+            {
+              "content": "Use S3 storage instead of EBS.",
+              "correct": false
+            },
+            {
+              "content": "Switch from EBS to Instance Store volumes.",
+              "correct": false
+            },
+            {
+              "content": "Increase the frequency of the backups to every 10 minutes.",
+              "correct": false
+            },
+            {
+              "content": "Enable 'VSS-Consistent' (Windows) snapshots in the AWS Backup plan.",
+              "correct": true
+            }
+          ],
+          "hint": ""
+        },
+        {
+          "id": "f9c24a65-8fb8-4d01-a8a6-689890d63ee5",
+          "prompt": "Your company uses AWS Organizations with 50 different AWS accounts. You need a centralized view to ensure that EVERY account is backing up their critical databases. You do not want to log into 50 different consoles to check.",
+          "options": [
+            {
+              "content": "Use CloudTrail to monitor for 'CreateSnapshot' events.",
+              "correct": false
+            },
+            {
+              "content": "Use AWS Backup's cross-account management features to apply a Backup Policy from the management account.",
+              "correct": true
+            },
+            {
+              "content": "It is not possible to manage backups across accounts; you must use a third-party tool.",
+              "correct": false
+            },
+            {
+              "content": "Create a Lambda script in each account to email you a report.",
+              "correct": false
+            }
+          ],
+          "hint": ""
+        }
+      ]
+    }
+  }
+]

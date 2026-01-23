@@ -6,7 +6,12 @@ import type { Category, Question, QuizData, QuizType } from "$lib/types/quiz";
 const CATEGORIES_META: Record<string, { name: string; files: string[] }> = {
   "aws-saa": {
     name: "AWS Solutions Architect Associate",
-    files: ["aws-saa-1-21.json", "aws-saa-22-27.json"],
+    files: [
+      "1-services-networking.json",
+      "2-services-storage.json",
+      "3-services-compute.json",
+      "4-services-database.json",
+    ],
   },
   // Add more categories as needed:
   // 'aws-cp': {

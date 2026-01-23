@@ -10,7 +10,7 @@ const CATEGORIES_META: Record<string, { name: string; files: string[] }> = {
       "1-services-networking.json",
       "2-services-storage.json",
       "3-services-compute.json",
-      "4-services-database.json",
+      "4-services-databases.json",
     ],
   },
   // Add more categories as needed:
